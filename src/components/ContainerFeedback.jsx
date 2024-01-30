@@ -1,120 +1,73 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { IoIosStar } from "react-icons/io";
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { IoIosStar } from "react-icons/io";
-
+import { feedback } from '../arrays/feedback';
 
 function ContainerFeedback() {
     return (
-        <section className='w-full py-16 bg-light-background dark:bg-dark-background'>
+        <section id="feedback" className='w-full py-16'>
             <div className='flex items-center justify-center flex-col mb-5 gap-3'>
-                <h6 className='text-dark-blue font-semibold font-inter dark:text-primary-blue'>Feedback</h6>
+                <h6 className='text-dark-blue font-semibold font-inter dark:text-blueish-gray'>Feedback</h6>
                 <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Depoimentos</h1>
             </div>
             <div className='flex items-center justify-center'>
                 <div className='w-[80vw]'>
                     <Swiper
-                    spaceBetween={15}
-                    slidesPerView={4}
-                    freeMode={true}
-                    navigation={true}
-                    loop={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Pagination, Navigation]}
-                    >
-                    <SwiperSlide>
-                        <div className='bg-white dark:bg-secondary-dark rounded-[40px] p-6 flex flex-col gap-2'>
-                            <div className='flex flex-row justify-between'>
-                                <div className='flex flex-row'>
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                </div>
-                                <span className='text-sm text-nowrap text-blueish-gray'>11 meses atrás</span>
-                            </div>
-                            <div className='flex flex-col'>
-                                <p className='font-regular'>“Excelente atendimento e software muito completo. O suporte é altamente qualificado e ágil.”</p>
-                                <span className='text-dark-blue font-medium mt-2'>- Josana T.</span>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='bg-white dark:bg-secondary-dark rounded-[40px] p-6 flex flex-col gap-2'>
-                            <div className='flex flex-row justify-between'>
-                                <div className='flex flex-row'>
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                    <IoIosStar color='yellow' size={22} />
-                                </div>
-                                <span className='text-sm text-nowrap text-blueish-gray'>11 meses atrás</span>
-                            </div>
-                            <div className='flex flex-col'>
-                                <p className='font-regular'>“Excelente atendimento e software muito completo. O suporte é altamente qualificado e ágil.”</p>
-                                <span className='text-dark-blue font-medium mt-2'>- Josana T.</span>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide><div className='bg-white dark:bg-secondary-dark rounded-[40px] p-6 flex flex-col gap-2'>
-                        <div className='flex flex-row justify-between'>
-                            <div className='flex flex-row'>
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                            </div>
-                            <span className='text-sm text-nowrap text-blueish-gray'>11 meses atrás</span>
-                        </div>
-                        <div className='flex flex-col'>
-                            <p className='font-regular'>“Excelente atendimento e software muito completo. O suporte é altamente qualificado e ágil.”</p>
-                            <span className='text-dark-blue font-medium mt-2'>- Josana T.</span>
-                        </div>
-                    </div></SwiperSlide>
-                    <SwiperSlide><div className='bg-white dark:bg-secondary-dark rounded-[40px] p-6 flex flex-col gap-2'>
-                        <div className='flex flex-row justify-between'>
-                            <div className='flex flex-row'>
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                            </div>
-                            <span className='text-sm text-nowrap text-blueish-gray'>11 meses atrás</span>
-                        </div>
-                        <div className='flex flex-col'>
-                            <p className='font-regular'>“Excelente atendimento e software muito completo. O suporte é altamente qualificado e ágil.”</p>
-                            <span className='text-dark-blue font-medium mt-2'>- Josana T.</span>
-                        </div>
-                    </div></SwiperSlide>
-                    <SwiperSlide><div className='bg-white dark:bg-secondary-dark rounded-[40px] p-6 flex flex-col gap-2'>
-                        <div className='flex flex-row justify-between'>
-                            <div className='flex flex-row'>
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                                <IoIosStar color='yellow' size={22} />
-                            </div>
-                            <span className='text-sm text-nowrap text-blueish-gray'>11 meses atrás</span>
-                        </div>
-                        <div className='flex flex-col'>
-                            <p className='font-regular'>“Excelente atendimento e software muito completo. O suporte é altamente qualificado e ágil.”</p>
-                            <span className='text-dark-blue font-medium mt-2'>- Josana T.</span>
-                        </div>
-                    </div></SwiperSlide>
-                </Swiper>
+                        spaceBetween={10}
+                        slidesPerView={1}
+                        autoplay={{
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={true}
+                        loop={true}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 15,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 15,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 15,
+                            },
+                        }}
+                        modules={[Pagination, Navigation, Autoplay]}>
+                        {feedback.map((f) => {
+                            return (
+                                <SwiperSlide key={f.autor} className='h-[15rem] w-full '>
+                                    <div
+                                        className='bg-white cursor-grab dark:bg-secondary-dark shadow-xl rounded-[40px] h-[12rem] justify-start p-7 flex flex-col gap-2'>
+                                        {/*STARS*/}  <div className='flex flex-row justify-between'>
+                                            <div className='flex flex-row'>
+                                                <IoIosStar color='yellow' size={20} />
+                                                <IoIosStar color='yellow' size={20} />
+                                                <IoIosStar color='yellow' size={20} />
+                                                <IoIosStar color='yellow' size={20} />
+                                                <IoIosStar color='yellow' size={20} />
+                                            </div>
+                                            <span className='text-sm text-nowrap text-blueish-gray font-light'>{f.date}</span>
+                                        </div>
+                                        <div className='flex flex-col'>
+                                            <p className='font-regular dark:text-vanilla text-sm'>{f.comment}</p>
+                                            <span className='text-dark-blue dark:text-primary-blue absolute bottom-[70px] font-medium text-sm mt-2'>{f.autor}</span>
+                                        </div>
+                                    </div>
+
+                                </SwiperSlide>
+                            )
+                        })}
+
+                    </Swiper>
+                </div>
             </div>
-        </div>
         </section >
     )
 }

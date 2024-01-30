@@ -1,6 +1,5 @@
-import { PackageOpen, Receipt, ScrollText, Settings, ShoppingBag, Truck } from 'lucide-react'
 import React from 'react'
-
+import { PackageOpen, Receipt, ScrollText, Settings, ShoppingBag, Truck } from 'lucide-react'
 
 const resources = [
     {
@@ -38,7 +37,7 @@ const resources = [
 const ContainerServices = () => {
     return (
         <section name="service" id="service" className='bg-light-background dark:bg-dark-background transition-colors w-full pt-16 px-36 gap-5'>
-            <div className='flex items-center justify-center flex-col mb-5 gap-3'>
+            <div className='flex items-center justify-center flex-col'>
                 <h6 className='text-dark-blue font-semibold font-inter dark:text-primary-blue'>Recursos</h6>
                 <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Potencialize seu negócio</h1>
                 <span className='font-inter text-blueish-gray lg:w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
@@ -47,7 +46,7 @@ const ContainerServices = () => {
                 <div className='grid w-full h-full min-w-[300px] lg:grid-cols-3 grid-cols-1 gap-5'>
                     {resources.map((r) => {
                         return (
-                            <div className='bg-white dark:bg-secondary-dark min-w-[300px] shadow-lg px-6 py-12 flex flex-col gap-3 rounded-3xl'>
+                            <div key={r.title} className='bg-white dark:bg-terciary-dark dark:hover:bg-hover-dark hover:cursor-pointer hover:bg-neutral-100 min-w-[300px] shadow-lg px-8 py-8 flex flex-col gap-3 rounded-3xl transition-colors duration-150 '>
                                 <div id="icon">{r.icon}</div>
                                 <div>
                                     <h1 className='font-inter font-bold text-lg text-dark-blue dark:text-vanilla'>{r.title}</h1>

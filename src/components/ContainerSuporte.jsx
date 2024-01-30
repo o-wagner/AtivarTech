@@ -1,5 +1,5 @@
 import React from 'react'
-import suporte from '../assets/suporte.png'
+import suporte from '../assets/support.svg'
 import Button from './Button'
 
 export default function ContainerSuporte() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import backup from '../assets/backup.png'
+import lock from '../assets/lock.svg'
 import Button from './Button'
 
 export default function ContainerBackup() {
@@ -10,14 +10,14 @@ export default function ContainerBackup() {
             <div className='flex items-center lg:items-end lg:justify-center flex-col gap-6'>
                 <div className='flex flex-col gap-2'>
                     <h1 className='text-primary-blue text-[39px] font-poppins font-bold lg:text-end text-center'>Segurança e Backup em Nuvem</h1>
-                    <p className='text-primary-gray font-inter lg:text-justify max-w-[640px] text-center dark:text-lighter-gray'>
+                    <p className='text-primary-gray font-inter lg:text-right max-w-[670px] text-center dark:text-lighter-gray'>
                     Controle os acessos dos usuários ao sistema de acordo com sua função, restringindo ou permitindo acesso aos módulos. 
                     Evite imprevistos e perdas, tenha maior segurança dos seus dados com nossa moderna ferramenta de backups em nuvem.</p>
                 </div>
                 <Button name="Saiba Mais" />
             </div>
             <div>
-                <img className='min-w-[300px] w-[340px]' src={backup} alt="imagem de uma pessoa da equipe de suporte" />
+                <img className='min-w-[220px] w-[250px]' src={lock} alt="imagem de uma pessoa da equipe de suporte" />
             </div>
 
         </div>

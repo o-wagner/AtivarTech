@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import ativar from '../assets/ativar-logo.svg'
+import ativarDark from '../assets/logo-darkm.png'
+import ativarLight from '../assets/logo-lightm.png'
 import ItemNav from './ItemNav'
 import Button from './Button'
 import ToggleButton from './ToggleButton'
@@ -10,28 +11,43 @@ const headerItem = [
     {
         itemName: 'Início',
         itemPath: 'home',
-        itemOffset: -50
+        itemOffset: -50,
+        dropdown: false,
     },
     {
-        itemName: 'Serviços',
+        itemName: 'Soluções',
         itemPath: 'service',
-        itemOffset: -25
+        itemOffset: -40,
+        dropdown: true,
+
     },
     {
-        itemName: 'Blog',
-        itemPath: '#',
-        itemOffset: 50
+        itemName: 'Sobre',
+        itemPath: 'about',
+        itemOffset: -80,
+        dropdown: false,
+
     },
     {
-        itemName: 'Quem somos',
+        itemName: 'Contato',
         itemPath: '#',
-        itemOffset: 50
+        itemOffset: 0,
+        dropdown: false,
+
+    },
+    {
+        itemName: 'Conteúdos',
+        itemPath: 'feedback',
+        itemOffset: -120,
+        dropdown: false,
+
     },
 ]
 
+
 const Header = () => {
     let [open, setOpen] = useState(false);
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     const toggleTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark");
@@ -45,38 +61,50 @@ const Header = () => {
     }, [theme])
 
     return (
-        <header className=' bg-light-background/85 backdrop-blur-sm transition-colors fixed dark:bg-dark-background/85 h-20 w-full text-slate-600 dark:text-slate-200 flex justify-center items-center z-10'>
-            <div className='w-full px-8 flex items-center justify-between'>
+        <header className='bg-light-background/85 backdrop-blur-sm transition-colors fixed
+         dark:bg-dark-background/85 h-20 w-full text-slate-600 dark:text-slate-200 
+         flex justify-center items-center px-6 z-20'>
+            <div className='w-full lg:px-10 flex items-center lg:justify-between lg:gap-20'>
                 <div>
                     <a href="/">
-                        <img src={ativar} alt="logotipo-ativar" className='min-w-[100px] w-[110px] z-10' />
+                        {theme === 'light' ?
+
+                            <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[120px] z-10 -translate-x-5' />
+                            :
+                            <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[120px] z-10 -translate-x-5' />}
                     </a>
                 </div>
-                <nav className='z-10 ml-8'>
+                <nav className='z-10 ml-8 flex gap-24'>
                     <ul div="menu" className={`lg:gap-7 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
                      items-center justify-center flex bg-white dark:bg-secondary-dark lg:bg-transparent dark:lg:bg-transparent
-                     pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-0' : 'top-[-1000px]'}`}>
+                     pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in-out ${open ? 'top-0' : 'top-[-10000px]'}`}>
+
                         {headerItem.map((h) => {
                             return (
-                                <li>
-                                    <ItemNav key={h.itemName} name={h.itemName} path={h.itemPath} offset={h.itemOffset} />
-                                </li>
+                                <ItemNav
+                                    key={h.itemName}
+                                    onClick={() => setOpen(false)}
+                                    dropdown={h.dropdown}
+                                    name={h.itemName}
+                                    path={h.itemPath}
+                                />
                             )
                         })}
-                        <Button name="Entre em Contato" />
-                        {open === true ?
-                            <div onClick={() => setOpen(false)} className='cursor-pointer text-2xl flex absolute right-8 top-6' >
-                                <X /> </div> : <></>}
+                        <Button name="Indique e Ganhe!" />
                     </ul>
+
+                    {open === true ?
+                        <div onClick={() => setOpen(false)} className='cursor-pointer text-2xl flex absolute right-8 top-6' >
+                            <X /> </div> : <></>}
                 </nav>
                 <div className='flex flex-row gap-4 lg:items-center lg:visible invisible lg:justify-center text-sky-600 dark:text-slate-200'>
                     <ToggleButton click={toggleTheme} />
                 </div>
-                <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow absolute right-8 top-6'>
+                <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow '>
                     <Menu size={28} />
                 </div>
             </div>
-        </header>
+        </header >
     )
 }
 

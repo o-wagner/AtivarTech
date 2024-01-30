@@ -1,28 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
+/* @layer base {
+  ::-webkit-scrollbar {
+    @apply w-2 bg-transparent
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-blue dark:bg-white
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-blue/90 
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent
+  }
+
+} */
+
+
 @tailwind components;
 @tailwind utilities;
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    /* overflow-x: hidden;  */
+html,
+body {
+  width: 100%;
+  height: 100% !important;
+  margin: 0px;
+  padding: 0px;
 }
 
-nav a:visited {
-    cursor: pointer;
-    color: #ffffff;
-  }
-  
-  nav a:hover{
-    cursor: pointer;
-   
-  }
+body::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: theme(colors.light-background);
+}
+.dark body::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: theme(colors.dark-background);
+}
+body::-webkit-scrollbar
+{
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.3);
+    background-color: theme(colors.primary-blue);
+}
 
-  nav a.active{
-    color: theme('colors.primary-blue')
-  }
+
+nav a:visited {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+nav a:hover {
+  cursor: pointer;
+
+}
+
+nav a.active {
+  color: theme('colors.primary-blue')
+}
+
+
