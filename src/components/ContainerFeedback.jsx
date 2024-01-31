@@ -14,8 +14,8 @@ function ContainerFeedback() {
                 <h6 className='text-dark-blue font-semibold font-inter dark:text-blueish-gray'>Feedback</h6>
                 <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Depoimentos</h1>
             </div>
-            <div className='flex items-center justify-center'>
-                <div className='w-[80vw]'>
+            <div className='flex items-center justify-center '>
+                <div className='w-[80vw] flex items-center max-w-[1100px] justify-center'>
                     <Swiper
                         spaceBetween={10}
                         slidesPerView={1}
