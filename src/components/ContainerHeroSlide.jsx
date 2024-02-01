@@ -12,7 +12,7 @@ function ContainerHeroSlide() {
             <Swiper
                 className='w-[90vw] rounded-3xl flex items-center justify-center text-center bg-white h-[80vh]'
                 style={{
-                    '--swiper-navigation-color':'#4c1d95',
+                    '--swiper-navigation-color':'black',
                     '--swiper-navigation-size':'30px',
                 }}
                 modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
@@ -21,9 +21,9 @@ function ContainerHeroSlide() {
                 loop={true}
                 navigation={true}
             >
-                <SwiperSlide className='bg-blue-400'>Slide 1</SwiperSlide>
-                <SwiperSlide className='bg-red-400'>Slide 2</SwiperSlide>
-                <SwiperSlide className='bg-zinc-400'>Slide 3</SwiperSlide>
+                <SwiperSlide className='bg-slate-500'>Slide 1</SwiperSlide>
+                <SwiperSlide className='bg-slate-300'>Slide 2</SwiperSlide>
+                <SwiperSlide className='bg-slate-400'>Slide 3</SwiperSlide>
 
 
             </Swiper>
