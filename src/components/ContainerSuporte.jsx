@@ -4,7 +4,7 @@ import Button from './Button'
 
 export default function ContainerSuporte() {
     return (
-        <div className='w-full lg:px-36 py-16 bg-light-background dark:bg-dark-background 
+        <div className='w-full lg:px-36 pt-28 py-16 bg-light-background dark:bg-dark-background 
         flex gap-10 flex-row items-center justify-center flex-wrap lg:flex-nowrap px-20'>
             <div>
                 <img className='min-w-[300px] w-[340px]' src={suporte} alt="imagem de uma pessoa da equipe de suporte" />

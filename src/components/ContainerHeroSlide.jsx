@@ -12,7 +12,7 @@ function ContainerHeroSlide() {
             <Swiper
                 className='w-[90vw] rounded-3xl flex items-center justify-center text-center bg-white h-[80vh]'
                 style={{
-                    '--swiper-navigation-color':'black',
+                    '--swiper-navigation-color':'white',
                     '--swiper-navigation-size':'30px',
                 }}
                 modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}

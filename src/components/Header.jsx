@@ -5,42 +5,36 @@ import ativarLight from '../assets/logo-lightm.png'
 import ItemNav from './ItemNav'
 import Button from './Button'
 import ToggleButton from './ToggleButton'
-import { Menu, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import { BiMenuAltRight } from "react-icons/bi";
-
 
 const headerItem = [
     {
         itemName: 'Início',
-        itemPath: 'home',
-        itemOffset: -50,
+        itemPath: '/',
         dropdown: false,
     },
     {
         itemName: 'Soluções',
-        itemPath: 'service',
-        itemOffset: -40,
+        itemPath: '/solucoes',
         dropdown: true,
 
     },
     {
         itemName: 'Sobre',
-        itemPath: 'about',
-        itemOffset: -80,
+        itemPath: '/sobre',
         dropdown: false,
 
     },
     {
         itemName: 'Contato',
-        itemPath: '#',
-        itemOffset: 0,
+        itemPath: '/contato',
         dropdown: false,
 
     },
     {
         itemName: 'Conteúdos',
-        itemPath: 'feedback',
-        itemOffset: -120,
+        itemPath: '/conteudos',
         dropdown: false,
 
     },
@@ -76,11 +70,11 @@ const Header = () => {
                             <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[120px] z-10 -translate-x-5' />}
                     </a>
                 </div>
-                <nav className='z-10 ml-8 flex gap-24'>
+                <nav className='z-10 mr-8 flex gap-24'>
                     <ul div="menu" className={`lg:gap-10 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
-                     items-center justify-center flex bg-light-background dark:bg-secondary-dark lg:bg-transparent dark:lg:bg-transparent
+                     items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent
                      pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
-
+                        <ToggleButton className='-translate-x-3 lg:invisible visible' click={toggleTheme} theme={theme} />
                         {headerItem.map((h) => {
                             return (
                                 <ItemNav
@@ -99,8 +93,8 @@ const Header = () => {
                         <div onClick={() => setOpen(false)} className='cursor-pointer animate-fade-down text-2xl flex absolute right-8 top-6' >
                             <X /> </div> : <></>}
                 </nav>
-                <div className='flex flex-row gap-4 lg:items-center lg:visible invisible lg:justify-center text-sky-600 dark:text-slate-200'>
-                    <ToggleButton click={toggleTheme} />
+                <div className='flex flex-row gap-4 lg:items-center lg:justify-center text-sky-600 dark:text-slate-200'>
+                <ToggleButton className='lg:visible invisible' click={toggleTheme} theme={theme} />
                 </div>
                 <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow '>
                     <BiMenuAltRight size={35} />

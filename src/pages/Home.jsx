@@ -10,13 +10,11 @@ import Header from '../components/Header'
 function Home() {
     return (
         <div className='bg-light-background dark:bg-dark-background'>
-            <Header />
             <ContainerHeroSlide />
             <ContainerServices />
             <ContainerSuporte />
             <ContainerBackup />
             <ContainerFeedback />
-            <Footer />
         </div>
     )
 }

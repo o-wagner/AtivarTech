@@ -9,7 +9,7 @@ import { feedback } from '../arrays/feedback';
 
 function ContainerFeedback() {
     return (
-        <section id="feedback" className='w-full py-16'>
+        <section id="feedback" className='w-full py-32 '>
             <div className='flex items-center justify-center flex-col mb-5 gap-3'>
                 <h6 className='text-dark-blue font-semibold font-inter dark:text-blueish-gray'>Feedback</h6>
                 <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Depoimentos</h1>

@@ -15,11 +15,16 @@ export default {
         'fade-down':{
           '0%':{transform : 'translateY(-10px)' , opacity: 0},
           '100%':{transform : 'translateY(0px)' , opacity: 1},
+        },
+        'fade-left':{
+          '0%':{transform : 'translateX(16px)' , opacity: 0},
+          '100%':{transform : 'translateY(0px)' , opacity: 1},
         }
       },
       animation:{
         'fade-in':'fade-in 1.5s ease-in-out',
-        'fade-down':'fade-down 0.3s ease-in-out'
+        'fade-down':'fade-down 0.3s ease-in-out',
+        'fade-left':'fade-left 0.5s ease-in-out'
       },      
       fontFamily: {
         'poppins': ['Poppins'],
