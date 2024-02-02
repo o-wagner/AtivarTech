@@ -8,8 +8,8 @@ import { NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
-        <div className='bg-primary-blue dark:bg-dark-footer text-white px-32 py-6 flex flex-col gap-2 w-full'>
-            <div className='grid-cols-1 md:grid-cols-3 lg:grid-cols-4 grid py-12 lg:justify-between text-left'>
+        <div className='bg-primary-blue dark:bg-dark-footer text-white lg:px-32 px-10 py-6 flex flex-col gap-2 w-full'>
+            <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid py-8 lg:justify-between text-left'>
                 <div className=' flex flex-col gap-4 lg:items-start justify-between p-8'>
                     <img src={logo} className='w-[100px]' alt="ativarlogo" />
                     <p className='font-normal text-left lg:max-w-[140px] text-white font-inter text-sm'>Potencialize sua empresa com nossa gestão inteligente</p>
@@ -46,7 +46,6 @@ function Footer() {
                     <a href='mailto:contato@ativartecnologia.com' ><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <MdOutlineMailOutline className='w-5 text-xl' width={20} />
                         <span className='font-inter'>contato@ativartecnologia.com</span></div></a>
-
                         <a href="https://wa.me/5533998315881" target='_blank' rel="noreferrer noopener"><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <FaWhatsapp className='text-xl' width={20} />
                         <span className='font-inter'>(33) 99831-5881</span></div></a>

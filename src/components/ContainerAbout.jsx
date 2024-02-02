@@ -1,9 +1,9 @@
 import React from 'react'
-import cbum from '../assets/cbum.png'
-import thais from '../assets/thais.png'
-import larissa from '../assets/larissa.png'
-import gabriel from '../assets/gabriel.png'
-import jeferson from '../assets/jeferson.png'
+import cbum from '../assets/equipe/cbum.png'
+import thais from '../assets/equipe/thais.png'
+import larissa from '../assets/equipe/larissa.png'
+import gabriel from '../assets/equipe/gabriel.png'
+import jeferson from '../assets/equipe/jeferson.png'
 
 
 const equipe = [
@@ -36,7 +36,7 @@ const equipe = [
 
 function ContainerAbout() {
     return (
-        <div id='about' className='w-full h-full pt-20 flex flex-col py-16 gap-12 justify-center bg-light-gradient dark:bg-dark-gradient'>
+        <section id='about' className='w-full h-full pt-20 flex flex-col py-16 gap-12 justify-center bg-light-gradient dark:bg-dark-gradient'>
             <div className='flex items-center justify-center flex-col mb-5 gap-2 px-16'>
                 <h1 className='text-4xl font-poppins font-bold text-dark-blue text-center dark:text-vanilla'>Nossa Equipe</h1>
                 <span className='font-inter text-dark-blue dark:text-blueish-gray lg:w-[700px] min-w-[260px] px-12 text-center'>
@@ -58,7 +58,7 @@ function ContainerAbout() {
                 })}
             </div>
 
-        </div>
+        </section>
     )
 }
 

@@ -31,8 +31,8 @@ export default {
         'inter' : ['Inter'],
      },
      backgroundImage:{
-      'button-gradient': 'linear-gradient(180deg, rgba(63,142,255,1) 0%, rgba(25,68,128,1) 100%)',
-      'button-gradient-hover': 'linear-gradient(180deg, rgba(78,150,252,1) 0%, rgba(46,90,153,1) 100%)',
+      'button-gradient': ' linear-gradient(180deg, rgba(24,162,222,1) 0%, rgba(22,75,98,1) 100%)',
+      'button-gradient-hover': 'linear-gradient(180deg, rgba(39,172,230,1) 0%, rgba(26,104,138,1) 100%)',
       'light-gradient':'linear-gradient(180deg, rgba(233,233,233,1) 0%, rgba(204,204,204,1) 70%);',
       'dark-gradient':'linear-gradient(180deg, rgba(7,11,17,1) 5%, rgba(4,7,11,1) 100%);',
       'dark-wave-gradient':'url("/dark-wave-gradient.svg")',
