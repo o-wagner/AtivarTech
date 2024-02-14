@@ -35,8 +35,8 @@ export default {
       'button-gradient-hover': 'linear-gradient(180deg, rgba(39,172,230,1) 0%, rgba(26,104,138,1) 100%)',
       'light-gradient':'linear-gradient(180deg, rgba(233,233,233,1) 0%, rgba(204,204,204,1) 70%);',
       'dark-gradient':'linear-gradient(180deg, rgba(7,11,17,1) 5%, rgba(4,7,11,1) 100%);',
-      'dark-wave-gradient':'url("/dark-wave-gradient.svg")',
-      'light-wave-gradient':'url("/light-wave-background.svg")',
+      'dark-wave-gradient':'url("/dark-wave-gradient.png")',
+      'light-wave-gradient':'url("/light-wave-gradient.png")',
 
      },
       colors:{
@@ -45,14 +45,18 @@ export default {
         'light-background':'#e9e9e9',
         'dark-background':'#070B11',
         'secondary-dark':'#181F2D',
-        'terciary-dark': '#101A28',
+        'tertiary-dark': '#101A28',
         'hover-dark':'#0a101a',
         'blueish-gray': '#81828C',
         'light-blueish-gray':'#b1b1b1',
         'lighter-gray':'#959BA4',
         'vanilla':'#D2DCEB',
         'primary-gray': '#404040',
-        'dark-footer': '#0A1018'
+        'dark-footer': '#0A1018',
+        'quaternary-dark':'#0C1219'
+      },
+      boxShadow:{
+        'medium-shadow':'8px 6px 4px 0px rgba(0,0,0,0.32)'
       }
     },
   },

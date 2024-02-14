@@ -61,17 +61,20 @@ const service = [
 
 const ContainerServices = () => {
     return (
-        <section name="service" id="service" className='bg-light-background dark:bg-dark-background w-full pt-16 px-40'>
-            <div className='flex items-center justify-center flex-col'>
-                <h6 className='text-dark-blue font-semibold font-inter dark:text-primary-blue'>Recursos</h6>
-                <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Potencialize seu negócio</h1>
-                <span className='font-inter text-blueish-gray lg:w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
+        <section name="service" id="service" className=' w-full pt-16 px-40'>
+
+            <div className='flex items-center justify-center flex-col z-10'>
+                <h6 className='text-blueish-gray z-10 font-semibold font-inter uppercase tracking-widest pb-2 text-[12px] dark:text-primary-blue'>Recursos</h6>
+                <h1 className='text-4xl font-poppins  z-10 font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Potencialize seu negócio</h1>
+                <span className='font-inter  z-10 text-blueish-gray lg:w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
             </div>
             <div className='w-full py-12 flex items-center justify-center flex-col gap-10'>
-                <div className='grid w-full h-full min-w-[300px] max-w-[1100px] lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1000px] lg:grid-cols-3 grid-cols-1 gap-3'>
                     {resources.map((r) => {
                         return (
-                            <div key={r.title} className='bg-white hover:-translate-y-2 dark:bg-terciary-dark dark:hover:bg-hover-dark hover:cursor-pointer hover:bg-neutral-100 min-w-[300px] drop-shadow-lg px-8 py-10 flex flex-col gap-3 rounded-3xl transition-transform duration-200'>
+                            <div key={r.title} className='bg-white hover:-translate-y-2 dark:bg-tertiary-dark
+                             dark:hover:bg-hover-dark hover:cursor-pointer hover:bg-neutral-100 min-w-[300px] 
+                             drop-shadow-lg px-6 py-8 flex flex-col gap-3 rounded-3xl transition-transform duration-200'>
                                 <div id="icon">{r.icon}</div>
                                 <div>
                                     <h1 className='font-inter font-bold text-lg text-dark-blue dark:text-vanilla'>{r.title}</h1>
@@ -81,12 +84,12 @@ const ContainerServices = () => {
                         )
                     })}
                 </div>
-                <div className=' w-full grid lg:grid-cols-2 grid-cols-1 min-w-[300px] gap-8 max-w-[1100px]'>
+                <div className=' grid z-10 lg:grid-cols-2 grid-cols-1 min-w-[300px] gap-10 max-w-[1000px]'>
                     {service.map((s) => {
                         return (
                             <div key={s.moduleTitle}
-                                className='flex flex-col drop-shadow-lg hover:bg-neutral-100 px-20 items-center py-16 cursor-pointer bg-white rounded-3xl
-                                 transition-transform hover:-translate-y-2 dark:bg-terciary-dark hover:dark:bg-hover-dark dark:text-vanilla'>
+                                className='flex flex-col shadow-medium-shadow hover:bg-neutral-100 px-16 items-center py-14 cursor-pointer bg-white rounded-3xl
+                                 transition-transform hover:-translate-y-2 dark:bg-tertiary-dark hover:dark:bg-hover-dark dark:text-vanilla'>
                                 <img src={s.icon} width={100} />
                                 <h1 className='text-lg font-bold text-dark-blue dark:text-vanilla uppercase font-inter'>{s.title}</h1>
                                 <span className='max-w-[200px] text-center text-blueish-gray'>{s.desc}</span>
@@ -120,6 +123,8 @@ const ContainerServices = () => {
                     })}
 
                 </div>
+                <div className='w-full absolute left-0 z-0 bg-light-wave-gradient dark:bg-dark-wave-gradient h-screen bg-repeat-x bg-center bg-contain'/>
+
             </div>
         </section>
     )

@@ -9,7 +9,7 @@ const ContainerHero = () => {
         items-center flex lg:block'>
             <div className='w-full animate-fade-in px-4 gap-3 flex flex-wrap-reverse lg:flex-nowrap items-center justify-center'>
                 <HeroText/>
-                <div className=' lg:w-1/2 w-[70%] z-0 flex  lg:h-[90vh] h-auto'>
+                <div className=' lg:w-1/2 w-[70%] z-0 flex lg:h-[90vh] h-auto'>
                     <img className='self-end' src={HeroShot} alt="heroshot" />
                 </div>
             </div>  

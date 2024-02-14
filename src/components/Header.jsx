@@ -20,14 +20,9 @@ const headerItem = [
         dropdown: true,
 
     },
-    {
-        itemName: 'Sobre',
-        itemPath: '/sobre',
-        dropdown: false,
 
-    },
     {
-        itemName: 'Blog',
+        itemName: 'Conteúdos',
         itemPath: '/conteudos',
         dropdown: false,
 
@@ -35,6 +30,12 @@ const headerItem = [
     {
         itemName: 'Contato',
         itemPath: '/contato',
+        dropdown: false,
+
+    },
+    {
+        itemName: 'Sobre Nós',
+        itemPath: '/sobre',
         dropdown: false,
 
     },
@@ -71,7 +72,7 @@ const Header = () => {
                     </a>
                 </div>
                 <nav className='z-10 mr-8 flex gap-24'>
-                    <ul div="menu" className={`lg:gap-8 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
+                    <ul div="menu" className={`lg:gap-6 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
                      items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent
                      pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
                         <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' click={toggleTheme} theme={theme} />
@@ -93,8 +94,10 @@ const Header = () => {
                         <div onClick={() => setOpen(false)} className='cursor-pointer animate-fade-down text-2xl flex absolute right-8 top-6' >
                             <X className='lg:invisible' /> </div> : <></>}
                 </nav>
-                <div className='flex flex-row gap-4 lg:items-center lg:justify-center hover:text-blueish-gray dark:hover:text-light-blueish-gray dark:text-vanilla'>
+                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center hover:text-lighter-gray dark:hover:text-light-blueish-gray dark:text-vanilla'>
                     <ToggleButton icon={true} className='lg:visible invisible ' click={toggleTheme} theme={theme} />
+                    {/* <Button name="Indique e Ganhe!" /> */}
+
                 </div>
                 <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow '>
                     <BiMenuAltRight size={35} />

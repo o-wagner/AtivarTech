@@ -19,9 +19,9 @@ function ContainerHeroSlide() {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     return (
-        <div id="home" className='w-full animate-fade-down pt-[85px] flex align-items justify-center h-screen bg-light-background dark:bg-dark-background'>
+        <div id="home" className='w-full animate-fade-down pt-[90px] flex align-items justify-center h-screen bg-light-background dark:bg-dark-background'>
             <Swiper
-                className='w-[90vw] rounded-3xl flex items-center justify-center text-center bg-white h-[80vh]'
+                className='w-[90vw] rounded-3xl flex items-center justify-center text-center h-[80vh]'
                 style={{
                     '--swiper-navigation-sides-offset': '20px',
                     '--swiper-navigation-size': '30px',

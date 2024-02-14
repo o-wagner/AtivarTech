@@ -3,7 +3,7 @@ import { Sun, Moon } from 'lucide-react'
 
 const ToggleButton = (props) => {
     return (
-        <div className={`flex flex-row gap-2 ml-6 items-center justify-center  ${props.className} `}>
+        <div className={`flex flex-row gap-2 ml-6 items-center justify-center ${props.className} `}>
             {props.icon ? <Sun onClick={props.click} className='cursor-pointer lg:visible invisible' size={20} /> : <></>}
             <button
                 onClick={props.click}

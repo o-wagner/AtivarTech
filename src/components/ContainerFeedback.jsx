@@ -11,7 +11,7 @@ function ContainerFeedback() {
     return (
         <div id="feedback" className='w-full pt-16 pb-36 '>
             <div className='flex items-center justify-center flex-col mb-5 gap-3'>
-                <h6 className='text-dark-blue font-semibold font-inter dark:text-blueish-gray'>Feedback</h6>
+                <h6 className='text-blueish-gray font-semibold text-[12px] uppercase tracking-widest dark:text-primary-blue font-inter'>Feedback</h6>
                 <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Depoimentos</h1>
             </div>
             <div className='flex items-center justify-center '>
@@ -45,7 +45,7 @@ function ContainerFeedback() {
                             return (
                                 <SwiperSlide key={f.autor} className='h-[15rem] w-full '>
                                     <div
-                                        className='bg-white cursor-grab dark:bg-secondary-dark shadow-xl
+                                        className='bg-white cursor-grab dark:bg-tertiary-dark shadow-xl
                                          rounded-[50px] h-[12rem] justify-start p-7 flex flex-col gap-2 max-w-[340px]'>
                                         {/*STARS*/}  <div className='flex flex-row justify-between'>
                                             <div className='flex flex-row'>
