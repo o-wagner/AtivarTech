@@ -28,14 +28,14 @@ const headerItem = [
 
     },
     {
-        itemName: 'Contato',
-        itemPath: '/contato',
+        itemName: 'Sobre Nós',
+        itemPath: '/sobre',
         dropdown: false,
 
     },
     {
-        itemName: 'Sobre Nós',
-        itemPath: '/sobre',
+        itemName: 'Contato',
+        itemPath: '/contato',
         dropdown: false,
 
     },

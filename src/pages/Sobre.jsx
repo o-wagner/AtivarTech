@@ -26,7 +26,7 @@ const mvv = [
 function Sobre() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
-      <div id="heroSection" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroAbout" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Ativar Tecnologia</h3>
@@ -49,23 +49,26 @@ function Sobre() {
         <div className=' max-w-[570px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
-      </div>
-      <div id="history" className='lg:h-screen h-auto py-10 flex-wrap lg:px-36 px-10 flex items-center justify-center lg:gap-28 gap-5 bg-neutral-300 dark:bg-quaternary-dark '>
+      </section>
+      <section id="history" className='lg:h-screen h-auto py-10 flex-wrap lg:px-36 px-10 flex items-center justify-center lg:gap-28 gap-5 bg-neutral-300 dark:bg-quaternary-dark '>
         <img className='lg:w-[430px] w-[280px]' src={ativarshot} alt='ativarfoto' />
         <div className='flex flex-col items-center lg:items-start gap-4 text-center lg:text-start'>
           <h1 className='lg:text-[40px] text-[30px] w-[320px] font-bold dark:text-vanilla text-dark-blue'>Nossa <span className='text-primary-blue'>História</span></h1>
           <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[460px]
                     text-center lg:text-left mb-6 lg:px-0 font-inter px-2'>Desde 2021 atuamos em Guanhães e região com as melhores soluções para seu negócio. Nosso compromisso com a excelência e a satisfação do cliente nos diferencia, enquanto nossa equipe apaixonada e experiente impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região. Junte-se a nós enquanto continuamos a escrever nossa história.</p>
         </div>
-      </div>
-      <div className='lg:h-screen h-auto py-10 flex flex-col items-center justify-center gap-2 px-10 lg:px-36'>
+      </section>
+      <section className='lg:h-screen h-auto py-10 flex flex-col items-center justify-center gap-2 px-10 lg:px-36'>
         <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>A Ativar Tecnologia</h3>
         <h1 className='lg:text-[40px] text-[25px] tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
         <p className='font-inter text-dark-blue dark:text-blueish-gray lg:max-w-[700px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
         <div className=' grid gap-5 grid-cols-1 lg:grid-cols-3 items-center mt-10 '>
           {mvv.map((item) => {
             return (
-              <div key={item.icon} className='bg-white hover:bg-neutral-100 hover:drop-shadow-xl hover:-translate-y-2 transition-transform duration-200 ease-in-out  dark:bg-quaternary-dark py-5 px-8 rounded-lg dark:hover:bg-secondary-dark lg:max-w-[350px] max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly cursor-pointer flex flex-col'>
+              <div key={item.icon} className='bg-white hover:bg-neutral-100 
+              hover:drop-shadow-xl hover:-translate-y-2 transition-transform duration-200 ease-in-out 
+              dark:bg-quaternary-dark py-5 px-8 rounded-lg dark:hover:bg-secondary-dark lg:max-w-[350px] 
+              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly cursor-pointer flex flex-col'>
                 <div className='flex gap-2 flex-col'> {item.icon}
                   <h4 className='dark:text-vanilla text-dark-blue font-bold text-xl'>{item.title}</h4>
                 </div>
@@ -74,7 +77,7 @@ function Sobre() {
             )
           })}
         </div>
-      </div>
+      </section>
       <ContainerAbout />
     </div>
   )

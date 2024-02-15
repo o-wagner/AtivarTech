@@ -53,7 +53,8 @@ export default {
         'vanilla':'#D2DCEB',
         'primary-gray': '#404040',
         'dark-footer': '#0A1018',
-        'quaternary-dark':'#0C1219'
+        'quaternary-dark':'#0C1219',
+        'dark-input':'#1D2D44'
       },
       boxShadow:{
         'medium-shadow':'8px 6px 4px 0px rgba(0,0,0,0.32)'
