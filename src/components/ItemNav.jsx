@@ -32,7 +32,7 @@ const ItemNav = (props) => {
                         //  text-nowrap items-center justify-center cursor-pointer transition-colors duration-300 ease-in-out'
                         className={({ isActive }) => {
                             return (
-                                'font-semibold  items-center justify-center cursor-pointer text-nowrap font-poppins visited:text-lighter-gray text-[14px] text-lighter-gray flex hover:text-primary-blue ease-in-out transition-colors duration-300' +
+                                'font-semibold items-center justify-center cursor-pointer text-nowrap font-poppins visited:text-lighter-gray text-[14px] text-lighter-gray flex hover:text-primary-blue ease-in-out transition-colors duration-300' +
                                 (isActive ? 'text-primary-blue visited:text-primary-blue' : 'text-blueish-gray visited:text-blueish-gray')
                             )
                         }}>

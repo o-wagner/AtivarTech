@@ -45,8 +45,8 @@ function Contato() {
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section className='lg:px-36 px-10 lg:h-screen h-auto lg:py-10'>
-        <div className=' flex flex-wrap bg-quaternary-dark rounded-xl w-full'>
+      <section className='lg:px-36 px-10 lg:h-screen h-auto lg:py-10 pb-8'>
+        <div className=' flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
           <div className=' lg:px-[100px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='items-center flex flex-col'>
               <h3 className='text-2xl font-bold font-poppins'>Fale Conosco</h3>
@@ -69,23 +69,23 @@ function Contato() {
                 <h3>Redes Sociais</h3>
               </div>
               <div className='text-sm font-semibold gap-[2px] pt-1 flex text-blueish-gray'>
-                <a className='hover:text-vanilla' href="https://instagram.com/ativartecnologia" target='_blank' rel="noreferrer noopener"><FaInstagram size={19} /></a>
-                <a className='hover:text-vanilla' href="https://br.linkedin.com/company/ativartecnologia" target='_blank' rel="noreferrer noopener"><RiLinkedinBoxLine size={20} /></a>
-                <a className='hover:text-vanilla' href="https://www.facebook.com/ativartecnologia/" target='_blank' rel="noreferrer noopener"><RiFacebookCircleLine size={20} /></a>
-                <a className='hover:text-vanilla' href="https://wa.me/5533998315881" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={20} /></a>
+                <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://instagram.com/ativartecnologia" target='_blank' rel="noreferrer noopener"><FaInstagram size={19} /></a>
+                <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://br.linkedin.com/company/ativartecnologia" target='_blank' rel="noreferrer noopener"><RiLinkedinBoxLine size={20} /></a>
+                <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://www.facebook.com/ativartecnologia/" target='_blank' rel="noreferrer noopener"><RiFacebookCircleLine size={20} /></a>
+                <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://wa.me/5533998315881" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={20} /></a>
               </div>
             </div>
           </div>
-          <div className='bg-tertiary-dark lg:rounded-e-xl rounded-md font-poppins flex-col items-center lg:px-16 px-8 w-full py-16 h-1/2 lg:w-1/2 text-vanilla'>
+          <div className='dark:bg-tertiary-dark bg-gray-300 lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg font-poppins flex-col items-center lg:px-16 px-8 w-full py-16 h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly gap-10'>
               <label className='flex flex-col gap-2 text-md'>Nome Completo
-                <input className="rounded-md py-2 px-2 bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" type="text" />
+                <input className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" type="text" />
               </label>
               <label className='flex flex-col gap-2 text-md'>Email
-                <input className="rounded-md py-2 px-2 bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" type="text" />
+                <input className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" type="text" />
               </label>
               <label className='flex flex-col gap-2 text-md'>Mensagem
-                <textarea className="rounded-md py-2 h-28 px-2 bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira sua mensagem" type="text" />
+                <textarea className="rounded-md py-2 h-28 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira sua mensagem" type="text" />
               </label>
               <Button name="Enviar Mensagem" />
             </div>

@@ -44,7 +44,7 @@ const headerItem = [
 
 const Header = () => {
     let [open, setOpen] = useState(false);
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("light");
 
     const toggleTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark");
