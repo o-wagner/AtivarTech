@@ -7,26 +7,32 @@ const content = [
   {
     title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
     img: conteudo,
+    id:1,
   },
   {
     title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
     img: conteudo,
+    id:2,
   },
   {
     title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
     img: conteudo,
+    id:3,
   },
   {
     title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
     img: conteudo,
+    id:4,
   },
   {
     title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
     img: conteudo,
+    id:5,
   },
   {
     title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
     img: conteudo,
+    id:6,
   },
 ] 
 
@@ -59,7 +65,7 @@ function Conteudos() {
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-4'>
           {content.map((c)=>{
             return(
-              <div key={c.title}
+              <div key={c.id}
               className='dark:bg-quaternary-dark p-6 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col items-center text-center drop-shadow-lg hover:drop-shadow-2xl cursor-pointer gap-5'>
               <img className='rounded-xl max-h-40 w-full' src={c.img}/>
               <h2 className='font-inter text-md font-semibold text-dark-blue dark:text-vanilla hover:text-primary-blue'>{c.title}</h2>

@@ -46,7 +46,7 @@ function ContainerFeedback() {
                                 <SwiperSlide key={f.autor} className='h-[15rem] w-full '>
                                     <div
                                         className='bg-white cursor-grab dark:bg-tertiary-dark shadow-xl
-                                         rounded-[50px] h-[12rem] justify-start p-7 flex flex-col gap-2 max-w-[340px]'>
+                                         rounded-[50px] h-[12rem] justify-start p-7 flex flex-col overflow-hidden gap-2 max-w-[340px]'>
                                         {/*STARS*/}  <div className='flex flex-row justify-between'>
                                             <div className='flex flex-row'>
                                                 <IoIosStar color='yellow' size={20} />

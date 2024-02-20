@@ -64,7 +64,7 @@ const Header = () => {
                     <ul div="menu" className={`lg:gap-6 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
                      items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent
                      pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
-                        <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' /*click={toggleTheme} theme={theme}*/ />
+                        <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' />
                         {headerItem.map((h) => {
                             return (
                                 <ItemNav
@@ -83,8 +83,8 @@ const Header = () => {
                         <div onClick={() => setOpen(false)} className='cursor-pointer animate-fade-down text-2xl flex absolute right-8 top-6' >
                             <X className='lg:invisible' /> </div> : <></>}
                 </nav>
-                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center hover:text-lighter-gray dark:hover:text-light-blueish-gray dark:text-vanilla'>
-                    <ToggleButton icon={true} /*click={toggleTheme} theme={theme}*/ />
+                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center invisible lg:visible dark:text-vanilla'>
+                    <ToggleButton icon={true}/>
 
                 </div>
                 <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow '>

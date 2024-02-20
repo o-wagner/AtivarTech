@@ -1,6 +1,7 @@
 import React from 'react'
 import suporte from '../assets/support.svg'
 import Button from './Button'
+import { NavLink } from 'react-router-dom'
 
 export default function ContainerSuporte() {
     return (
@@ -16,7 +17,9 @@ export default function ContainerSuporte() {
                         te atender de forma rápida e eficiente. A qualidade do atendimento oferecido
                         aos nossos clientes é um dos fatores determinantes para o sucesso da nossa  empresa.</p>
                 </div>
-                <Button name="Entrar em contato" path="/contato"/>
+                <NavLink className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold text-[14px] cursor-pointer text-slate-100 flex justify-center items-center text-center' to="/contato">Entrar em Contato</NavLink>
             </div>
 
         </div>

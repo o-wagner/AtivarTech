@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/theme";
 import { useEffect, useState } from "react";
+
 function App() {
   const [themeMode, setThemeMode] = useState('dark')
   
@@ -16,7 +17,7 @@ function App() {
   }
 
   useEffect(() => {
-    document.querySelector('html').classList.remove('dark', "light")
+    document.querySelector('html').classList.remove('dark', 'light')
     document.querySelector('html').classList.add(themeMode)
   },[themeMode])
 

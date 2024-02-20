@@ -4,8 +4,6 @@ import ContainerServices from '../components/ContainerServices'
 import ContainerSuporte from '../components/ContainerSuporte'
 import ContainerBackup from '../components/ContainerBackup'
 import ContainerFeedback from '../components/ContainerFeedback'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 
 function Home() {
     return (

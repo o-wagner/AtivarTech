@@ -137,10 +137,10 @@ const ContainerServices = () => {
                             </div>
                         )
                     })} */}
-                    {service2.map((s) => {
+                    {/* {service2.map((s) => {
                         return (
-                            <div key={s.img} className='bg-white animate-fade-in dark:bg-tertiary-dark lg:min-h-[400px] min-w-[100px] 
-                            drop-shadow-lg flex flex-col rounded-xl justify-evenly transition-transform duration-200'>
+                            <div key={s.img} className='bg-white dark:bg-tertiary-dark lg:min-h-[400px] min-w-[100px] 
+                            drop-shadow-lg flex flex-col rounded-xl justify-evenly '>
                                 <div className=''>
                                     <img src={s.img} className='object-fill rounded-t-xl' />
                                 </div>
@@ -154,7 +154,7 @@ const ContainerServices = () => {
 
                             </div>
                         )
-                    })}
+                    })} */}
 
                 </div>
                 {/* <div className='w-full absolute left-0 z-0 bg-light-wave-gradient dark:bg-dark-wave-gradient h-screen bg-repeat-x bg-center bg-contain'/> */}

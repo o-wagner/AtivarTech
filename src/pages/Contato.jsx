@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroContact from '../assets/HeroContact.png'
 import Button from '../components/Button'
 import { IoIosCall, IoIosMail, IoIosPin, IoIosPeople } from "react-icons/io";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { RiFacebookCircleLine, RiLinkedinBoxLine } from 'react-icons/ri';
+import ContactForm from '../components/ContactForm';
 
 const info = [
   {
@@ -26,7 +27,7 @@ const info = [
 function Contato() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full h-full'>
-      <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Fale Conosco</h3>
@@ -76,21 +77,8 @@ function Contato() {
               </div>
             </div>
           </div>
-          <div className='dark:bg-tertiary-dark bg-gray-300 lg:rounded-e-xl rounded-b-xl lg:rounded-b-none lg font-poppins flex-col items-center lg:px-16 px-8 w-full py-16 h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
-            <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly gap-10'>
-              <label className='flex flex-col gap-2 text-md'>Nome Completo
-                <input className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" type="text" />
-              </label>
-              <label className='flex flex-col gap-2 text-md'>Email
-                <input className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" type="text" />
-              </label>
-              <label className='flex flex-col gap-2 text-md'>Mensagem
-                <textarea className="rounded-md py-2 h-28 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira sua mensagem" type="text" />
-              </label>
-              <Button name="Enviar Mensagem" />
-            </div>
+          <ContactForm />
 
-          </div>
         </div>
       </section>
     </div>
