@@ -36,8 +36,8 @@ const equipe = [
 
 function ContainerAbout() {
     return (
-        <section id='about' className='w-full h-full flex flex-col py-10 gap-12 justify-center bg-light-gradient dark:bg-dark-gradient'>
-            <div className='flex items-center justify-center flex-col mb-5 gap-2 px-16'>
+        <section id='about' className='w-full h-full flex flex-col py-12 gap-12 justify-center bg-darker-light-bg dark:bg-dark-gradient'>
+            <div className='flex items-center justify-center flex-col mb-5 mt-8 gap-2 px-16'>
                 <h1 className='lg:text-[35px] text-3xl font-poppins font-semibold text-dark-blue text-center dark:text-vanilla'>Nossa Equipe</h1>
                 <p className='font-inter text-dark-blue dark:text-blueish-gray lg:max-w-[700px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>
                     Conheça a equipe dedicada que impulsiona nossas soluções. Juntos, estamos comprometidos em elevar seu sucesso empresarial.</p>
@@ -45,7 +45,7 @@ function ContainerAbout() {
             <div className='flex flex-row gap-12 flex-wrap pb-20 px-16 items-center justify-center'>
                 {equipe.map((e) => {
                     return (
-                        <div key={e.name} className='flex flex-col items-center gap-4'>
+                        <div key={e.name} className='flex flex-col items-center gap-4 ease-in-out transition-transform hover:-translate-y-2'>
                             <div>
                                 <img src={e.Img} className='w-32' />
                             </div>

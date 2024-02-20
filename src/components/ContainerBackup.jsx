@@ -4,7 +4,7 @@ import Button from './Button'
 
 export default function ContainerBackup() {
     return (
-        <div className='w-full lg:px-36 py-16 bg-light-background dark:bg-dark-background 
+        <div className='w-full lg:px-36 py-16 bg-secondary-light dark:bg-quaternary-dark
         flex lg:gap-20 flex-row items-center justify-center flex-wrap-reverse lg:flex-nowrap px-20'>
 
             <div className='flex items-center lg:items-end lg:justify-center flex-col gap-6'>

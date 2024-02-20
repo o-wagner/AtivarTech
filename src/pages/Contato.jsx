@@ -25,7 +25,7 @@ const info = [
 
 function Contato() {
   return (
-    <div className='dark:bg-dark-background bg-light-background w-full'>
+    <div className='dark:bg-dark-background bg-light-background w-full h-full'>
       <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
@@ -45,7 +45,7 @@ function Contato() {
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section className='lg:px-36 px-10 lg:h-screen h-auto lg:py-10 pb-8'>
+      <section className='lg:px-36 px-10 md:h-auto h-auto lg:py-10 pb-8'>
         <div className=' flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
           <div className=' lg:px-[100px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='items-center flex flex-col'>

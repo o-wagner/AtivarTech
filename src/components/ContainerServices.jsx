@@ -83,11 +83,11 @@ const ContainerServices = () => {
                 <h1 className='text-4xl font-poppins  z-10 font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Potencialize seu negócio</h1>
                 <span className='font-inter  z-10 text-greish-blue dark:text-blueish-gray lg:w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
             </div>
-            <div className='w-full py-12 flex items-center justify-center flex-col gap-10'>
+            <div className='w-full py-12 flex items-center justify-center flex-col gap-6'>
                 <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1000px] lg:grid-cols-3 grid-cols-1 gap-5'>
                     {resources.map((r) => {
                         return (
-                            <div key={r.title} className='bg-white hover:-translate-y-2 dark:bg-tertiary-dark
+                            <div key={r.title} className='bg-white dark:bg-tertiary-dark
                              dark:hover:bg-hover-dark hover:drop-shadow-2xl hover:cursor-pointer lg:min-h-[240px] min-w-[300px] 
                              drop-shadow-lg px-6 py-8 flex flex-col rounded-xl justify-evenly transition-transform duration-200'>
                                 <div className='flex gap-2 flex-col text-dark-blue dark:text-vanilla' id="icon">
@@ -100,7 +100,7 @@ const ContainerServices = () => {
                     })}
                 </div>
 
-                <div className=' grid z-10 lg:grid-cols-2 grid-cols-1 min-w-[300px] gap-10 max-w-[1000px]'>
+                <div className=' grid pb-20 z-10 lg:grid-cols-2 grid-cols-1 min-w-[300px] gap-6 max-w-[1000px]'>
                     {/* {service.map((s) => {
                         return (
                             <div key={s.moduleTitle}
@@ -139,7 +139,7 @@ const ContainerServices = () => {
                     })} */}
                     {service2.map((s) => {
                         return (
-                            <div key={s.icon} className='bg-white animate-fade-in dark:bg-tertiary-dark lg:min-h-[400px] min-w-[100px] 
+                            <div key={s.img} className='bg-white animate-fade-in dark:bg-tertiary-dark lg:min-h-[400px] min-w-[100px] 
                             drop-shadow-lg flex flex-col rounded-xl justify-evenly transition-transform duration-200'>
                                 <div className=''>
                                     <img src={s.img} className='object-fill rounded-t-xl' />

@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
-        <div className='bg-primary-blue dark:bg-dark-footer text-white lg:px-32 px-10 py-6 flex flex-col gap-2 w-full'>
+        <div className='bg-primary-blue bottom-0 dark:bg-dark-footer text-white lg:px-32 px-10 py-6 flex flex-col gap-2 w-full'>
             <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid py-8 lg:justify-between text-left'>
                 <div className=' flex flex-col gap-4 lg:items-start justify-between p-8'>
                     <img src={logo} className='w-[100px]' alt="ativarlogo" />

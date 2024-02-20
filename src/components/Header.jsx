@@ -7,6 +7,7 @@ import Button from './Button'
 import ToggleButton from './ToggleButton'
 import { X } from 'lucide-react'
 import { BiMenuAltRight } from "react-icons/bi";
+import useTheme from '../context/theme'
 
 const headerItem = [
     {
@@ -41,21 +42,9 @@ const headerItem = [
     },
 ]
 
-
 const Header = () => {
     let [open, setOpen] = useState(false);
-    const [theme, setTheme] = useState("light");
-
-    const toggleTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
-    }
-    useEffect(() => {
-        if (theme === "dark") {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    }, [theme])
+    const {themeMode, lightTheme, darkTheme } = useTheme()
 
     return (
         <header className='bg-light-background/85 backdrop-blur-sm fixed
@@ -64,7 +53,7 @@ const Header = () => {
             <div className='w-full lg:px-10 flex items-center lg:justify-between lg:gap-20'>
                 <div>
                     <a href="/">
-                        {theme === 'light' ?
+                        {themeMode === 'light' ?
 
                             <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[120px] z-10 -translate-x-5' />
                             :
@@ -75,7 +64,7 @@ const Header = () => {
                     <ul div="menu" className={`lg:gap-6 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
                      items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent
                      pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
-                        <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' click={toggleTheme} theme={theme} />
+                        <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' /*click={toggleTheme} theme={theme}*/ />
                         {headerItem.map((h) => {
                             return (
                                 <ItemNav
@@ -95,8 +84,7 @@ const Header = () => {
                             <X className='lg:invisible' /> </div> : <></>}
                 </nav>
                 <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center hover:text-lighter-gray dark:hover:text-light-blueish-gray dark:text-vanilla'>
-                    <ToggleButton icon={true} className='lg:visible invisible ' click={toggleTheme} theme={theme} />
-                    {/* <Button name="Indique e Ganhe!" /> */}
+                    <ToggleButton icon={true} /*click={toggleTheme} theme={theme}*/ />
 
                 </div>
                 <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow '>
