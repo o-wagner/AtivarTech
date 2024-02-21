@@ -3,11 +3,15 @@ import useTheme from '../context/theme'
 import { Link } from 'react-scroll'
 import heroshot from '../assets/heroFood.png'
 import { ChevronDownCircleIcon } from 'lucide-react'
-import SegmentosFood from '../components/SegmentosFood'
+import Segmentos from '../components/Segmentos'
+import InfoSolution from '../components/InfoSolution'
+import MoreFunc from '../components/moreFunc'
+
 function handleClick() {
   document.getElementById('link').innerHTML = 'Entre em contato ' + ' '
   document.getElementById('notFound').innerHTML = ' com um de nossos consultores para explorar possíveis soluções.'
 }
+
 
 function Food() {
   return (
@@ -34,30 +38,38 @@ function Food() {
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id='segmento' className='w-full lg:px-36 px-10 pb-12 flex flex-col items-center justify-center'>
+      <section id='segmento' className='w-full lg:px-36 px-10 pb-24 flex flex-col items-center justify-center'>
         <div className='flex items-center flex-col justify-center mb-[50px]'>
           <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>Conheça a solução</h3>
           <h1 className='lg:text-[40px] text-[25px] mb-2 lg:mb-0 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Segmentos de atuação</h1>
-          <p className='font-inter text-dark-blue dark:text-blueish-gray lg:max-w-[680px] min-w-[300px] lg:min-w-[380px]
+          <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[680px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Nosso sistema de gestão e frente de caixa PDV atende diversos segmentos do mercado em
             todo o território brasileiro. Veja alguns dos nossos segmentos.</p>
         </div>
-          <SegmentosFood/>        
+        <Segmentos segmento="food"/>
         <div className='w-full flex-col items-end flex justify-end max-w-[970px] pt-4'>
           <button onClick={handleClick}><h3 className='text-blueish-gray hover:underline font-semibold text-[14px] font-poppins'>Não localizou sua área específica?</h3></button>
-          <div className="font-inter font-regular text-[13px] text-end text-blueish-gray lg:max-w-52"><a href="/contato" className='text-primary-blue underline' id="link"></a><p id="notFound"> </p></div>
+          <div className="font-inter font-regular text-[13px] text-end text-blueish-gray max-w-[200px]"><a href="/contato" className='text-primary-blue underline' id="link"></a><p id="notFound"> </p></div>
         </div>
       </section>
-      <section className='w-full lg:px-36 px-10 py-16 dark:bg-quaternary-dark bg-darker-light-bg'>
+      <section id='recursos' className='w-full lg:px-36 px-10 py-24  dark:bg-quaternary-dark bg-darker-light-bg'>
         <div className='flex items-center flex-col justify-center'>
-          <h3 className='dark:text-lighter-gray text-blueish-gray uppercase text-[12px] font-inter font-semibold tracking-widest'>Recursos</h3>
+          <h3 className='dark:text-primary-blue text-blueish-gray uppercase text-[12px] font-inter font-semibold tracking-widest'>Recursos</h3>
           <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
-          <p className='font-inter text-dark-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
+          <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
         </div>
-        <div>
-
+        <div className='py-16 '>
+          <InfoSolution />
         </div>
+      </section>
+      <section id='moreFunc'className='lg:px-36 px-10 pb-24 pt-10'>
+        <div className='flex items-center flex-col justify-center py-20 '>
+          <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Confira mais diferencias</h1>
+          <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
+           px-2 text-center'>Proporcionando novas tecnologias para você e seu cliente evoluirem</p>
+        </div>
+        <MoreFunc/>
       </section>
     </div >
   )

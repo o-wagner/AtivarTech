@@ -1,6 +1,7 @@
 import React from 'react'
 import lock from '../assets/lock.svg'
 import Button from './Button'
+import { NavLink } from 'react-router-dom'
 
 export default function ContainerBackup() {
     return (
@@ -14,7 +15,9 @@ export default function ContainerBackup() {
                     Controle os acessos dos usuários ao sistema de acordo com sua função, restringindo ou permitindo acesso aos módulos. 
                     Evite imprevistos e perdas, tenha maior segurança dos seus dados com nossa moderna ferramenta de backups em nuvem.</p>
                 </div>
-                <Button name="Saiba Mais" />
+                <NavLink className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold text-[14px] cursor-pointer text-slate-100 flex justify-center items-center text-center' to="/solucoes/food">Conheça nossas soluções</NavLink>
             </div>
             <div>
                 <img className='min-w-[170px] w-[190px]' src={lock} alt="imagem de uma pessoa da equipe de suporte" />

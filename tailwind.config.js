@@ -55,7 +55,7 @@ export default {
         'dark-footer': '#0A1018',
         'quaternary-dark':'#0C1219',
         'dark-input':'#1D2D44',
-        'greish-blue':'#667085',
+        'greish-blue':'#555e70',
         'secondary-light':'#F5F5F5',
         'darker-light-bg':'#d4d4d4'
       },

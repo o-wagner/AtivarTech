@@ -10,16 +10,20 @@ const info = [
   {
     icon: <IoIosCall color="#18A2DE" size={20} />,
     title: 'Telefone',
+    path: 'tel:+55332101-0601',
     info: '(33) 2101-0601 ',
+
   },
   {
     icon: <IoIosMail color='#18A2DE' size={20} />,
     title: 'Email',
+    path: 'mailto:contato@ativartecnologia.com',
     info: 'contato@ativartecnologia.com',
   },
   {
     icon: <IoIosPin fill="#18A2DE" size={20} />,
     title: 'Endereço',
+    path: 'https://maps.app.goo.gl/dfA1RgvP9D77ABGaA',
     info: 'Av. Milton Campos, 2852 - 1° Andar, Centro, Guanhães-MG',
   },
 ]
@@ -40,27 +44,29 @@ function Contato() {
                 text-center leading-loose lg:text-left pt-2 pb-6 font-inter lg:px-0 px-2 '>
             Ja estamos ansiosos para o seu contato, descubra como nossas soluções de gestão de negócios podem impulsionar o seu sucesso. Estamos aqui para ajudar a encontrar a melhor solução para as necessidades únicas da sua empresa.</p>
           <Button
-            className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]' name="Falar pelo Whatsapp" />
+            className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]' 
+            name="Falar pelo Whatsapp"
+            />
         </div>
         <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section className='lg:px-36 px-10 md:h-auto h-auto lg:py-10 pb-8'>
+      <section className='lg:px-36 px-10 lg:py-12 flex flex-col gap-10 pb-8'>
         <div className=' flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
           <div className=' lg:px-[100px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='items-center flex flex-col'>
               <h3 className='text-2xl font-bold font-poppins'>Fale Conosco</h3>
-              <p className='text-blueish-gray font-inter text-center leading-snug '>Nos envie uma mensagem preenchendo o formulário ao lado</p>
+              <p className='text-blueish-gray font-inter text-center leading-snug'>Nos envie uma mensagem preenchendo o formulário ao lado</p>
             </div>
             {info.map((i) => {
               return (
-                <div className=' flex flex-col self-start '>
+                <div key={i.title} className=' flex flex-col self-start '>
                   <div className='flex-row break-words flex gap-2 items-center dark:text-vanilla text-dark-blue font-semibold font-poppins'>
                     {i.icon}
                     <h3>{i.title}</h3>
                   </div>
-                  <p className='text-sm font-inter font-semibold text-blueish-gray'>{i.info}</p>
+                  <a target='_blank' rel="noopener noreferrer" href={i.path}><p className='text-sm font-inter font-semibold text-blueish-gray'>{i.info}</p></a>
                 </div>
               )
             })}
@@ -69,7 +75,7 @@ function Contato() {
                 <IoIosPeople size={25} color="#18A2DE" />
                 <h3>Redes Sociais</h3>
               </div>
-              <div className='text-sm font-semibold gap-[2px] pt-1 flex text-blueish-gray'>
+              <div className='text-sm font-semibold gap-2 pt-1 flex text-blueish-gray'>
                 <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://instagram.com/ativartecnologia" target='_blank' rel="noreferrer noopener"><FaInstagram size={19} /></a>
                 <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://br.linkedin.com/company/ativartecnologia" target='_blank' rel="noreferrer noopener"><RiLinkedinBoxLine size={20} /></a>
                 <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://www.facebook.com/ativartecnologia/" target='_blank' rel="noreferrer noopener"><RiFacebookCircleLine size={20} /></a>
@@ -78,7 +84,9 @@ function Contato() {
             </div>
           </div>
           <ContactForm />
-
+        </div>
+        <div className='w-full flex items-center justify-center'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.4881132562464!2d-42.937687499999996!3d-18.7763883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xafb4abeea50f19%3A0x75cbcc10045a25dd!2sAv.%20Milton%20Campos%2C%202852%20-%20Guanh%C3%A3es%2C%20MG%2C%2039740-000!5e0!3m2!1spt-BR!2sbr!4v1708519478146!5m2!1spt-BR!2sbr" width="100%" height="450" style={{ 'border': '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </div>

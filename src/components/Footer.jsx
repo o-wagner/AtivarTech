@@ -24,10 +24,10 @@ function Footer() {
                     <h1 className='font-semibold font-poppins text-lg'>Navegação</h1>
                     <div className='flex flex-col gap-4 mt-5 font-normal font-inter text-sm'>
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/'>Início</NavLink>
-                        <NavLink className='cursor-pointer hover:text-vanilla' to='/solucoes'>Soluções</NavLink>
+                        <NavLink className='cursor-pointer hover:text-vanilla' to='/solucoes/food'>Soluções</NavLink>
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/sobre' >Sobre</NavLink>
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/contato'>Contato</NavLink>
-                        <NavLink className='cursor-pointer hover:text-vanilla' to='/conteudo'>Conteúdos</NavLink>
+                        <NavLink className='cursor-pointer hover:text-vanilla' to='/conteudos'>Conteúdos</NavLink>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between gap-4 p-8'>

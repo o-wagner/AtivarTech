@@ -20,7 +20,7 @@ function ContainerHeroSlide() {
     };
     return (
         <div id="home" className='w-full animate-fade-down pt-[90px] flex align-items justify-center h-screen bg-light-background dark:bg-dark-background'>
-            {/* <Swiper
+            <Swiper
                 className='w-[90vw] rounded-3xl flex items-center justify-center text-center h-[80vh]'
                 style={{
                     '--swiper-navigation-sides-offset': '20px',
@@ -46,7 +46,7 @@ function ContainerHeroSlide() {
                     <span ref={progressContent}></span>
                 </div>
 
-            </Swiper> */}
+            </Swiper>
         </div>
     )
 }

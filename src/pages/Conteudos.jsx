@@ -66,7 +66,7 @@ function Conteudos() {
           {content.map((c)=>{
             return(
               <div key={c.id}
-              className='dark:bg-quaternary-dark p-6 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col items-center text-center drop-shadow-lg hover:drop-shadow-2xl cursor-pointer gap-5'>
+              className='dark:bg-quaternary-dark px-3 pb-8 pt-3 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col items-center text-center drop-shadow-lg hover:drop-shadow-2xl cursor-pointer gap-5 justify-start'>
               <img className='rounded-xl max-h-40 w-full' src={c.img}/>
               <h2 className='font-inter text-md font-semibold text-dark-blue dark:text-vanilla hover:text-primary-blue'>{c.title}</h2>
               </div>

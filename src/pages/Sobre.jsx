@@ -43,25 +43,25 @@ function Sobre() {
           <Link
             to="history"
             smooth={true}
-            offset={-20}
+            offset={-100}
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
         </div>
         <div className=' max-w-[570px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id="history" className='h-auto py-10 flex-wrap lg:px-36 px-10 flex items-center justify-center lg:gap-28 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
+      <section id="history" className='h-auto py-12 flex-wrap lg:px-36 px-10 flex items-center justify-center lg:gap-28 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
         <img className='lg:w-[430px] w-[280px]' src={ativarshot} alt='ativarfoto' />
         <div className='flex flex-col items-center lg:items-start gap-4 text-center lg:text-start'>
           <h1 className='lg:text-[40px] text-[30px] w-[320px] font-bold dark:text-vanilla text-dark-blue'>Nossa <span className='text-primary-blue'>História</span></h1>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[460px]
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[460px]
                     text-center lg:text-left mb-6 lg:px-0 font-inter px-2'>Desde 2021 atuamos em Guanhães e região com as melhores soluções para seu negócio. Nosso compromisso com a excelência e a satisfação do cliente nos diferencia, enquanto nossa equipe apaixonada e experiente impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região. Junte-se a nós enquanto continuamos a escrever nossa história.</p>
         </div>
       </section>
       <section className=' h-auto py-10 flex flex-col items-center justify-center gap-2 px-10 lg:px-36'>
         <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>A Ativar Tecnologia</h3>
         <h1 className='lg:text-[40px] text-[25px] tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
-        <p className='font-inter text-dark-blue dark:text-blueish-gray lg:max-w-[700px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
+        <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[700px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
         <div className=' grid gap-5 grid-cols-1 lg:grid-cols-3 items-center mt-10 '>
           {mvv.map((item) => {
             return (

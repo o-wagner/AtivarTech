@@ -4,6 +4,7 @@ import bag from '/bag.png'
 import '../index.css'
 import retail from '../assets/service/retail.jpg'
 import food from '../assets/service/food.jpg'
+import { NavLink } from 'react-router-dom'
 
 const resources = [
     {
@@ -88,7 +89,7 @@ const ContainerServices = () => {
                     {resources.map((r) => {
                         return (
                             <div key={r.title} className='bg-white dark:bg-tertiary-dark
-                             dark:hover:bg-hover-dark hover:drop-shadow-2xl hover:cursor-pointer lg:min-h-[240px] min-w-[300px] 
+                             dark:hover:bg-hover-dark hover:drop-shadow-2xl lg:min-h-[240px] min-w-[300px] 
                              drop-shadow-lg px-6 py-8 flex flex-col rounded-xl justify-evenly transition-transform duration-200'>
                                 <div className='flex gap-2 flex-col text-dark-blue dark:text-vanilla' id="icon">
                                     {r.icon}
@@ -137,24 +138,24 @@ const ContainerServices = () => {
                             </div>
                         )
                     })} */}
-                    {/* {service2.map((s) => {
+                    {service2.map((s) => {
                         return (
                             <div key={s.img} className='bg-white dark:bg-tertiary-dark lg:min-h-[400px] min-w-[100px] 
-                            drop-shadow-lg flex flex-col rounded-xl justify-evenly '>
+                            drop-shadow-lg flex flex-col rounded-xl justify-evenly'>
                                 <div className=''>
-                                    <img src={s.img} className='object-fill rounded-t-xl' />
+                                    <img loading='lazy' src={s.img} className='object-fill rounded-t-xl' />
                                 </div>
                                 <div className='flex flex-col gap-4 py-8 px-8'>
                                     <h3 className='dark:text-vanilla text-dark-blue font-poppins uppercase font-semibold'>{s.title}</h3>
                                     <p className='text-blueish-gray font-inter font-normal'>{s.desc}</p>
                                     <div className='w-full flex justify-end font-inter font-semibold uppercase text-sm text-dark-blue dark:text-vanilla'>
-                                        <a href={s.path} className='hover:underline'>Saber Mais</a>
+                                        <NavLink to={s.path} className='hover:underline'>Saber Mais</NavLink>
                                     </div>
                                 </div>
 
                             </div>
                         )
-                    })} */}
+                    })}
 
                 </div>
                 {/* <div className='w-full absolute left-0 z-0 bg-light-wave-gradient dark:bg-dark-wave-gradient h-screen bg-repeat-x bg-center bg-contain'/> */}
