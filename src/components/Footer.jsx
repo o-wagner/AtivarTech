@@ -10,7 +10,7 @@ function Footer() {
     return (
         <div className='bg-primary-blue bottom-0 dark:bg-dark-footer text-white lg:px-32 px-10 py-6 flex flex-col gap-2 w-full'>
             <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid py-8 lg:justify-between text-left'>
-                <div className=' flex flex-col gap-4 lg:items-start justify-between p-8'>
+                <div className=' flex flex-col gap-5 lg:items-start justify-start p-8'>
                     <img src={logo} className='w-[100px]' alt="ativarlogo" />
                     <p className='font-normal text-left lg:max-w-[140px] text-white font-inter text-sm'>Potencialize sua empresa com nossa gestão inteligente</p>
                     <div className='flex self-start gap-1'>
@@ -28,6 +28,7 @@ function Footer() {
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/sobre' >Sobre</NavLink>
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/contato'>Contato</NavLink>
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/conteudos'>Conteúdos</NavLink>
+                        <NavLink className='cursor-pointer hover:text-vanilla' to='/indique-e-ganhe'>Indique e Ganhe</NavLink>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between gap-4 p-8'>

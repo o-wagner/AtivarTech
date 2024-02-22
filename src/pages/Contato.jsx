@@ -43,10 +43,7 @@ function Contato() {
           <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px]
                 text-center leading-loose lg:text-left pt-2 pb-6 font-inter lg:px-0 px-2 '>
             Ja estamos ansiosos para o seu contato, descubra como nossas soluções de gestão de negócios podem impulsionar o seu sucesso. Estamos aqui para ajudar a encontrar a melhor solução para as necessidades únicas da sua empresa.</p>
-          <Button
-            className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]' 
-            name="Falar pelo Whatsapp"
-            />
+          <Button title="Falar pelo Whatsapp" />
         </div>
         <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={HeroContact} alt="EntreEmContato-Image" />

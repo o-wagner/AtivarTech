@@ -55,7 +55,9 @@ function Conteudos() {
             to="content"
             smooth={true}
             offset={-90}
-            className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-46 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Explorar Conteúdos<ChevronDownCircleIcon size={16} /></Link>
+            className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Explorar Conteúdos<ChevronDownCircleIcon size={16} /></Link>
         </div>
         <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[280px] lg:max-w-[380px] translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />

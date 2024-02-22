@@ -7,7 +7,7 @@ import { Link } from 'react-scroll'
 
 const mvv = [
   {
-    icon: <Goal size={32} className='dark:text-vanilla text-dark-blue'  />,
+    icon: <Goal size={32} className='dark:text-vanilla text-dark-blue' />,
     title: 'Missão',
     text: 'A nossa missão é promover sistemas de gestão ágeis, que conciliem qualidade e tecnologia para a solução de problemas gerenciais, priorizando a satisfação do cliente.',
   },
@@ -17,7 +17,7 @@ const mvv = [
     text: 'Ter reconhecimento no mercado como uma empresa de excelência na prestação de serviços, entregando qualidade e segurança nos serviços prestados.',
   },
   {
-    icon: <HeartHandshake size={32} className='dark:text-vanilla text-dark-blue'/>,
+    icon: <HeartHandshake size={32} className='dark:text-vanilla text-dark-blue' />,
     title: 'Valores',
     text: 'Manter a ética optando pelo justo e correto na tomada de decisões; Trabalhar em equipe, com respeito, diálogo e transparência; Buscar inovação para solucionar problemas e satisfazer o cliente.',
   }
@@ -44,7 +44,9 @@ function Sobre() {
             to="history"
             smooth={true}
             offset={-100}
-            className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
+            className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+            hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+            font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
         </div>
         <div className=' max-w-[570px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />

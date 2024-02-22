@@ -109,30 +109,31 @@ function Segmentos(props) {
   return (
     <div>
       {props.segmento === "varejo" &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-4'>
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-3'>
           {segmentosVarejo.map((v) => {
             return (
               <div key={v.title} className='bg-white dark:bg-quaternary-dark items-center
-                             dark:hover:bg-secondary-dark hover:drop-shadow-2xl p-8 lg:h-[120px] min-w-[100px] 
+                             dark:hover:bg-secondary-dark hover:drop-shadow-xl hover:-translate-y-[0.1rem] p-8 lg:h-[120px] min-w-[100px] 
                              drop-shadow-lg flex flex-col rounded-xl justify-center text-center transition-transform duration-200'>
                 <div className='flex flex-col gap-1 items-center justify-center text-dark-blue dark:text-vanilla' id="icon">
                   {themeMode === "dark" ? <img src={v.iconDark} className='min-w-[35px] w-[35px]' /> : <img src={v.icon} className='min-w-[35px] w-[35px]' />}
-                  <h1 className='font-poppins font-semibold leading-5 text-md text-blueish-gray dark:text-vanilla'>{v.title}</h1>
+                  <h3 className='font-poppins font-medium leading-4 text-[14px] text-dark-blue dark:text-vanilla'>{v.title}</h3>
                 </div>
               </div>
             )
           })}
-        </div>
-      }:{ props.segmento === "food"  &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-4'>
+        </div>}
+      
+      { props.segmento === "food"  &&
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-3'>
           {segmentosFood.map((s) => {
             return (
               <div key={s.title} className='bg-white dark:bg-quaternary-dark items-center
-                             dark:hover:bg-secondary-dark hover:drop-shadow-2xl p-8 lg:h-[120px] min-w-[100px] 
+                             dark:hover:bg-secondary-dark hover:drop-shadow-xl hover:-translate-y-[0.1rem] p-8 lg:h-[120px] min-w-[100px] 
                              drop-shadow-lg flex flex-col rounded-xl justify-center text-center transition-transform duration-200'>
                 <div className='flex flex-col gap-1 items-center justify-center text-dark-blue dark:text-vanilla' id="icon">
                   {themeMode === "dark" ? <img src={s.iconDark} className='min-w-[35px] w-[35px]' /> : <img src={s.icon} className='min-w-[35px] w-[35px]' />}
-                  <h1 className='font-poppins leading-5 font-semibold text-md text-blueish-gray dark:text-vanilla'>{s.title}</h1>
+                  <h1 className='font-poppins leading-4 font-medium text-[14px] text-dark-blue dark:text-vanilla'>{s.title}</h1>
                 </div>
               </div>
             )

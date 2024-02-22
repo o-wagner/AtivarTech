@@ -6,6 +6,7 @@ import Food from "../pages/Food";
 import Contato from "../pages/Contato";
 import Conteudos from "../pages/Conteudos";
 import Varejo from "../pages/Varejo";
+import Indique from "../pages/Indique";
 
 export default function AppRoutes() {
     const location = useLocation();
@@ -20,6 +21,7 @@ export default function AppRoutes() {
             <Route path="/sobre" exact element={<Sobre />} />
             <Route path="/contato" exact element={<Contato />} />
             <Route path="/conteudos" exact element={<Conteudos />} />
+            <Route path="/indique-e-ganhe" exact element={<Indique />} />
         </Routes>
     );
 }

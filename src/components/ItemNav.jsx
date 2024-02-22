@@ -9,19 +9,19 @@ const ItemNav = (props) => {
         <>{props.dropdown ?
                 <li className='animate-fade-left group'>
                     <button 
-                    className='font-semibold items-center justify-center cursor-pointer text-nowrap font-poppins visited:text-lighter-gray text-[14px] text-lighter-gray flex hover:text-primary-blue ease-in-out transition-colors duration-300'>
-                    Soluções <ChevronDown className='translate-y-[2px] translate-x-[4px]' strokeWidth={3} size={14} />
+                    className='translate-x-1 font-semibold items-center justify-center cursor-pointer text-nowrap font-inter visited:text-blueish-gray text-[14px] text-blueish-gray flex hover:text-dark-blue dark:hover:text-vanilla ease-in-out transition-colors duration-300'>
+                    Soluções <ChevronDown className='translate-y-[2.5px] translate-x-[1px]' strokeWidth={3} size={14} />
                 </button>
-                    <div onClick={props.onClick} className='animate-fade-down text-center dark:bg-dark-background/85 backdrop-blur-3xl bg-light-background/85 absolute w-[90px] drop-shadow-md group-hover:block hidden' >
+                    <div onClick={props.onClick} className='animate-fade-down text-center dark:bg-dark-background/85 backdrop-blur-3xl bg-light-background/85 absolute w-[80px] drop-shadow-lg group-hover:block hidden' >
                         <ul>
                             <li>
-                                <NavLink className='flex p-3 font-semibold font-poppins text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-light-blueish-gray hover:text-white hover:dark:text-white  dark:text-blueish-gray rounded-md dark:visited:text-blueish-gray
-                                 dark:hover:bg-secondary-dark'
+                                <NavLink className='flex p-3 font-semibold font-inter text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-neutral-300 dark:hover:bg-secondary-dark hover:text-dark-blue hover:dark:text-vanilla  dark:text-blueish-gray rounded-md dark:visited:text-blueish-gray
+                                 dark:hover:text-primary-blue'
                                  to="/solucoes/food">Food</NavLink>
                             </li>
                             <li>
-                                <NavLink className='flex p-3 font-semibold font-poppins text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-light-blueish-gray hover:text-white hover:dark:text-white dark:text-lighter-gray rounded-md dark:visited:text-blueish-gray
-                                 dark:hover:bg-secondary-dark' to="/solucoes/varejo">Varejo</NavLink>
+                                <NavLink className='flex p-3 font-semibold font-inter text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-neutral-300 dark:hover:bg-secondary-dark hover:text-dark-blue hover:dark:text-vanilla dark:text-lighter-gray rounded-md dark:visited:text-blueish-gray
+                                 dark:hover:text-primary-blue' to="/solucoes/varejo">Varejo</NavLink>
                             </li>
                         </ul>
                     </div>
@@ -32,8 +32,8 @@ const ItemNav = (props) => {
                         //  text-nowrap items-center justify-center cursor-pointer transition-colors duration-300 ease-in-out'
                         className={({ isActive }) => {
                             return (
-                                'font-semibold items-center justify-center cursor-pointer text-nowrap font-poppins visited:text-lighter-gray text-[14px] text-lighter-gray flex hover:text-primary-blue ease-in-out transition-colors duration-300' +
-                                (isActive ? 'text-primary-blue visited:text-primary-blue' : 'text-blueish-gray visited:text-blueish-gray')
+                                'font-semibold items-center justify-center cursor-pointer text-nowrap font-inter text-[14px] text-blueish-gray flex dark:hover:text-vanilla hover:text-dark-blue ease-in-out transition-colors duration-200' +
+                                (isActive ? 'text-dark-blue visited:text-dark-blue dark:text-vanilla dark:visited:text-vanilla' : 'text-blueish-gray visited:text-blueish-gray')
                             )
                         }}>
                         {props.name}
