@@ -17,7 +17,7 @@ function Footer() {
                         <a className='hover:text-vanilla' href="https://instagram.com/ativartecnologia" target='_blank' rel="noreferrer noopener"><FaInstagram size={22} /></a>
                         <a className='hover:text-vanilla' href="https://br.linkedin.com/company/ativartecnologia" target='_blank' rel="noreferrer noopener"><RiLinkedinBoxLine size={22} /></a>
                         <a className='hover:text-vanilla' href="https://www.facebook.com/ativartecnologia/" target='_blank' rel="noreferrer noopener"><RiFacebookCircleLine size={23} /></a>
-                        <a className='hover:text-vanilla' href="https://wa.me/5533998315881" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={22} /></a>
+                        <a className='hover:text-vanilla' href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={22} /></a>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between p-8'>
@@ -31,7 +31,7 @@ function Footer() {
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/indique-e-ganhe'>Indique e Ganhe</NavLink>
                     </div>
                 </div>
-                <div className='flex flex-col justify-between gap-4 p-8'>
+                <div className='flex flex-col gap-6 p-8'>
                     <h1 className='font-semibold font-poppins text-lg max-w-28'>Horário de Funcionamento</h1>
                     <div>
                         <p className='font-normal font-inter text-sm'>Segunda-Sexta</p>
@@ -42,14 +42,14 @@ function Footer() {
                         <p className='font-normal font-inter text-sm'>08:00 - 12:00</p>
                     </div>
                 </div>
-                <div className='flex flex-col justify-between items-start gap-4 w-72 text-sm p-8'>
+                <div className='flex flex-col items-start gap-6 w-72 text-sm p-8'>
                     <h1 className='font-semibold font-poppins text-lg'>Contato</h1>
                     <a href='mailto:contato@ativartecnologia.com' ><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <MdOutlineMailOutline className='w-5 text-xl' width={20} />
                         <span className='font-inter'>contato@ativartecnologia.com</span></div></a>
-                        <a href="https://wa.me/5533998315881" target='_blank' rel="noreferrer noopener"><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
+                        <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <FaWhatsapp className='text-xl' width={20} />
-                        <span className='font-inter'>(33) 99831-5881</span></div></a>
+                        <span className='font-inter'>(33) 2101-0601</span></div></a>
                     <a href='https://maps.app.goo.gl/WpKsf5Yymttgiphr9' target='_blank' rel="noreferrer noopener">
                         <div className='flex flex-row items-center gap-2 justify-center hover:text-vanilla'>
                             <IoLocationOutline className='w-10 text-xl' />
@@ -59,7 +59,7 @@ function Footer() {
                 </div>
             </div>
             <div className='border-t pt-2 flex items-center justify-center text-center'>
-                <p className='text-white'>© 2024 Ativar Tecnologia LTDA </p>
+                <p className='text-white'>© 2024 Ativar Tecnologia LTDA | <NavLink className='hover:underline text-white dark:text-primary-blue'>Política de Privacidade</NavLink></p>
             </div>
         </div >
     )

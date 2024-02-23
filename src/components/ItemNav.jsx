@@ -10,7 +10,7 @@ const ItemNav = (props) => {
                 <li className='animate-fade-left group'>
                     <button 
                     className='translate-x-1 font-semibold items-center justify-center cursor-pointer text-nowrap font-inter visited:text-blueish-gray text-[14px] text-blueish-gray flex hover:text-dark-blue dark:hover:text-vanilla ease-in-out transition-colors duration-300'>
-                    Soluções <ChevronDown className='translate-y-[2.5px] translate-x-[1px]' strokeWidth={3} size={14} />
+                    Soluções <ChevronDown className='translate-y-[2px] translate-x-[1px]' strokeWidth={3} size={14} />
                 </button>
                     <div onClick={props.onClick} className='animate-fade-down text-center dark:bg-dark-background/85 backdrop-blur-3xl bg-light-background/85 absolute w-[80px] drop-shadow-lg group-hover:block hidden' >
                         <ul>

@@ -12,7 +12,7 @@ function Indique() {
   const [numberOrg, setNumberOrg] = useState('');
   return (
     <div className='bg-light-background dark:bg-dark-background w-full'>
-      <section id="heroIndique" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroIndique" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Promoção</h3>
@@ -31,15 +31,15 @@ function Indique() {
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Saiba como funciona<ChevronDownCircleIcon size={16} /> </Link>
         </div>
         <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
+          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[430px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section id="indique" className='pb-12 flex flex-wrap items-center justify-center px-[120px]'>
-        <div className='flex flex-row flex-wrap'>
-          <div className='w-1/2 dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins p-12'>
+      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[120px] px-10'>
+        <div className='flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
+          <div className='lg:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col p-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>
             <h2 className='text-2xl text-center'>Como funciona a promoção?</h2>
-            <div className='dark:bg-secondary-dark justify-evenly h-full flex flex-col dark:text-vanilla text-dark-blue font-poppins'>
+            <div className='dark:bg-secondary-dark justify-evenly gap-10 h-full flex flex-col dark:text-vanilla text-dark-blue font-inter'>
 
               <p className='text-[14px] text-blueish-gray text-justify'>1. Aqui na Ativar Tecnologia, a indicação é quando você nos recomenda para possíveis clientes. Basta nos fornecer os nomes, números de telefone e e-mails de possíveis empresas, e se elas se tornarem clientes, você e sua empresa ganham recompensas!</p>
               <p className='text-[14px] text-blueish-gray text-justify'>2. Caso a empresa indicada já tenha tido contato comercial prévio com a Ativar Tecnologia, a indicação não será considerada válida, e não será oferecida nenhuma bonificação relacionada a esse negócio.</p>
@@ -48,7 +48,7 @@ function Indique() {
               <h2 className='self-center text-sm rounded-lg'>Indicação + Contratação = Você ganha!</h2>
             </div>
           </div>
-          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark w-1/2 bg-gray-300 font-poppins flex-col items-center p-12 text-dark-blue dark:text-vanilla'>
+          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark lg:w-1/2 bg-gray-300 font-poppins flex-col items-center p-12 text-dark-blue dark:text-vanilla'>
             <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly'>
               <div className='flex flex-col gap-10'>
                 <label htmlFor='fullName' className='flex flex-col gap-2 text-md'>Nome Completo

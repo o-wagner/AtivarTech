@@ -12,39 +12,41 @@ import slide3 from '../assets/slide/slide3.jpg'
 import '../index.css'
 
 function ContainerHeroSlide() {
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (s, time, progress) => {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
-        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    };
+    // const progressCircle = useRef(null);
+    // const progressContent = useRef(null);
+    // const onAutoplayTimeLeft = (s, time, progress) => {
+    //     progressCircle.current.style.setProperty('--progress', 1 - progress);
+    //     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    // };
     return (
-        <div id="home" className='w-full pt-[90px] flex align-items justify-center h-screen bg-light-background dark:bg-dark-background'>
+        <div id="home" className='w-full pt-[65px] flex align-items justify-center h-screen bg-light-background dark:bg-dark-background'>
             <Swiper
-                className='w-[90vw] rounded-3xl flex items-center justify-center text-center h-[80vh]'
+                className='w-[90vw] rounded-md flex items-center justify-center text-center h-[80vh]'
                 style={{
                     '--swiper-navigation-sides-offset': '20px',
                     '--swiper-navigation-size': '30px',
+                    '--swiper-pagination-color': '#18A2DE',
                 }}
                 modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
                 pagination={{
                     type: 'progressbar',
                 }}
                 grabCursor={true}
-                autoplay={{ delay: 4000 }}
+                autoplay={{ delay: 4000, }}
+
                 loop={true}
                 // navigation={true}
-                onAutoplayTimeLeft={onAutoplayTimeLeft}
+                // onAutoplayTimeLeft={onAutoplayTimeLeft}
             >
-                <SwiperSlide><img className='cover' src={slide} alt="slideimage" /></SwiperSlide>
                 <SwiperSlide><img className='cover' src={slide2} alt="slideimage" /></SwiperSlide>
+                <SwiperSlide><img className='cover' src={slide} alt="slideimage" /></SwiperSlide>
                 <SwiperSlide><img className='cover' src={slide3} alt="slideimage" /></SwiperSlide>
-                <div className="autoplay-progress" slot="container-end">
+                {/* <div className="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
                         <circle cx="24" cy="24" r="20"></circle>
                     </svg>
                     <span ref={progressContent}></span>
-                </div>
+                </div> */}
 
             </Swiper>
         </div>

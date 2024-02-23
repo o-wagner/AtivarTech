@@ -39,7 +39,7 @@ const content = [
 function Conteudos() {
   return (
     <div className='w-full bg-light-background dark:bg-dark-background'>
-      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-32'>
+      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Materiais</h3>
@@ -59,7 +59,7 @@ function Conteudos() {
                 hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                 font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Explorar Conteúdos<ChevronDownCircleIcon size={16} /></Link>
         </div>
-        <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
+        <div className=' max-w-[360px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[280px] lg:max-w-[380px] translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>

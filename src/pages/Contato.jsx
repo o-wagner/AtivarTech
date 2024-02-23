@@ -31,7 +31,7 @@ const info = [
 function Contato() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full h-full'>
-      <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[100px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Fale Conosco</h3>
@@ -43,9 +43,12 @@ function Contato() {
           <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px]
                 text-center leading-loose lg:text-left pt-2 pb-6 font-inter lg:px-0 px-2 '>
             Ja estamos ansiosos para o seu contato, descubra como nossas soluções de gestão de negócios podem impulsionar o seu sucesso. Estamos aqui para ajudar a encontrar a melhor solução para as necessidades únicas da sua empresa.</p>
-          <Button title="Falar pelo Whatsapp" />
+          <a target='_blank' rel="noreferrer noopener" href="https://wa.me/553321010601" className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold font-inter text-[14px] cursor-pointer text-slate-100 flex justify-center items-center text-center'>
+            Falar pelo Whatsapp</a>
         </div>
-        <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
+        <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
@@ -76,7 +79,7 @@ function Contato() {
                 <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://instagram.com/ativartecnologia" target='_blank' rel="noreferrer noopener"><FaInstagram size={19} /></a>
                 <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://br.linkedin.com/company/ativartecnologia" target='_blank' rel="noreferrer noopener"><RiLinkedinBoxLine size={20} /></a>
                 <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://www.facebook.com/ativartecnologia/" target='_blank' rel="noreferrer noopener"><RiFacebookCircleLine size={20} /></a>
-                <a className='dark:hover:text-vanilla hover:text-primary-blue' href="https://wa.me/5533998315881" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={20} /></a>
+                <a className='dark:hover:text-vanilla hover:text-primary-blue' target='_blank' rel="noreferrer noopener" href="https://wa.me/553321010601"><FaWhatsapp size={20} /></a>
               </div>
             </div>
           </div>

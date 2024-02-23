@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Input from 'react-phone-number-input/input'
+import emailjs from '@emailjs/browser'
 
 const sendEmail = (e) => {
     e.preventDefault();
-    alert('email enviado');
+    emailjs.sendForm('service_id', 'template_id', e.target, 'public_key')
 }
 export default function ContactForm() {
     const [value, setValue] = useState('');

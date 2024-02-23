@@ -16,7 +16,7 @@ function handleClick() {
 function Food() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
-      <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 lg:px-36 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Food</h3>

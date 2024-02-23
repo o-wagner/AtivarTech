@@ -53,13 +53,13 @@ const Header = () => {
          flex justify-center items-center px-6 z-20 '>
             <div className='w-full lg:px-9 flex items-center lg:justify-between lg:gap-20'>
                 <div>
-                    <a href="/">
+                    <NavLink to="/">
                         {themeMode === 'light' ?
 
                             <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[110px] z-10 -translate-x-5' />
                             :
                             <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[110px] z-10 -translate-x-5' />}
-                    </a>
+                    </NavLink>
                 </div>
                 <nav className='z-10 mr-8 flex gap-24'>
                     <ul div="menu" className={`lg:gap-8 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
