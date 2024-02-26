@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import Input from 'react-phone-number-input/input'
 import heroIndique from '../assets/HeroIndique.png'
+import { NavLink } from 'react-router-dom'
 const sendEmail = (e) => {
   e.preventDefault();
   alert('email enviado');
@@ -75,14 +76,13 @@ function Indique() {
                     className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira o número da empresa indicada" />
                 </label>
               </div>
-              <div className='flex flex-col text-blueish-gray pt-4 pb-6 gap-6'><div className='flex gap-2 text-sm'><input type="checkbox" /> <p>Estou de acordo em receber mensagens.</p></div>
-                <p className='text-[14px] leading-4 text-blueish-gray'>Ao informar meus dados, concordo com a <a className='underline hover:text-primary-blue font-semibold dark:hover:text-vanilla' href="#">Política de Privacidade.</a></p>
+              <div className='flex flex-col text-blueish-gray py-8 gap-6'><div className='flex gap-2 text-sm'><input type="checkbox" required={true} /> <p> Li e estou de acordo com o <NavLink to="/politica-de-privacidade" className='text-dark-blue dark:text-primary-blue hover:underline'>Termo de uso e Política de Privacidade</NavLink> </p></div>
               </div>
               <button type='submit' className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
                 hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                 font-regular text-[14px] cursor-pointer text-slate-100 flex justify-center items-center text-center'>
                 Fazer Indicação</button>
-                <span className='text-[12px] text-blueish-gray pt-4 leading-4'>Garantimos que suas informações de contato não serão utilizadas para enviar qualquer forma de mensagem não solicitada.</span>
+
             </div>
           </form>
         </div>

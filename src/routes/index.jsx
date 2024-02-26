@@ -7,6 +7,7 @@ import Contato from "../pages/Contato";
 import Conteudos from "../pages/Conteudos";
 import Varejo from "../pages/Varejo";
 import Indique from "../pages/Indique";
+import Termos from "../pages/Termos";
 
 export default function AppRoutes() {
     const location = useLocation();
@@ -22,6 +23,8 @@ export default function AppRoutes() {
             <Route path="/contato" exact element={<Contato />} />
             <Route path="/conteudos" exact element={<Conteudos />} />
             <Route path="/indique-e-ganhe" exact element={<Indique />} />
+            <Route path="/politica-de-privacidade" exact element={<Termos />} />
+            
         </Routes>
     );
 }

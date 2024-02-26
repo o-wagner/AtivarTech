@@ -59,7 +59,7 @@ function Footer() {
                 </div>
             </div>
             <div className='border-t pt-2 flex items-center justify-center text-center'>
-                <p className='text-white'>© 2024 Ativar Tecnologia LTDA | <NavLink className='hover:underline text-white dark:text-primary-blue'>Política de Privacidade</NavLink></p>
+                <p className='text-white font-poppins text-sm font-normal'>© 2024 Ativar Tecnologia LTDA | <NavLink to='/politica-de-privacidade' className='hover:underline text-white/70 dark:text-primary-blue'>Política de Privacidade</NavLink></p>
             </div>
         </div >
     )

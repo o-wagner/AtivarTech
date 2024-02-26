@@ -8,25 +8,23 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark')
-  
   const darkTheme = () => {
     setThemeMode('dark')
   }
   const lightTheme = () => {
     setThemeMode('light')
   }
-
   useEffect(() => {
     document.querySelector('html').classList.remove('dark', 'light')
     document.querySelector('html').classList.add(themeMode)
-  },[themeMode])
+  }, [themeMode])
 
   return (
-    <ThemeProvider value={{themeMode, darkTheme, lightTheme}}>
+    <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <BrowserRouter>
-        <Header />
-        <AppRoutes />
-        <Footer />
+          <Header />
+          <AppRoutes />
+          <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )
