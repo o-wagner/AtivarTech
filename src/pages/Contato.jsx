@@ -53,7 +53,7 @@ function Contato() {
         </div>
       </section>
       <section className='lg:px-36 px-10 lg:py-12 flex flex-col gap-10 pb-8'>
-        <div className=' flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
+        <div className='border border-slate-400 dark:border-slate-700 flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
           <div className=' lg:px-[100px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='items-center flex flex-col'>
               <h3 className='text-2xl font-bold font-poppins'>Fale Conosco</h3>

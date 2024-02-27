@@ -31,7 +31,7 @@ export default function Varejo() {
 
     return (
         <div className='dark:bg-dark-background bg-light-background w-full'>
-             <div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
+             <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
                 <div className='py-[14px] dark:text-vanilla font-poppins font-semibold text-sm bg-dark-blue rounded-t-lg flex flex-row items-center justify-between text-white px-4'>Olá, seja bem vindo!
                     <button onClick={() => handleClickMod()}><X size={18} /></button></div>
                 <div className='items-center flex flex-col'>
@@ -39,7 +39,7 @@ export default function Varejo() {
                     <div className=' lg:px-3 flex items-center justify-center gap-10 py-5 text-dark-blue dark:text-vanilla text-2xl'>
                         <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener" className='flex flex-col items-center justify-center animate-fade-left dark:hover:text-white '>
                             <FaWhatsapp />
-                            <p className='text-sm'>Preciso de suporte</p>
+                            <p className='text-sm'>Entre em contato</p>
                         </a>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export default function Varejo() {
                         <FaWhatsapp color='white' />
                     </div>
                 </a>
-            </button>
+            </button></>
             <section id="heroVarejo" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
                 <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
                     <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
@@ -95,7 +95,7 @@ export default function Varejo() {
            px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
                 </div>
                 <div className='py-16 '>
-                    <InfoSolution />
+                    <InfoSolution segmento="varejo"/>
                 </div>
             </section>
             <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
@@ -104,7 +104,7 @@ export default function Varejo() {
                     <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para você e seu cliente evoluirem</p>
                 </div>
-                <MoreFunc />
+                <MoreFunc segmento="varejo"/>
             </section>
         </div >
     )

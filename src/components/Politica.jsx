@@ -2,7 +2,7 @@ import React from 'react'
 
 function Politica() {
   return (
-    <div className='dark:bg-secondary-dark text-dark-blue dark:text-vanilla bg-white p-10'>
+    <div className=' rounded-lg dark:bg-secondary-dark text-dark-blue dark:text-vanilla bg-white p-10 border border-slate-300 dark:border-slate-700'>
       <h3 className='text-primary-blue pt-4 font-semibold text-lg'><span>Política de Privacidade</span></h3>
         <p><span >A sua privacidade é importante para nós. É política do Ativar Tecnologia respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a className='underline' href="/">Ativar Tecnologia</a>, e outros sites que possuímos e operamos.</span></p>
         <p><span>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</span></p><br/>

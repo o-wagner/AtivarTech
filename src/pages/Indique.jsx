@@ -36,7 +36,7 @@ function Indique() {
         </div>
       </section>
       <section id="indique" className='pb-12 flex items-center justify-center lg:px-[120px] px-10'>
-        <div className='flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
+        <div className='border border-slate-400 dark:border-slate-700 flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
           <div className='lg:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col p-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>
             <h2 className='text-2xl text-center'>Como funciona a promoção?</h2>
@@ -63,7 +63,7 @@ function Indique() {
                     required={true}
                     onChange={setNumber}
                     country="BR"
-                    className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira seu número" />
+                    className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira seu número de telefone" />
                 </label>
                 <label className='flex flex-col gap-2 text-md'>Nome da Empresa Indicada*
                   <input required='true' type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira o nome da empresa indicada" />
@@ -73,7 +73,7 @@ function Indique() {
                     onChange={setNumberOrg}
                     required={true}
                     country="BR"
-                    className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira o número da empresa indicada" />
+                    className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira o telefone da empresa indicada" />
                 </label>
               </div>
               <div className='flex flex-col text-blueish-gray py-8 gap-6'><div className='flex gap-2 text-sm'><input type="checkbox" required={true} /> <p> Li e estou de acordo com o <NavLink to="/politica-de-privacidade" className='text-dark-blue dark:text-primary-blue hover:underline'>Termo de uso e Política de Privacidade</NavLink> </p></div>
@@ -86,7 +86,6 @@ function Indique() {
             </div>
           </form>
         </div>
-
       </section>
     </div>
   )

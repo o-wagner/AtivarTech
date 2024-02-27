@@ -30,7 +30,7 @@ function Food() {
 
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
-      <div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
+      <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
         <div className='py-[14px] dark:text-vanilla font-poppins font-semibold text-sm bg-dark-blue rounded-t-lg flex flex-row items-center justify-between text-white px-4'>Olá, seja bem vindo!
           <button onClick={() => handleClickMod()}><X size={18} /></button></div>
         <div className='items-center flex flex-col'>
@@ -38,18 +38,19 @@ function Food() {
           <div className=' lg:px-3 flex items-center justify-center gap-10 py-5 text-dark-blue dark:text-vanilla text-2xl'>
             <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener" className='flex flex-col items-center justify-center animate-fade-left dark:hover:text-white '>
               <FaWhatsapp />
-              <p className='text-sm'>Preciso de suporte</p>
+              <p className='text-sm'>Entre em contato</p>
             </a>
           </div>
         </div>
       </div>
-      <button onClick={() => handleClickMod()}>
-        <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
-          <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
-            <FaWhatsapp color='white' />
-          </div>
-        </a>
-      </button>
+        <button onClick={() => handleClickMod()}>
+          <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
+            <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
+              <FaWhatsapp color='white' />
+            </div>
+          </a>
+        </button>
+      </>
       <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
@@ -82,7 +83,7 @@ function Food() {
         </div>
         <Segmentos segmento="food" />
         <div className='w-full flex-col items-end flex justify-end max-w-[970px] pt-4'>
-          <button onClick={()=>handleClickMod()}><h3 className='text-blueish-gray hover:underline font-semibold text-[14px] font-poppins'>Não localizou sua área específica?</h3></button>
+          <button onClick={() => handleClick()}><h3 className='text-blueish-gray hover:underline font-semibold text-[14px] font-poppins'>Não localizou sua área específica?</h3></button>
           <div className="font-inter font-regular text-[13px] text-end text-blueish-gray max-w-[200px]"><a href="/contato" className='text-primary-blue underline' id="link"></a><p id="notFound"> </p></div>
         </div>
       </section>
@@ -94,7 +95,7 @@ function Food() {
            px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
         </div>
         <div className='py-16 '>
-          <InfoSolution />
+          <InfoSolution segmento="food" />
         </div>
       </section>
       <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
@@ -103,7 +104,7 @@ function Food() {
           <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para você e seu cliente evoluirem</p>
         </div>
-        <MoreFunc />
+        <MoreFunc segmento="food" />
       </section>
     </div >
   )

@@ -11,14 +11,14 @@ function Termos() {
                 <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Legal</h3>
                 {politica ? <h1 className='text-dark-blue dark:text-vanilla lg:text-5xl text-3xl md:text-4xl font-poppins font-semibold'>Política de Privacidade</h1> : <h1 className='text-dark-blue dark:text-vanilla lg:text-5xl text-3xl md:text-4xl font-poppins font-semibold'>Termos e Condições</h1>}
 
-                <div className='flex flex-row justify-end'>
+                <div className='flex flex-row justify-end -translate-x-2'>
                     <button onClick={() => setPolitica(true)}>
-                        <div className={`${politica ? 'dark:bg-secondary-dark  bg-white' : 'dark:bg-quaternary-dark bg-neutral-300'} dark:text-vanilla text-dark-blue text-center lg:px-6 lg:py-2`}>
+                        <div className={`${politica ? 'dark:bg-secondary-dark  bg-white' : 'dark:bg-quaternary-dark bg-neutral-300'} dark:text-vanilla text-dark-blue text-center border border-slate-300 dark:border-slate-700 rounded-t-lg lg:px-6 lg:py-2`}>
                             Política de Privacidade
                         </div>
                     </button>
                     <button onClick={() => setPolitica(false)}>
-                        <div className={`${politica ? 'dark:bg-quaternary-dark bg-neutral-300' : 'dark:bg-secondary-dark bg-white'} text-dark-blue dark:text-vanilla text-center lg:px-6 lg:py-2 `}>
+                        <div className={`${politica ? 'dark:bg-quaternary-dark bg-neutral-300 ' : 'dark:bg-secondary-dark bg-white'} text-dark-blue dark:text-vanilla text-center border border-slate-300 dark:border-slate-700 rounded-t-lg lg:px-6 lg:py-2`}>
                             Termos e condições
                         </div>
                     </button>

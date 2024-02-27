@@ -2,39 +2,40 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import heroshot from '../assets/HeroContent.png'
 import conteudo from '../assets/conteudo/content2.jpg'
-import { ChevronDownCircleIcon } from 'lucide-react'
+import { ArrowBigRight, ChevronDownCircleIcon, ChevronRight, MoveRight } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 const content = [
   {
-    title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
+    title: 'Aprenda a cadastrar clientes',
     img: conteudo,
-    id:1,
+    id: 1,
   },
   {
-    title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
+    title: 'Aprenda a cadastrar NFC-e',
     img: conteudo,
-    id:2,
+    id: 2,
   },
   {
-    title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
+    title: 'Como cadastrar produtos?',
     img: conteudo,
-    id:3,
+    id: 3,
   },
   {
-    title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
+    title: 'Aprenda a cadastrar clientes.',
     img: conteudo,
-    id:4,
+    id: 4,
   },
   {
-    title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
+    title: 'Aprenda a cadastrar clientes.',
     img: conteudo,
-    id:5,
+    id: 5,
   },
   {
-    title:'Lorem ipsum dolor sit amet consectetur. Tellus vel dolor.',
+    title: 'Aprenda a cadastrar clientes.',
     img: conteudo,
-    id:6,
+    id: 6,
   },
-] 
+]
 
 function Conteudos() {
   return (
@@ -64,17 +65,27 @@ function Conteudos() {
         </div>
       </section>
       <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-36 px-10'>
-        <div className='grid lg:grid-cols-3 grid-cols-1 gap-4'>
-          {content.map((c)=>{
-            return(
-              <div key={c.id}
-              className='dark:bg-quaternary-dark px-3 pb-8 pt-3 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col items-center text-center drop-shadow-lg hover:drop-shadow-2xl cursor-pointer gap-5 justify-start'>
-              <img className='rounded-xl max-h-40 w-full' src={c.img}/>
-              <h2 className='font-inter text-md font-semibold text-dark-blue dark:text-vanilla hover:text-primary-blue'>{c.title}</h2>
-              </div>
+        {content ? <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
+          {content.map((c) => {
+            return (
+              <NavLink key={c.id} 
+                className='dark:bg-quaternary-dark px-4 py-4 border-slate-400 duration-200 transition-transform hover:-translate-y-1 border dark:border-slate-800 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col drop-shadow-lg hover:drop-shadow-xl gap-3 justify-start'>
+                <img className='rounded-xl max-h-40 w-full' src={c.img} />
+                <div className='gap-3 pb-2 flex-col flex'>
+                  <h2 className='font-inter text-md font-semibold text-dark-blue dark:text-vanilla'>{c.title}</h2>
+                  <span className='text-blueish-gray text-sm font-inter'>Lorem ipsum dolor sit amet consec tetur adipis icing elit. Odio deserunt eius cupiditate incidunt fugit veritatis.</span>
+                </div>
+                <div className='flex flex-row items-center justify-end text-sm gap-1 font-inter text-dark-blue dark:text-vanilla'>
+                    <p>Ver Mais</p>
+                    <ChevronRight className='translate-y-[1.8px]' size={16} />
+                </div>
+              </NavLink>
             )
           })}
-        </div>
+        </div> :
+          <div className='bg-red-200 w-full h-20'>
+            testeasdasdasdasssssssssssssssssssssss
+          </div>}
       </section>
     </div>
   )

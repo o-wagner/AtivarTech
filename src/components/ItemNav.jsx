@@ -15,12 +15,12 @@ const ItemNav = (props) => {
                     <div onClick={props.onClick} className='animate-fade-down text-center dark:bg-dark-background/85 backdrop-blur-3xl bg-light-background/85 absolute w-[80px] drop-shadow-lg group-hover:block hidden' >
                         <ul>
                             <li>
-                                <NavLink className='flex p-3 font-medium font-inter text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-neutral-300 dark:hover:bg-secondary-dark hover:text-dark-blue hover:dark:text-vanilla  dark:text-blueish-gray rounded-md dark:visited:text-blueish-gray
+                                <NavLink className='flex p-3 font-medium font-inter text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-neutral-300 dark:hover:bg-secondary-dark hover:text-dark-blue hover:dark:text-vanilla  dark:text-blueish-gray dark:visited:text-blueish-gray
                                  dark:hover:text-primary-blue'
                                  to="/solucoes/food">Food</NavLink>
                             </li>
                             <li>
-                                <NavLink className='flex p-3 font-medium font-inter text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-neutral-300 dark:hover:bg-secondary-dark hover:text-dark-blue hover:dark:text-vanilla dark:text-lighter-gray rounded-md dark:visited:text-blueish-gray
+                                <NavLink className='flex p-3 font-medium font-inter text-[14px] text-blueish-gray visited:text-blueish-gray hover:bg-neutral-300 dark:hover:bg-secondary-dark hover:text-dark-blue hover:dark:text-vanilla dark:text-lighter-gray dark:visited:text-blueish-gray
                                  dark:hover:text-primary-blue' to="/solucoes/varejo">Varejo</NavLink>
                             </li>
                         </ul>

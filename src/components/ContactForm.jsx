@@ -22,7 +22,7 @@ export default function ContactForm() {
                     <Input value={value}
                         onChange={setValue}
                         country="BR"
-                        className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira seu melhor número" />
+                        className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira seu número de telefone" />
                 </label>
                 <label htmlFor='message' className='flex flex-col gap-2 text-md'>Mensagem
                     <textarea maxLength="300" className="rounded-md py-2 h-28 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira sua mensagem" type="text" />
