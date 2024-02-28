@@ -109,10 +109,10 @@ function Segmentos(props) {
   return (
     <div>
       {props.segmento === "varejo" &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-3'>
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-4 grid-cols-2  gap-3'>
           {segmentosVarejo.map((v) => {
             return (
-              <div key={v.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400 border dark:border-slate-700
+              <div key={v.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400/60 border dark:border-slate-800
                              dark:hover:bg-secondary-dark hover:drop-shadow-xl hover:-translate-y-[0.1rem] p-8 lg:h-[120px] min-w-[100px] 
                              drop-shadow-lg flex flex-col rounded-xl justify-center text-center transition-transform duration-200'>
                 <div className='flex flex-col gap-1 items-center justify-center text-dark-blue dark:text-vanilla' id="icon">
@@ -128,7 +128,7 @@ function Segmentos(props) {
         <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-3'>
           {segmentosFood.map((s) => {
             return (
-              <div key={s.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400 border dark:border-slate-700
+              <div key={s.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400/60 border dark:border-slate-800
                              dark:hover:bg-secondary-dark hover:drop-shadow-xl hover:-translate-y-[0.1rem] p-8 lg:h-[120px] min-w-[100px] 
                              drop-shadow-lg flex flex-col rounded-xl justify-center text-center transition-transform duration-200'>
                 <div className='flex flex-col gap-1 items-center justify-center text-dark-blue dark:text-vanilla' id="icon">

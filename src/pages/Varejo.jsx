@@ -31,7 +31,7 @@ export default function Varejo() {
 
     return (
         <div className='dark:bg-dark-background bg-light-background w-full'>
-             <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
+            <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
                 <div className='py-[14px] dark:text-vanilla font-poppins font-semibold text-sm bg-dark-blue rounded-t-lg flex flex-row items-center justify-between text-white px-4'>Olá, seja bem vindo!
                     <button onClick={() => handleClickMod()}><X size={18} /></button></div>
                 <div className='items-center flex flex-col'>
@@ -44,13 +44,13 @@ export default function Varejo() {
                     </div>
                 </div>
             </div>
-            <button onClick={() => handleClickMod()}>
-                <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
-                    <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
-                        <FaWhatsapp color='white' />
-                    </div>
-                </a>
-            </button></>
+                <button onClick={() => handleClickMod()}>
+                    <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
+                        <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
+                            <FaWhatsapp color='white' />
+                        </div>
+                    </a>
+                </button></>
             <section id="heroVarejo" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
                 <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
                     <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
@@ -74,10 +74,10 @@ export default function Varejo() {
                 </div>
             </section>
             <section id='segmento' className='w-full lg:px-36 px-10 pb-24 flex flex-col items-center justify-center'>
-                <div className='flex items-center flex-col justify-center mb-[50px]'>
+                <div className='flex items-center flex-col justify-center lg:py-[50px] py-[40px]'>
                     <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>Conheça a solução</h3>
-                    <h1 className='lg:text-[40px] text-[25px] mb-2 lg:mb-0 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Segmentos de atuação</h1>
-                    <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[680px] min-w-[300px] lg:min-w-[380px]
+                    <h1 className='lg:text-[40px] leading-[50px] text-[25px] mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Segmentos de atuação</h1>
+                    <p className='font-inter text-[14px] lg:text-[16px] text-greish-blue dark:text-blueish-gray lg:max-w-[680px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Nosso sistema de gestão e frente de caixa PDV atende diversos segmentos do mercado em
                         todo o território brasileiro. Veja alguns dos nossos segmentos.</p>
                 </div>
@@ -90,12 +90,12 @@ export default function Varejo() {
             <section id='recursos' className='w-full lg:px-36 px-10 py-24  dark:bg-quaternary-dark bg-darker-light-bg'>
                 <div className='flex items-center flex-col justify-center'>
                     <h3 className='dark:text-primary-blue text-blueish-gray uppercase text-[12px] font-inter font-semibold tracking-widest'>Recursos</h3>
-                    <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
-                    <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
-           px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
+                    <h1 className='lg:text-[35px] text-[25px] font-poppins lg:leading-[50px] leading-[35px] tracking-tight text-center font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
+                    <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
+                        px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
                 </div>
-                <div className='py-16 '>
-                    <InfoSolution segmento="varejo"/>
+                <div>
+                    <InfoSolution segmento="varejo" />
                 </div>
             </section>
             <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
@@ -104,7 +104,7 @@ export default function Varejo() {
                     <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para você e seu cliente evoluirem</p>
                 </div>
-                <MoreFunc segmento="varejo"/>
+                <MoreFunc segmento="varejo" />
             </section>
         </div >
     )

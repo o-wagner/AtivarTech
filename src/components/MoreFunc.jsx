@@ -11,6 +11,14 @@ import pen from '../assets/food/moreFunc/pen.png'
 import penLight from '../assets/food/moreFunc/light/pen.png'
 import bank from '../assets/food/moreFunc/bank.png'
 import bankLight from '../assets/food/moreFunc/light/bank.png'
+import moonLight from '../assets/retail/moreFunc/light/moon.png'
+import moon from '../assets/retail/moreFunc/moon.png'
+import pix from '../assets/retail/moreFunc/pix.png'
+import pixLight from '../assets/retail/moreFunc/light/pix.png'
+import analyticsLight from '../assets/retail/moreFunc/light/analytics.png'
+import analytics from '../assets/retail/moreFunc/analytics.png'
+import service from '../assets/retail/moreFunc/service.png'
+import serviceLight from '../assets/retail/moreFunc/light/service.png'
 import useTheme from '../context/theme'
 
 const food = [
@@ -41,15 +49,15 @@ const food = [
 ]
 const varejo = [
     {
-        icon: check, iconLight: checkLight, title: 'Controle de Turno',
+        icon: moon, iconLight: moonLight, title: 'Controle de Turno',
         desc: 'Facilite o controle do seu caixa. Nosso sistema permite a organização dos valores do caixa de cada vendedor, horários de turnos, sangrias e reforços do caixa.',
     },
     {
-        icon: backup, iconLight: backupLight, title: 'Frente de caixa com PIX',
+        icon: pix, iconLight: pixLight, title: 'Frente de caixa com PIX',
         desc: 'Faça suas vendas e emita NFC-e em poucos segundos com o PDV Expresso. Nosso PDV possui PIX Integrado, no qual você não precisa conferir o PIX, o QR CODE é gerado, e o sistema ja confere o recebimento',
     },
     {
-        icon: hand, iconLight: handLight, title: 'Analytics',
+        icon: analytics, iconLight: analyticsLight, title: 'Analytics',
         desc: 'Acompanhe em tempo real tudo da sua empresa diretamente na tela do seu celular. Saiba os pontos estratégicos do seu negócio através de indicadores, direcionando a sua atenção ao que importa.',
     },
     {
@@ -57,11 +65,11 @@ const varejo = [
         desc: 'Gestão de contas a pagar, recebimentos, inadimplência de clientes cheques, conciliação bancária, fechamento de caixa.',
     },
     {
-        icon: pen, iconLight: penLight, title: 'Ordem de serviço',
+        icon: service, iconLight: serviceLight, title: 'Ordem de serviço',
         desc: 'Organize o fluxo dos serviços prestados pela sua empresa. Tenha controle de prioridades, etapas, tempo, quem executou o serviço, entre outros recursos.',
     },
     {
-        icon: bank, iconLight: bankLight, title: 'Acompanhe suas vendas',
+        icon: hand, iconLight: handLight, title: 'Acompanhe suas vendas',
         desc: 'Crie orçamentos e faça vendas de forma prática, possibilitando imporessão e envio por e-mail. Além disso você tem o histórico completo do cliente no momento da venda.',
     }
 ]
@@ -69,14 +77,14 @@ const varejo = [
 function MoreFunc(props) {
     const { themeMode } = useTheme()
     return (
-        <div className='grid pb-10 gap-16 lg:grid-cols-3 grid-cols-1'>
+        <div className='grid pb-10 gap-16 lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
             {props.segmento === "food" &&
                 <>{food.map((f) => {
                     return (
                         <div key={f.title} className='flex flex-col items-center gap-3 text-center justify-start'>
                             {themeMode === "dark" ? <img src={f.icon} className='lg:w-8 w-8' /> : <img src={f.iconLight} className='lg:w-8 w-8' />}
                             <h3 className='dark:text-vanilla text-[16px] font-semibold font-poppins text-dark-blue'>{f.title}</h3>
-                            <p className='dark:text-blueish-gray font-inter text-[15px] text-greish-blue leading-7'>{f.desc}</p>
+                            <p className='dark:text-blueish-gray font-inter lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[400px]'>{f.desc}</p>
                         </div>
                     )
                 })} </>}
@@ -86,7 +94,7 @@ function MoreFunc(props) {
                         <div key={v.title} className='flex flex-col items-center gap-3 text-center justify-start'>
                             {themeMode === "dark" ? <img src={v.icon} className='lg:w-8 w-8' /> : <img src={v.iconLight} className='lg:w-8 w-8' />}
                             <h3 className='dark:text-vanilla text-[16px] font-semibold font-poppins text-dark-blue'>{v.title}</h3>
-                            <p className='dark:text-blueish-gray font-inter text-[15px] text-greish-blue leading-7'>{v.desc}</p>
+                            <p className='dark:text-blueish-gray font-inter lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[400px]'>{v.desc}</p>
                         </div>
                     )
                 })} </>}

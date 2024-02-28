@@ -111,18 +111,18 @@ function InfoSolution(props) {
                     return (
                         <div key={f.title} className='flex flex-col items-center'>
                             {
-                                f.position ? <div className='flex py-16 gap-28 justify-center items-center flex-wrap' key={f.title}>
-                                    <img loading="lazy" src={f.img} className='max-w-[320px] ' />
-                                    <div className='flex flex-col'>
-                                        <h3 className='dark:text-vanilla text-[35px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
-                                        <p className='dark:text-blueish-gray text-greish-blue text-[18px] leading-8 max-w-[530px]'>{f.desc}</p>
+                                f.position ? <div className='flex lg:py-16 py-12 lg:gap-28 gap-5 justify-center items-center flex-wrap' key={f.title}>
+                                    <img loading="lazy" src={f.img} className='lg:max-w-[320px] max-w-[250px] ' />
+                                    <div className='flex flex-col lg:text-start text-center'>
+                                        <h3 className='dark:text-vanilla lg:text-start text-center lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
+                                        <p className='font-inter dark:text-blueish-gray text-greish-blue lg:text-[16px] text-[14px] leading-6 max-w-[530px]'>{f.desc}</p>
                                     </div>
-                                </div> : <div className='flex gap-28 py-16 justify-center items-center flex-wrap' key={f.title}>
-                                    <div className='flex flex-col text-end'>
-                                        <h3 className='dark:text-vanilla text-[35px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
-                                        <p className='dark:text-blueish-gray text-[18px] text-greish-blue leading-8 max-w-[540px]'>{f.desc}</p>
+                                </div> : <div className='flex lg:gap-28 gap-5 lg:py-16 py-12 justify-center items-center flex-wrap-reverse' key={f.title}>
+                                    <div className='flex flex-col lg:text-end text-center'>
+                                        <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
+                                        <p className='font-inter dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[540px]'>{f.desc}</p>
                                     </div>
-                                    <img loading="lazy" src={f.img} className='max-w-[320px] ' />
+                                    <img loading="lazy" src={f.img} className='lg:max-w-[320px] max-w-[250px]' />
                                 </div>
                             }
                         </div>
@@ -134,18 +134,18 @@ function InfoSolution(props) {
                     return (
                         <div key={v.title} className='flex flex-col items-center'>
                             {
-                                v.position ? <div className='flex py-16 gap-28 justify-center items-center flex-wrap' key={v.title}>
-                                    <img loading="lazy" src={v.img} className='max-w-[280px] max-h-[280px]' />
-                                    <div className='flex flex-col'>
-                                        <h3 className='dark:text-vanilla text-[35px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
-                                        <p className='dark:text-blueish-gray text-greish-blue text-[18px] leading-8 max-w-[600px]'>{v.desc}</p>
+                                v.position ? <div className='flex lg:gap-28 gap-5 lg:py-16 py-12 justify-center items-center flex-wrap' key={v.title}>
+                                    <img loading="lazy" src={v.img}  className='lg:max-w-[300px] max-w-[250px] ' />
+                                    <div className='flex flex-col lg:text-start text-center'>
+                                        <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
+                                        <p className='font-inter dark:text-blueish-gray text-greish-blue lg:text-[16px] text-[14px] leading-6 max-w-[600px]'>{v.desc}</p>
                                     </div>
-                                </div> : <div className='flex gap-28 py-16 justify-center items-center flex-wrap' key={v.title}>
-                                    <div className='flex flex-col text-end'>
-                                        <h3 className='dark:text-vanilla text-[35px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
-                                        <p className='dark:text-blueish-gray text-[18px] text-greish-blue leading-8 max-w-[600px]'>{v.desc}</p>
+                                </div> : <div className='flex lg:gap-28 gap-5 lg:py-16 py-12 justify-center items-center flex-wrap-reverse' key={v.title}>
+                                    <div className='flex flex-col lg:text-end text-center'>
+                                        <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
+                                        <p className='font-inter dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[600px]'>{v.desc}</p>
                                     </div>
-                                    <img loading="lazy" src={v.img} className='max-w-[280px] max-h-[350px]' />
+                                    <img loading="lazy" src={v.img}  className='lg:max-w-[300px] max-w-[250px] ' />
                                 </div>
                             }
                         </div>

@@ -12,7 +12,7 @@ function ContainerFeedback() {
         <div id="feedback" className='w-full pt-16 pb-36 '>
             <div className='flex items-center justify-center flex-col mb-5 gap-3 '>
                 <h6 className='text-blueish-gray font-semibold text-[12px] uppercase tracking-widest dark:text-primary-blue font-inter'>Feedback</h6>
-                <h1 className='text-4xl font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Depoimentos</h1>
+                <h1 className='lg:text-[40px] text-[25px] font-poppins font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Depoimentos</h1>
             </div>
             <div className='flex items-center justify-center '>
                 <div className='w-[80vw] flex items-center max-w-[1100px] overflow-hidden justify-center'>

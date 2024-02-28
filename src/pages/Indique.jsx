@@ -35,9 +35,9 @@ function Indique() {
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[430px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[120px] px-10'>
+      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[120px] px-8'>
         <div className='border border-slate-400 dark:border-slate-700 flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
-          <div className='lg:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col p-12'>
+          <div className='lg:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>
             <h2 className='text-2xl text-center'>Como funciona a promoção?</h2>
             <div className='dark:bg-secondary-dark justify-evenly gap-10 h-full flex flex-col dark:text-vanilla text-dark-blue font-inter'>
@@ -49,7 +49,7 @@ function Indique() {
               <h2 className='self-center text-sm rounded-lg'>Indicação + Contratação = Você ganha!</h2>
             </div>
           </div>
-          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark lg:w-1/2 bg-gray-300 font-poppins flex-col items-center p-12 text-dark-blue dark:text-vanilla'>
+          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark w-full lg:w-1/2 bg-gray-300 font-poppins flex-col items-center lg:p-12 p-8  text-dark-blue dark:text-vanilla'>
             <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly'>
               <div className='flex flex-col gap-10'>
                 <label htmlFor='fullName' className='flex flex-col gap-2 text-md'>Nome Completo

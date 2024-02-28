@@ -97,14 +97,14 @@ function Sobre() {
       <section className=' h-auto py-16 flex flex-col items-center justify-center gap-2 px-10 lg:px-36'>
         <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>A Ativar Tecnologia</h3>
         <h1 className='lg:text-[40px] text-[25px] tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
-        <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[700px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
-        <div className=' grid gap-5 grid-cols-1 lg:grid-cols-3 items-center mt-10 '>
+        <p className='font-inter lg:text-[16px] text-[14px] leading-6 text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
+        <div className=' grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 items-center mt-10 '>
           {mvv.map((item) => {
             return (
               <div key={item.icon} className='bg-white 
               hover:drop-shadow-xl hover:-translate-y-1 transition-transform duration-200 ease-in-out drop-shadow-lg
               dark:bg-quaternary-dark py-5 px-8 rounded-lg dark:hover:bg-secondary-dark lg:max-w-[350px] 
-              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly flex flex-col border border-slate-400 dark:border-slate-700'>
+              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly flex flex-col border border-slate-300 dark:border-slate-700'>
                 <div className='flex gap-2 flex-col'> {item.icon}
                   <h4 className='dark:text-vanilla text-dark-blue font-bold text-xl'>{item.title}</h4>
                 </div>

@@ -46,11 +46,20 @@ const headerItem = [
 const Header = () => {
     let [open, setOpen] = useState(false);
     const { themeMode } = useTheme()
+    const [sombra, setSombra] = useState(false)
 
+    const showSombra = () => {
+        if (window.scrollY >= 90) {
+            setSombra(true);
+        } else {
+            setSombra(false);
+        }
+    }
+    window.addEventListener('scroll', showSombra);
     return (
-        <header className='bg-light-background/95 backdrop-blur-sm fixed
+        <header className={`bg-light-background/95 backdrop-blur-sm fixed
          dark:bg-dark-background/95 h-20 w-full text-slate-600 dark:text-slate-200 
-         flex justify-center items-center px-6 z-20 '>
+         flex justify-center items-center px-6 z-20 ${sombra ? 'drop-shadow-md':'drop-shadow-none'}`}>
             <div className='w-full lg:px-9 flex items-center lg:justify-between lg:gap-20'>
                 <div>
                     <NavLink to="/">
@@ -77,7 +86,7 @@ const Header = () => {
                                 />
                             )
                         })}
-                        <NavLink className='px-6 min-w-36 py-[4px] bg-button-gradient text-nowrap
+                        <NavLink onClick={()=>setOpen(false)} className='px-6 min-w-36 py-[4px] bg-button-gradient text-nowrap
                         hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                         font-semibold text-[13px] font-inter cursor-pointer text-slate-100 visited:text-slate-100 flex justify-center items-center text-center' to='/indique-e-ganhe'>Indique e Ganhe!</NavLink>
                     </ul>

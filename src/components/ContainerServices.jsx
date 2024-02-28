@@ -78,17 +78,17 @@ const service2 = [
 
 const ContainerServices = () => {
     return (
-        <section name="service" id="service" className=' w-full pt-16 px-40'>
+        <section name="service" id="service" className=' w-full py-10 px-10 lg:px-36'>
             <div className='flex items-center justify-center flex-col z-10'>
                 <h6 className='text-blueish-gray z-10 font-semibold font-inter uppercase tracking-widest pb-2 text-[12px] dark:text-primary-blue'>Recursos</h6>
-                <h1 className='text-4xl font-poppins  z-10 font-bold text-dark-blue mb-4 text-center dark:text-vanilla'>Potencialize seu negócio</h1>
-                <span className='font-inter  z-10 text-greish-blue dark:text-blueish-gray lg:w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
+                <h1 className='lg:text-[40px] text-[25px] font-poppins  z-10 font-bold text-dark-blue mb-4 leading-[35px] lg:leading-[50px] text-center tracking-tight dark:text-vanilla'>Potencialize seu negócio</h1>
+                <span className='font-inter lg:text-[16px] text-[14px] leading-6 z-10 text-greish-blue dark:text-blueish-gray lg:max-w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
             </div>
             <div className='w-full py-12 flex items-center justify-center flex-col gap-6'>
-                <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1000px] lg:grid-cols-3 grid-cols-1 gap-5'>
+                <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1000px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
                     {resources.map((r) => {
                         return (
-                            <div key={r.title} className='bg-white dark:bg-tertiary-dark hover:-translate-y-1 border-slate-300 border dark:border-slate-700
+                            <div key={r.title} className='bg-white dark:bg-tertiary-dark hover:-translate-y-1 border-slate-300 border dark:border-slate-800
                              dark:hover:bg-hover-dark hover:drop-shadow-xl lg:min-h-[240px] min-w-[300px] 
                              drop-shadow-lg px-6 py-8 flex flex-col rounded-xl justify-evenly transition-transform duration-200'>
                                 <div className='flex gap-2 flex-col text-dark-blue dark:text-vanilla' id="icon">
@@ -101,7 +101,7 @@ const ContainerServices = () => {
                     })}
                 </div>
 
-                <div className=' grid pb-20 z-10 lg:grid-cols-2 grid-cols-1 min-w-[300px] gap-6 max-w-[1000px]'>
+                <div className=' grid z-10 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 min-w-[300px] gap-6 max-w-[1000px]'>
                     {/* {service.map((s) => {
                         return (
                             <div key={s.moduleTitle}
@@ -141,15 +141,13 @@ const ContainerServices = () => {
                     {service2.map((s) => {
                         return (
                             <div key={s.img} className='bg-white dark:bg-tertiary-dark lg:min-h-[400px] min-w-[100px] 
-                            drop-shadow-lg flex flex-col rounded-xl justify-evenly border-slate-300 border dark:border-slate-700'>
-                                <div className=''>
-                                    <img loading='lazy' src={s.img} className='object-fill rounded-t-xl' />
-                                </div>
-                                <div className='flex flex-col gap-4 py-8 px-8'>
+                            drop-shadow-lg flex flex-col rounded-xl justify-between border-slate-300 border dark:border-slate-800'>
+                                <img loading='lazy' src={s.img} className='object-fill flex rounded-t-xl' />
+                                <div className='flex flex-col gap-4 py-6 px-8'>
                                     <h3 className='dark:text-vanilla text-dark-blue font-poppins uppercase font-semibold'>{s.title}</h3>
-                                    <p className='text-blueish-gray font-inter font-normal'>{s.desc}</p>
+                                    <p className='text-blueish-gray font-inter text-[16px] font-normal'>{s.desc}</p>
                                     <div className='w-full flex justify-end font-inter font-semibold uppercase text-sm text-dark-blue dark:text-vanilla'>
-                                        <NavLink to={s.path} className='hover:underline flex items-center justify-center'>Saber Mais<ChevronRight className='translate-y-[1px]' size={18}/></NavLink>
+                                        <NavLink to={s.path} className='hover:underline flex items-center justify-center'>Saber Mais<ChevronRight className='translate-y-[1px]' size={18} /></NavLink>
                                     </div>
                                 </div>
 

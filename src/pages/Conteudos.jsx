@@ -61,15 +61,15 @@ function Conteudos() {
                 font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Explorar Conteúdos<ChevronDownCircleIcon size={16} /></Link>
         </div>
         <div className=' max-w-[360px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[280px] lg:max-w-[380px] translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[380px] translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-36 px-10'>
-        {content ? <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
+      <section id='content' className='w-full  h-auto lg:pb-20 pb-10 py-20 lg:px-44 px-16'>
+        {content ? <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
           {content.map((c) => {
             return (
               <NavLink key={c.id} 
-                className='dark:bg-quaternary-dark px-4 py-4 border-slate-400 duration-200 transition-transform hover:-translate-y-1 border dark:border-slate-800 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col drop-shadow-lg hover:drop-shadow-xl gap-3 justify-start'>
+                className='dark:bg-quaternary-dark px-4 py-4 border-slate-300 duration-200 transition-transform hover:-translate-y-1 border dark:border-slate-900 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col drop-shadow-lg hover:drop-shadow-xl gap-3 justify-start'>
                 <img className='rounded-xl max-h-40 w-full' src={c.img} />
                 <div className='gap-3 pb-2 flex-col flex'>
                   <h2 className='font-inter text-md font-semibold text-dark-blue dark:text-vanilla'>{c.title}</h2>

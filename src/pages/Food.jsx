@@ -30,11 +30,11 @@ function Food() {
 
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
-      <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
+      <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'hidden'} ${showModal ? 'block animate-fade-left' : 'invisible'} duration-200 transition-all bg-white bottom-6 lg:right-[100px] right-[85px] rounded-lg h-64 w-64  z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
         <div className='py-[14px] dark:text-vanilla font-poppins font-semibold text-sm bg-dark-blue rounded-t-lg flex flex-row items-center justify-between text-white px-4'>Olá, seja bem vindo!
           <button onClick={() => handleClickMod()}><X size={18} /></button></div>
         <div className='items-center flex flex-col'>
-          <div className='text-dark-blue dark:text-vanilla px-4 flex justify-center text-center py-4'><p>Precisa de atendimento? Converse com um de nossos colaboladores pelo Whatsapp </p></div>
+          <div className='text-dark-blue dark:text-vanilla font-inter text-[14px] px-4 flex justify-center text-center py-4'><p>Precisa de atendimento? Converse com um de nossos colaboladores pelo Whatsapp </p></div>
           <div className=' lg:px-3 flex items-center justify-center gap-10 py-5 text-dark-blue dark:text-vanilla text-2xl'>
             <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener" className='flex flex-col items-center justify-center animate-fade-left dark:hover:text-white '>
               <FaWhatsapp />
@@ -74,10 +74,10 @@ function Food() {
         </div>
       </section>
       <section id='segmento' className='w-full lg:px-36 px-10 pb-24 flex flex-col items-center justify-center'>
-        <div className='flex items-center flex-col justify-center mb-[50px]'>
+        <div className='flex items-center flex-col justify-center lg:py-[50px] py-[40px] '>
           <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>Conheça a solução</h3>
-          <h1 className='lg:text-[40px] text-[25px] mb-2 lg:mb-0 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Segmentos de atuação</h1>
-          <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[680px] min-w-[300px] lg:min-w-[380px]
+          <h1 className='lg:text-[40px] text-[25px] mb-2 tracking-tight lg:leading-[50px] leading-[35px] font-bold dark:text-vanilla text-dark-blue'>Segmentos de atuação</h1>
+          <p className='font-inter text-greish-blue text-[14px] lg:text-[16px]  dark:text-blueish-gray lg:max-w-[680px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Nosso sistema de gestão e frente de caixa PDV atende diversos segmentos do mercado em
             todo o território brasileiro. Veja alguns dos nossos segmentos.</p>
         </div>
@@ -90,18 +90,18 @@ function Food() {
       <section id='recursos' className='w-full lg:px-36 px-10 py-24  dark:bg-quaternary-dark bg-darker-light-bg'>
         <div className='flex items-center flex-col justify-center'>
           <h3 className='dark:text-primary-blue text-blueish-gray uppercase text-[12px] font-inter font-semibold tracking-widest'>Recursos</h3>
-          <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
-          <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
+          <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 lg:leading-[50px] leading-[35px] tracking-tight text-center font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
+          <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
         </div>
-        <div className='py-16 '>
+        <div>
           <InfoSolution segmento="food" />
         </div>
       </section>
       <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
         <div className='flex items-center flex-col justify-center py-20 '>
           <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Confira mais diferencias</h1>
-          <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
+          <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para você e seu cliente evoluirem</p>
         </div>
         <MoreFunc segmento="food" />
