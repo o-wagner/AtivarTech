@@ -37,6 +37,9 @@ export default {
       'dark-gradient':'linear-gradient(180deg, rgba(7,11,17,1) 5%, rgba(4,7,11,1) 100%);',
       'dark-wave-gradient':'url("/dark-wave-gradient.png")',
       'light-wave-gradient':'url("/light-wave-gradient.png")',
+      'fundo-ativar':'url("/planofundo.jpg")',
+
+
 
      },
       colors:{

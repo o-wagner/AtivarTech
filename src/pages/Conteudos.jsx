@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import heroshot from '../assets/HeroContent.png'
 import conteudo from '../assets/conteudo/content2.jpg'
 import { ArrowBigRight, ChevronDownCircleIcon, ChevronRight, MoveRight } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import ativar from '../../public/Ativar.png'
 const content = [
   {
     title: 'Aprenda a cadastrar clientes',
@@ -25,19 +26,20 @@ const content = [
     img: conteudo,
     id: 4,
   },
-  {
-    title: 'Aprenda a cadastrar clientes.',
-    img: conteudo,
-    id: 5,
-  },
-  {
-    title: 'Aprenda a cadastrar clientes.',
-    img: conteudo,
-    id: 6,
-  },
+ 
 ]
 
 function Conteudos() {
+  const [iscontent, setIscontent] = useState(false);
+  useEffect(() => {
+    if (content.length > 4) {
+      setIscontent(true)
+      console.log('muita coisa')
+    } else {
+      console.log('nada aqui')
+      setIscontent(false)
+    }
+  })
   return (
     <div className='w-full bg-light-background dark:bg-dark-background'>
       <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
@@ -64,11 +66,11 @@ function Conteudos() {
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[380px] translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id='content' className='w-full  h-auto lg:pb-20 pb-10 py-20 lg:px-44 px-16'>
-        {content ? <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
+      <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-44 px-16'>
+        {iscontent ? <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
           {content.map((c) => {
             return (
-              <NavLink key={c.id} 
+              <NavLink key={c.id}
                 className='dark:bg-quaternary-dark px-4 py-4 border-slate-300 duration-200 transition-transform hover:-translate-y-1 border dark:border-slate-900 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col drop-shadow-lg hover:drop-shadow-xl gap-3 justify-start'>
                 <img className='rounded-xl max-h-40 w-full' src={c.img} />
                 <div className='gap-3 pb-2 flex-col flex'>
@@ -76,16 +78,23 @@ function Conteudos() {
                   <span className='text-blueish-gray text-sm font-inter'>Lorem ipsum dolor sit amet consec tetur adipis icing elit. Odio deserunt eius cupiditate incidunt fugit veritatis.</span>
                 </div>
                 <div className='flex flex-row items-center justify-end text-sm gap-1 font-inter text-dark-blue dark:text-vanilla'>
-                    <p>Ver Mais</p>
-                    <ChevronRight className='translate-y-[1.8px]' size={16} />
+                  <p>Ver Mais</p>
+                  <ChevronRight className='translate-y-[1.8px]' size={16} />
                 </div>
               </NavLink>
             )
           })}
         </div> :
-          <div className='bg-red-200 w-full h-20'>
-            testeasdasdasdasssssssssssssssssssssss
-          </div>}
+          <section className='flex flex-col text-dark-blue dark:text-blueish-gray items-center justify-center w-full h-screen'>
+            <div className='flex items-center flex-col '>
+              <h2 className='font-poppins text-[30px] leading tracking-widest font-semibold uppercase text-primary-blue dark:text-vanilla text-center'>Em Breve</h2>
+              <p className='font-inter text-sm pb-4 text-center'>Conteúdos exclusivos em breve!</p>
+              <NavLink to="/" className='px-10 min-w-40 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold font-inter text-sm cursor-pointer text-slate-100 flex justify-center items-center text-center'>Voltar para início</NavLink>
+                <img src={ativar} className='max-w-32'/>
+            </div>
+          </section>}
       </section>
     </div>
   )
