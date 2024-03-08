@@ -31,7 +31,7 @@ const info = [
 function Contato() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full h-full'>
-      <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[100px]'>
+      <section id="heroContato" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[68px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Fale Conosco</h3>
@@ -49,10 +49,10 @@ function Contato() {
             Falar pelo Whatsapp</a>
         </div>
         <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 -translate-x-4 lg:w-[430px] drop-shadow-md ' src={HeroContact} alt="EntreEmContato-Image" />
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[360px] lg:w-[350px] drop-shadow-md' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section className='lg:px-36 px-10 lg:py-12 flex flex-col gap-10 pb-8'>
+      <section className='lg:px-20 px-10 lg:py-12 flex flex-col gap-10 pb-8'>
         <div className='border border-slate-400 dark:border-slate-700 flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
           <div className=' lg:px-[100px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='items-center flex flex-col'>

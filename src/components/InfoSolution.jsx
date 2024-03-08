@@ -52,40 +52,40 @@ const food = [
 ]
 const varejo = [
     {
-        position: false,
+        position: true,
         img: NFC,
         title: 'Documentos ',
         titleBlue: 'Fiscais',
         desc: 'Tudo em um só sistema. Emita diversos documentos fiscais (NF-e, NFC-e, CT-e, MDF-e) e gere as obrigações acessórias (Sintegra, Sped Fiscal e Contribuições). Contamos com o MD-e, que recebe automaticamente as Notas emitidas contra o seu CNPJ.',
     },
     {
-        position: true,
+        position: false,
         img: atendimento,
         title: 'Gerenciador de',
         titleBlue: ' Entregas',
         desc: 'Não perca tempo tentando organizar suas entregas em papel ou planilhas, nosso módulo de vendas para entrega futura, permite fazer uma enda e agendar a entrega de forma organizada',
     },
     {
-        position: false,
+        position: true,
         img: vendas,
         title: 'Força de vendas',
         titleBlue: ' Externas',
         desc: 'Nosso Força de vendas é a solução ideal para seus vendedores realizarem as vendas externas com agilidade direto no seu celular ou tablet. Realize pedidos offline, gerencie estoque, rotas, relatórios, saldo flex, gestão de clientes e muito mais.',
     },
     {
-        position: true,
+        position: false,
         img: lock,
         title: 'Segurança e Backup',
         titleBlue: ' em Nuvem',
         desc: 'Controle os acessos dos usuários ao sistema de acordo com sua função, restringindo ou permitindo acesso aos módulos, e em caso de imprevistos, fique tranquilo. Possuímos um poderoso sistema de Backup em nuvem que mantém uma cópia dos seus dados de forma segura.',
     },
-    {
-        position: false,
-        img: monitor,
-        title: 'Ordem de ',
-        titleBlue: 'Serviço',
-        desc: 'Organize o fluxo dos serviços prestados pela sua empresa. Tenha controle de prioridades, etapas, tempo, quem executou o serviço, entre outros recursos.',
-    },
+    // {
+    //     position: true,
+    //     img: monitor,
+    //     title: 'Ordem de ',
+    //     titleBlue: 'Serviço',
+    //     desc: 'Organize o fluxo dos serviços prestados pela sua empresa. Tenha controle de prioridades, etapas, tempo, quem executou o serviço, entre outros recursos.',
+    // },
     {
         position: true,
         img: comp,
@@ -111,18 +111,18 @@ function InfoSolution(props) {
                     return (
                         <div key={f.title} className='flex flex-col items-center'>
                             {
-                                f.position ? <div className='flex lg:py-16 py-12 lg:gap-28 gap-5 justify-center items-center flex-wrap' key={f.title}>
-                                    <img loading="lazy" src={f.img} className='lg:max-w-[320px] max-w-[250px] ' />
-                                    <div className='flex flex-col lg:text-start text-center'>
-                                        <h3 className='dark:text-vanilla lg:text-start text-center lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
+                                f.position ? <div className='flex lg:py-20 md:py-16 py-12 lg:gap-28 md:gap-20 gap-5 justify-center items-center flex-wrap' key={f.title}>
+                                    <img loading="lazy" src={f.img} className='lg:max-w-[300px] lg:max-h-[300px] max-h-[250px] max-w-[250px] ' />
+                                    <div className='flex flex-col lg:text-start md:text-start text-center'>
+                                        <h3 className='dark:text-vanilla lg:text-start md:text-start text-center lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray text-greish-blue lg:text-[16px] text-[14px] leading-6 max-w-[530px]'>{f.desc}</p>
                                     </div>
-                                </div> : <div className='flex lg:gap-28 gap-5 lg:py-16 py-12 justify-center items-center flex-wrap-reverse' key={f.title}>
-                                    <div className='flex flex-col lg:text-end text-center'>
+                                </div> : <div className='flex lg:gap-28 md:gap-20 gap-5 lg:py-20 md:py-16 py-12 justify-center items-center flex-wrap-reverse' key={f.title}>
+                                    <div className='flex flex-col lg:text-end md:text-end text-center'>
                                         <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[540px]'>{f.desc}</p>
                                     </div>
-                                    <img loading="lazy" src={f.img} className='lg:max-w-[320px] max-w-[250px]' />
+                                    <img loading="lazy" src={f.img} className='lg:max-w-[300px] lg:max-h-[300px] max-h-[250px] max-w-[250px]' />
                                 </div>
                             }
                         </div>
@@ -134,18 +134,18 @@ function InfoSolution(props) {
                     return (
                         <div key={v.title} className='flex flex-col items-center'>
                             {
-                                v.position ? <div className='flex lg:gap-28 gap-5 lg:py-16 py-12 justify-center items-center flex-wrap' key={v.title}>
-                                    <img loading="lazy" src={v.img}  className='lg:max-w-[300px] max-w-[250px] ' />
+                                v.position ? <div className='flex lg:gap-28 gap-5 lg:py-20 py-12 justify-center items-center flex-wrap' key={v.title}>
+                                    <img loading="lazy" src={v.img}  className='lg:max-w-[280px] lg:max-h-[280px] max-h-[250px] max-w-[250px]' />
                                     <div className='flex flex-col lg:text-start text-center'>
                                         <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray text-greish-blue lg:text-[16px] text-[14px] leading-6 max-w-[600px]'>{v.desc}</p>
                                     </div>
-                                </div> : <div className='flex lg:gap-28 gap-5 lg:py-16 py-12 justify-center items-center flex-wrap-reverse' key={v.title}>
+                                </div> : <div className='flex lg:gap-28 gap-5 lg:py-20 py-12 justify-center items-center flex-wrap-reverse' key={v.title}>
                                     <div className='flex flex-col lg:text-end text-center'>
                                         <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[600px]'>{v.desc}</p>
                                     </div>
-                                    <img loading="lazy" src={v.img}  className='lg:max-w-[300px] max-w-[250px] ' />
+                                    <img loading="lazy" src={v.img}  className='lg:max-w-[280px] lg:max-h-[280px] max-h-[250px] max-w-[250px]' />
                                 </div>
                             }
                         </div>

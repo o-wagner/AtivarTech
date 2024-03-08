@@ -9,28 +9,48 @@ import jeferson from '../assets/equipe/jeferson.png'
 const equipe = [
     {
         Img: cbum,
-        name: 'Luan',
+        name: 'Luan Marinho',
+        cargo: 'Sócio Proprietário',
+    },
+    {
+        Img: jeferson,
+        name: 'Jeferson Álefe',
+        cargo: 'Sócio Proprietário',
+    },
+    {
+        Img: thais,
+        name: 'Thaís Pascoal',
         cargo: 'Suporte',
     },
     {
         Img: thais,
-        name: 'Thaís',
-        cargo: 'Suporte',
+        name: 'Wagner Oliveira',
+        cargo: 'Analista de Suporte',
     },
     {
         Img: gabriel,
-        name: 'Gabriel',
-        cargo: 'Suporte',
+        name: 'Gabriel Lucas',
+        cargo: 'Analista de Suporte',
     },
     {
-        Img: jeferson,
-        name: 'Jeferson',
-        cargo: 'Suporte',
+        Img: gabriel,
+        name: 'Gabriel Marques',
+        cargo: 'Analista de Suporte',
     },
     {
         Img: larissa,
-        name: 'Larissa',
-        cargo: 'Suporte',
+        name: 'Larissa Gonzaga',
+        cargo: 'Analista de Suporte',
+    },
+    {
+        Img: larissa,
+        name: 'Alessandra Diamantino',
+        cargo: 'Analista de Suporte',
+    },
+    {
+        Img: larissa,
+        name: 'Géssica Araújo',
+        cargo: 'Setor Comercial',
     },
 ]
 
@@ -42,15 +62,15 @@ function ContainerAbout() {
                 <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>
                     Conheça a equipe dedicada que impulsiona nossas soluções. Juntos, estamos comprometidos em elevar seu sucesso empresarial.</p>
             </div>
-            <div className='flex flex-row gap-10 flex-wrap pb-20 px-16 items-center justify-center'>
+            <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-20 px-10 items-center justify-center'>
                 {equipe.map((e) => {
                     return (
-                        <div key={e.name} className='flex flex-col items-center gap-4 ease-in-out transition-transform hover:-translate-y-1'>
+                        <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark w-[240px] h-[260px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-800'>
                             <div>
-                                <img src={e.Img} className='w-24 lg:w-[100px] drop-shadow-md' />
+                                <img src={e.Img} className='w-28 lg:w-[115px] drop-shadow-md' />
                             </div>
                             <div className='flex flex-col gap-1 items-center justify-center' >
-                                <h3 className='font-bold font-poppins text-lg dark:text-primary-blue text-dark-blue'>{e.name}</h3>
+                                <h3 className='font-bold leading-tight font-poppins text-lg dark:text-primary-blue text-dark-blue'>{e.name}</h3>
                                 <span className='font-regular text-[14px] font-poppins text-greish-blue dark:text-blueish-gray'>{e.cargo}</span>
                             </div>
                         </div>

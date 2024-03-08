@@ -60,7 +60,7 @@ function Sobre() {
           </div>
         </a>
       </button></>
-      <section id="heroAbout" className='lg:h-screen h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[85px]'>
+      <section id="heroAbout" className='lg:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Ativar Tecnologia</h3>
@@ -83,28 +83,28 @@ function Sobre() {
             font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Ativar Tecnologia<ChevronDownCircleIcon size={16} /> </Link>
         </div>
         <div className=' max-w-[450px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[360px] translate-x-6 lg:w-[350px] drop-shadow-md' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id="history" className='h-auto py-12 flex-wrap lg:px-36 px-10 flex items-center justify-center lg:gap-28 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
-        <img className='lg:w-[430px] w-[280px]' src={ativarshot} alt='ativarfoto' />
+      <section id="history" className='h-auto py-16 flex-wrap px-10 flex items-center justify-center lg:gap-28 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
+        <img className='lg:w-[320px] w-[280px]' src={ativarshot} alt='ativarfoto' />
         <div className='flex flex-col items-center lg:items-start gap-4 text-center lg:text-start'>
           <h1 className='lg:text-[40px] text-[30px] w-[320px] font-bold dark:text-vanilla text-dark-blue'>Nossa <span className='text-primary-blue'>História</span></h1>
           <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[460px]
                     text-center lg:text-left mb-6 lg:px-0 font-inter px-2'>Desde 2021 atuamos em Guanhães e região com as melhores soluções para seu negócio. Nosso compromisso com a excelência e a satisfação do cliente nos diferencia, enquanto nossa equipe apaixonada e experiente impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região. Junte-se a nós enquanto continuamos a escrever nossa história.</p>
         </div>
       </section>
-      <section className=' h-auto py-16 flex flex-col items-center justify-center gap-2 px-10 lg:px-36'>
+      <section className=' h-auto py-16 flex flex-col items-center justify-center gap-2 px-20'>
         <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>A Ativar Tecnologia</h3>
         <h1 className='lg:text-[40px] text-[25px] tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
         <p className='font-inter lg:text-[16px] text-[14px] leading-6 text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
         <div className=' grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 items-center mt-10 '>
           {mvv.map((item) => {
             return (
-              <div key={item.icon} className='bg-white 
+              <div key={item.title} className='bg-white 
               hover:drop-shadow-xl hover:-translate-y-1 transition-transform duration-200 ease-in-out drop-shadow-lg
               dark:bg-quaternary-dark py-5 px-8 rounded-lg dark:hover:bg-secondary-dark lg:max-w-[350px] 
-              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly flex flex-col border border-slate-300 dark:border-slate-700'>
+              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly flex flex-col border border-slate-300 dark:border-slate-800'>
                 <div className='flex gap-2 flex-col'> {item.icon}
                   <h4 className='dark:text-vanilla text-dark-blue font-bold text-xl'>{item.title}</h4>
                 </div>

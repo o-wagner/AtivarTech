@@ -60,7 +60,7 @@ const Header = () => {
         <header className={`bg-light-background/95 backdrop-blur-sm fixed
          dark:bg-dark-background/95 h-20 w-full text-slate-600 dark:text-slate-200 
          flex justify-center items-center px-6 z-20 ${sombra ? 'drop-shadow-md':'drop-shadow-none'}`}>
-            <div className='w-full lg:px-9 flex items-center lg:justify-between lg:gap-20'>
+            <div className='w-full lg:px-12 flex items-center justify-center'>
                 <div>
                     <NavLink to="/">
                         {themeMode === 'light' ?
@@ -70,10 +70,9 @@ const Header = () => {
                             <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[110px] z-10 -translate-x-5' />}
                     </NavLink>
                 </div>
-                <nav className='z-10 mr-8 flex gap-24'>
+                <nav className='z-10 mr-8 w-full'>
                     <ul div="menu" className={`lg:gap-8 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
-                     items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent
-                     pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
+                     items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent pb-12 lg:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
                         <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' />
                         {headerItem.map((h) => {
                             return (
@@ -86,8 +85,8 @@ const Header = () => {
                                 />
                             )
                         })}
-                        <NavLink onClick={()=>setOpen(false)} className='px-6 min-w-36 py-[4px] bg-button-gradient text-nowrap
-                        hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                        <NavLink onClick={()=>setOpen(false)} className='px-6 min-w-40 py-[4px] bg-button-gradient text-nowrap
+                        hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px] 
                         font-semibold text-[13px] font-inter cursor-pointer text-slate-100 visited:text-slate-100 flex justify-center items-center text-center' to='/indique-e-ganhe'>Indique e Ganhe!</NavLink>
                     </ul>
 
@@ -95,7 +94,7 @@ const Header = () => {
                         <div onClick={() => setOpen(false)} className='cursor-pointer animate-fade-down text-2xl flex absolute right-8 top-6' >
                             <X className='lg:invisible' /> </div> : <></>}
                 </nav>
-                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center invisible lg:visible dark:text-vanilla'>
+                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center lg:visible invisible dark:text-vanilla'>
                     <ToggleButton icon={true} />
 
                 </div>

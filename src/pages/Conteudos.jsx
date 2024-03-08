@@ -4,7 +4,7 @@ import heroshot from '../assets/HeroContent.png'
 import conteudo from '../assets/conteudo/content2.jpg'
 import { ArrowBigRight, ChevronDownCircleIcon, ChevronRight, MoveRight } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
-import ativar from '../../public/Ativar.png'
+import ativar from '../assets/Ativar.png'
 const content = [
   {
     title: 'Aprenda a cadastrar clientes',
@@ -42,7 +42,7 @@ function Conteudos() {
   })
   return (
     <div className='w-full bg-light-background dark:bg-dark-background'>
-      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[65px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Materiais</h3>
@@ -57,13 +57,13 @@ function Conteudos() {
           <Link
             to="content"
             smooth={true}
-            offset={-90}
+            offset={-20}
             className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
                 hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                 font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Explorar Conteúdos<ChevronDownCircleIcon size={16} /></Link>
         </div>
         <div className=' max-w-[360px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[380px] translate-x-6 lg:w-[470px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[320px] lg:w-[320px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>
       <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-44 px-16'>
@@ -87,12 +87,11 @@ function Conteudos() {
         </div> :
           <section className='flex flex-col text-dark-blue dark:text-blueish-gray items-center justify-center w-full h-screen'>
             <div className='flex items-center flex-col '>
-              <h2 className='font-poppins text-[30px] leading tracking-widest font-semibold uppercase text-primary-blue dark:text-vanilla text-center'>Em Breve</h2>
-              <p className='font-inter text-sm pb-4 text-center'>Conteúdos exclusivos em breve!</p>
+              <h2 className='font-poppins text-[30px] leading tracking-widest font-semibold uppercase text-primary-blue dark:text-vanilla text-center'>Em Breve!</h2>
+              <p className='font-inter text-sm pb-4 text-center'>Conteúdos exclusivos em breve.</p>
               <NavLink to="/" className='px-10 min-w-40 py-[5px] bg-button-gradient text-nowrap
                 hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                 font-semibold font-inter text-sm cursor-pointer text-slate-100 flex justify-center items-center text-center'>Voltar para início</NavLink>
-                <img src={ativar} className='max-w-32'/>
             </div>
           </section>}
       </section>

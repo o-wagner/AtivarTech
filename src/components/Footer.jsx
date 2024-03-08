@@ -9,10 +9,10 @@ import { NavLink } from 'react-router-dom';
 function Footer() {
     return (
         <div className='bg-primary-blue bottom-0 dark:bg-dark-footer text-white lg:px-32 px-10 py-6 flex flex-col gap-2 w-full'>
-            <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid py-8 lg:justify-between text-left'>
-                <div className=' flex flex-col gap-5 lg:items-start justify-start p-8'>
+            <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid py-24 gap-10 lg:justify-between text-left'>
+                <div className=' flex flex-col gap-5 lg:items-start justify-start'>
                     <img src={logo} className='w-[100px]' alt="ativarlogo" />
-                    <p className='font-normal text-left lg:max-w-[140px] text-white font-inter text-sm'>Potencialize sua empresa com nossa gestão inteligente</p>
+                    <p className='font-normal text-left lg:max-w-[80%] max-w-[50%] text-white font-inter text-sm'>Potencialize sua empresa com nossa gestão inteligente</p>
                     <div className='flex self-start gap-1'>
                         <a className='hover:text-vanilla' href="https://instagram.com/ativartecnologia" target='_blank' rel="noreferrer noopener"><FaInstagram size={22} /></a>
                         <a className='hover:text-vanilla' href="https://br.linkedin.com/company/ativartecnologia" target='_blank' rel="noreferrer noopener"><RiLinkedinBoxLine size={22} /></a>
@@ -20,7 +20,7 @@ function Footer() {
                         <a className='hover:text-vanilla' href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={22} /></a>
                     </div>
                 </div>
-                <div className='flex flex-col justify-between p-8'>
+                <div className='flex flex-col justify-between '>
                     <h1 className='font-semibold font-poppins text-lg'>Navegação</h1>
                     <div className='flex flex-col gap-4 mt-5 font-normal font-inter text-sm'>
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/'>Início</NavLink>
@@ -31,7 +31,7 @@ function Footer() {
                         <NavLink className='cursor-pointer hover:text-vanilla' to='/indique-e-ganhe'>Indique e Ganhe</NavLink>
                     </div>
                 </div>
-                <div className='flex flex-col gap-6 p-8'>
+                <div className='flex flex-col gap-6 '>
                     <h1 className='font-semibold font-poppins text-lg max-w-28'>Horário de Funcionamento</h1>
                     <div>
                         <p className='font-normal font-inter text-sm'>Segunda-Sexta</p>
@@ -42,7 +42,7 @@ function Footer() {
                         <p className='font-normal font-inter text-sm'>08:00 - 12:00</p>
                     </div>
                 </div>
-                <div className='flex flex-col items-start gap-6 w-72 text-sm p-8'>
+                <div className='flex flex-col items-start gap-6 w-72 text-sm '>
                     <h1 className='font-semibold font-poppins text-lg'>Contato</h1>
                     <a href='mailto:contato@ativartecnologia.com' ><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <MdOutlineMailOutline className='w-5 text-xl' width={20} />
@@ -52,7 +52,7 @@ function Footer() {
                         <span className='font-inter'>(33) 2101-0601</span></div></a>
                     <a href='https://maps.app.goo.gl/WpKsf5Yymttgiphr9' target='_blank' rel="noreferrer noopener">
                         <div className='flex flex-row items-center gap-2 justify-center hover:text-vanilla'>
-                            <IoLocationOutline className='w-10 text-xl' />
+                            <IoLocationOutline className='text-3xl' />
                             <span className='font-inter'>Av. Milton Campos, 2852. Centro, Guanhães-MG</span>
                         </div>
                     </a>

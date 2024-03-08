@@ -13,7 +13,7 @@ function Indique() {
   const [numberOrg, setNumberOrg] = useState('');
   return (
     <div className='bg-light-background dark:bg-dark-background w-full'>
-      <section id="heroIndique" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[72px]'>
+      <section id="heroIndique" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Promoção</h3>
@@ -32,7 +32,7 @@ function Indique() {
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Saiba como funciona<ChevronDownCircleIcon size={16} /> </Link>
         </div>
         <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] lg:translate-x-10 translate-x-6 lg:w-[430px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
+          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[360px] lg:translate-x-10 translate-x-6 lg:w-[350px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
       <section id="indique" className='pb-12 flex items-center justify-center lg:px-[120px] px-8'>

@@ -109,7 +109,7 @@ function Segmentos(props) {
   return (
     <div>
       {props.segmento === "varejo" &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-4 grid-cols-2  gap-3'>
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3'>
           {segmentosVarejo.map((v) => {
             return (
               <div key={v.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400/60 border dark:border-slate-800
@@ -125,7 +125,7 @@ function Segmentos(props) {
         </div>}
       
       { props.segmento === "food"  &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 grid-cols-2 gap-3'>
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3'>
           {segmentosFood.map((s) => {
             return (
               <div key={s.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400/60 border dark:border-slate-800
