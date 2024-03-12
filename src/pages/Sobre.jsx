@@ -6,6 +6,7 @@ import { ChevronDownCircleIcon, Eye, Goal, HeartHandshake } from 'lucide-react'
 import { Link } from 'react-scroll'
 import { FaWhatsapp } from 'react-icons/fa'
 import { X } from 'lucide-react'
+import PopupModal from '../components/PopupModal'
 const mvv = [
   {
     icon: <Goal size={32} className='dark:text-vanilla text-dark-blue' />,
@@ -28,38 +29,28 @@ function Sobre() {
   const [support, setSupport] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const supportShow = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 10) {
       setSupport(true);
     } else {
       setSupport(false);
     }
   }
-  window.addEventListener('scroll', supportShow);
   const handleClick = () => {
     setShowModal(!showModal);
   }
+  window.addEventListener('scroll', supportShow)
+
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
-     <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'invisible'} ${showModal ? 'visible animate-fade-left' : 'invisible'} bg-white bottom-6 right-[100px] rounded-lg h-64 w-64 z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
-        <div className='py-[14px] dark:text-vanilla font-poppins font-semibold text-sm bg-dark-blue rounded-t-lg flex flex-row items-center justify-between text-white px-4'>Olá, seja bem vindo!
-          <button onClick={() => handleClick()}><X size={18} /></button></div>
-        <div className='items-center flex flex-col'>
-          <div className='text-dark-blue dark:text-vanilla px-4 flex justify-center text-center py-4'><p>Precisa de atendimento? Converse com um de nossos colaboladores pelo Whatsapp </p></div>
-          <div className=' lg:px-3 flex items-center justify-center gap-10 py-5 text-dark-blue dark:text-vanilla text-2xl'>
-            <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener" className='flex flex-col items-center justify-center animate-fade-left dark:hover:text-white '>
-              <FaWhatsapp />
-              <p className='text-sm'>Entre em contato</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <button onClick={() => handleClick()}>
-        <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
-          <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
-            <FaWhatsapp color='white' />
-          </div>
-        </a>
-      </button></>
+      <> <PopupModal handleClick={handleClick} showModal={showModal} support={support} />
+        <button onClick={() => handleClick()}>
+          <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
+            <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
+              <FaWhatsapp color='white' />
+            </div>
+          </a>
+        </button>
+      </>
       <section id="heroAbout" className='lg:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
@@ -104,7 +95,7 @@ function Sobre() {
               <div key={item.title} className='bg-white 
               hover:drop-shadow-xl hover:-translate-y-1 transition-transform duration-200 ease-in-out drop-shadow-lg
               dark:bg-quaternary-dark py-5 px-8 rounded-lg dark:hover:bg-secondary-dark lg:max-w-[350px] 
-              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly flex flex-col border border-slate-300 dark:border-slate-800'>
+              max-w-[280px] min-h-[350px] lg:min-h-[310px] justify-evenly flex flex-col border border-slate-300 dark:border-slate-900'>
                 <div className='flex gap-2 flex-col'> {item.icon}
                   <h4 className='dark:text-vanilla text-dark-blue font-bold text-xl'>{item.title}</h4>
                 </div>

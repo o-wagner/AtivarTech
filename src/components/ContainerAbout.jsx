@@ -65,7 +65,7 @@ function ContainerAbout() {
             <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-20 px-10 items-center justify-center'>
                 {equipe.map((e) => {
                     return (
-                        <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark w-[240px] h-[260px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-800'>
+                        <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark w-[240px] h-[260px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-900'>
                             <div>
                                 <img src={e.Img} className='w-28 lg:w-[115px] drop-shadow-md' />
                             </div>

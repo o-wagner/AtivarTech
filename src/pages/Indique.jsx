@@ -35,8 +35,8 @@ function Indique() {
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[360px] lg:translate-x-10 translate-x-6 lg:w-[350px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[120px] px-8'>
-        <div className='border border-slate-400 dark:border-slate-700 flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
+      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[100px] px-8'>
+        <div className='border border-slate-400 dark:border-slate-800 flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
           <div className='lg:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>
             <h2 className='text-2xl text-center'>Como funciona a promoção?</h2>

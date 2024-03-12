@@ -5,8 +5,14 @@ import { RiFacebookCircleLine, RiLinkedinBoxLine } from "react-icons/ri";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
+import { ChevronUp } from 'lucide-react';
 
 function Footer() {
+
+    const goTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+
     return (
         <div className='bg-primary-blue bottom-0 dark:bg-dark-footer text-white lg:px-32 px-10 py-6 flex flex-col gap-2 w-full'>
             <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid py-24 gap-10 lg:justify-between text-left'>
@@ -19,6 +25,9 @@ function Footer() {
                         <a className='hover:text-vanilla' href="https://www.facebook.com/ativartecnologia/" target='_blank' rel="noreferrer noopener"><RiFacebookCircleLine size={23} /></a>
                         <a className='hover:text-vanilla' href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={22} /></a>
                     </div>
+                    <button  onClick={goTop}>
+                        <span className='flex flex-row group justify-center items-center gap-[5px]'><ChevronUp className='group-hover:-translate-y-[3px] transition-transform ease-in-out duration-200' size={16}/> Ir para o topo </span>
+                    </button>
                 </div>
                 <div className='flex flex-col justify-between '>
                     <h1 className='font-semibold font-poppins text-lg'>Navegação</h1>
@@ -47,7 +56,7 @@ function Footer() {
                     <a href='mailto:contato@ativartecnologia.com' ><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <MdOutlineMailOutline className='w-5 text-xl' width={20} />
                         <span className='font-inter'>contato@ativartecnologia.com</span></div></a>
-                        <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
+                    <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <FaWhatsapp className='text-xl' width={20} />
                         <span className='font-inter'>(33) 2101-0601</span></div></a>
                     <a href='https://maps.app.goo.gl/WpKsf5Yymttgiphr9' target='_blank' rel="noreferrer noopener">
@@ -58,8 +67,10 @@ function Footer() {
                     </a>
                 </div>
             </div>
-            <div className='border-t pt-2 flex items-center justify-center text-center'>
-                <p className='text-white font-poppins text-sm font-normal'>© 2024 Ativar Tecnologia LTDA | <NavLink to='/politica-de-privacidade' className='hover:underline text-white/70 dark:text-primary-blue'>Política de Privacidade</NavLink></p>
+            <div className='flex border-t flex-row justify-center items-center'>
+                <div className='pt-2 flex items-center justify-center text-center'>
+                    <p className='text-white font-poppins text-sm font-normal'>© 2024 Ativar Tecnologia LTDA | <NavLink to='/politica-de-privacidade' className='hover:underline text-white/70 dark:text-primary-blue'>Política de Privacidade</NavLink></p>
+                </div>
             </div>
         </div >
     )

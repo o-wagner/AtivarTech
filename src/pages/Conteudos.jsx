@@ -5,6 +5,8 @@ import conteudo from '../assets/conteudo/content2.jpg'
 import { ArrowBigRight, ChevronDownCircleIcon, ChevronRight, MoveRight } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import ativar from '../assets/Ativar.png'
+import PopupModal from '../components/PopupModal'
+import { FaWhatsapp } from 'react-icons/fa'
 const content = [
   {
     title: 'Aprenda a cadastrar clientes',
@@ -26,11 +28,14 @@ const content = [
     img: conteudo,
     id: 4,
   },
- 
+
 ]
 
 function Conteudos() {
-  const [iscontent, setIscontent] = useState(false);
+  const [iscontent, setIscontent] = useState(false)
+  const [support, setSupport] = useState(true)
+  const [showModal, setShowModal] = useState(false)
+  const [showFound, setShowFound] = useState(false)
   useEffect(() => {
     if (content.length > 4) {
       setIscontent(true)
@@ -40,8 +45,19 @@ function Conteudos() {
       setIscontent(false)
     }
   })
+  const handleClick = () => {
+    setShowModal(!showModal);
+  }
+
   return (
     <div className='w-full bg-light-background dark:bg-dark-background'>
+      <> <PopupModal handleClick={handleClick} showModal={showModal} support={support} />
+        <button onClick={() => handleClick()}>
+            <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
+              <FaWhatsapp color='white' />
+            </div>
+        </button>
+      </>
       <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[65px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>

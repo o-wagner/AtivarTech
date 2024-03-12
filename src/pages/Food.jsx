@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import useTheme from '../context/theme'
 import { Link } from 'react-scroll'
 import heroshot from '../assets/heroFood.png'
@@ -8,14 +8,14 @@ import InfoSolution from '../components/InfoSolution'
 import MoreFunc from '../components/moreFunc'
 import { FaWhatsapp } from 'react-icons/fa'
 import { X } from 'lucide-react'
-function handleClick() {
-  document.getElementById('link').innerHTML = 'Entre em contato ' + ' '
-  document.getElementById('notFound').innerHTML = ' com um de nossos consultores para explorar possíveis soluções.'
-}
+import { NavLink } from 'react-router-dom'
+import PopupModal from '../components/PopupModal'
+
 
 function Food() {
   const [support, setSupport] = useState(false)
   const [showModal, setShowModal] = useState(false)
+  const [showFound, setShowFound] = useState(false)
   const supportShow = () => {
     if (window.scrollY >= 90) {
       setSupport(true);
@@ -24,26 +24,13 @@ function Food() {
     }
   }
   window.addEventListener('scroll', supportShow);
-  const handleClickMod = () => {
+  const handleClick = () => {
     setShowModal(!showModal);
-  }
-
+}
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
-      <><div className={`${support ? 'visible animate-fade-left duration-200 ' : 'hidden'} ${showModal ? 'block animate-fade-left' : 'invisible'} duration-200 transition-all bg-white bottom-6 lg:right-[100px] right-[85px] rounded-lg h-64 w-64  z-30 fixed drop-shadow-2xl dark:bg-secondary-dark`}>
-        <div className='py-[14px] dark:text-vanilla font-poppins font-semibold text-sm bg-dark-blue rounded-t-lg flex flex-row items-center justify-between text-white px-4'>Olá, seja bem vindo!
-          <button onClick={() => handleClickMod()}><X size={18} /></button></div>
-        <div className='items-center flex flex-col'>
-          <div className='text-dark-blue dark:text-vanilla font-inter text-[14px] px-4 flex justify-center text-center py-4'><p>Precisa de atendimento? Converse com um de nossos colaboladores pelo Whatsapp </p></div>
-          <div className=' lg:px-3 flex items-center justify-center gap-10 py-5 text-dark-blue dark:text-vanilla text-2xl'>
-            <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener" className='flex flex-col items-center justify-center animate-fade-left dark:hover:text-white '>
-              <FaWhatsapp />
-              <p className='text-sm'>Entre em contato</p>
-            </a>
-          </div>
-        </div>
-      </div>
-        <button onClick={() => handleClickMod()}>
+      <> <PopupModal handleClick={handleClick} showModal={showModal} support={support} />
+        <button onClick={() => handleClick()}>
           <a className={` ${support ? 'visible animate-fade-left duration-100' : 'invisible'}`}>
             <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
               <FaWhatsapp color='white' />
@@ -83,11 +70,14 @@ function Food() {
         </div>
         <Segmentos segmento="food" />
         <div className='w-full flex-col items-end flex justify-end max-w-[970px] pt-4'>
-          <button onClick={() => handleClick()}><h3 className='text-blueish-gray hover:underline font-semibold text-[14px] font-poppins'>Não localizou sua área específica?</h3></button>
-          <div className="font-inter font-regular text-[13px] text-end text-blueish-gray max-w-[200px]"><a href="/contato" className='text-primary-blue underline' id="link"></a><p id="notFound"> </p></div>
+          <button onClick={() => setShowFound(!showFound)}><h3 className='text-blueish-gray hover:underline font-semibold text-[14px] font-poppins'>Não localizou sua área específica?</h3></button>
+          <div className={`${showFound ? 'block animate-fade-down' : 'hidden'} font-inter font-regular text-[13px] text-end text-blueish-gray max-w-[200px]`}>
+            <NavLink to='/contato' className='text-primary-blue underline' id="link">Entre em contato</NavLink>
+            <span> com um de nossos consultores para explorar possíveis soluções.</span>
+          </div>
         </div>
       </section>
-      <section id='recursos' className='w-full lg:px-36 px-10 py-24  dark:bg-quaternary-dark bg-darker-light-bg'>
+      <section id='recursos' className='w-full lg:px-36 px-10 py-24 dark:bg-quaternary-dark bg-darker-light-bg'>
         <div className='flex items-center flex-col justify-center'>
           <h3 className='dark:text-primary-blue text-blueish-gray uppercase text-[12px] font-inter font-semibold tracking-widest'>Recursos</h3>
           <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 lg:leading-[50px] leading-[35px] tracking-tight text-center font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
