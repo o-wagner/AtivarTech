@@ -7,6 +7,8 @@ import { NavLink } from 'react-router-dom'
 import ativar from '../assets/Ativar.png'
 import PopupModal from '../components/PopupModal'
 import { FaWhatsapp } from 'react-icons/fa'
+import { PrismicImage, usePrismicDocumentByUID} from '@prismicio/react';
+
 const content = [
   {
     title: 'Aprenda a cadastrar clientes',
@@ -32,16 +34,15 @@ const content = [
 ]
 
 function Conteudos() {
+  const [page, { state }] = usePrismicDocumentByUID('carousel', 'slideimgs');
   const [iscontent, setIscontent] = useState(false)
   const [support, setSupport] = useState(true)
   const [showModal, setShowModal] = useState(false)
-  const [showFound, setShowFound] = useState(false)
+
   useEffect(() => {
     if (content.length > 4) {
       setIscontent(true)
-      console.log('muita coisa')
     } else {
-      console.log('nada aqui')
       setIscontent(false)
     }
   })
@@ -83,7 +84,7 @@ function Conteudos() {
         </div>
       </section>
       <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-44 px-16'>
-        {iscontent ? <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
           {content.map((c) => {
             return (
               <NavLink key={c.id}
@@ -100,7 +101,7 @@ function Conteudos() {
               </NavLink>
             )
           })}
-        </div> :
+        </div> 
           <section className='flex flex-col text-dark-blue dark:text-blueish-gray items-center justify-center w-full h-screen'>
             <div className='flex items-center flex-col '>
               <h2 className='font-poppins text-[30px] leading tracking-widest font-semibold uppercase text-primary-blue dark:text-vanilla text-center'>Em Breve!</h2>
@@ -109,7 +110,7 @@ function Conteudos() {
                 hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                 font-semibold font-inter text-sm cursor-pointer text-slate-100 flex justify-center items-center text-center'>Voltar para início</NavLink>
             </div>
-          </section>}
+          </section>
       </section>
     </div>
   )

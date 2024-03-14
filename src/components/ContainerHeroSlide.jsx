@@ -6,37 +6,41 @@ import 'swiper/css/a11y';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import slide from '../assets/slide/slide.jpg'
-import slide2 from '../assets/slide/slide2.jpg'
-import slide3 from '../assets/slide/slide3.jpg'
 import '../index.css'
+import { PrismicImage, usePrismicDocumentByUID} from '@prismicio/react';
 
 function ContainerHeroSlide() {
+
+    const [page, { state }] = usePrismicDocumentByUID('carousel', 'slideimgs');
+
     return (
         <div id="home" className='w-full pt-[65px] flex align-items justify-center h-screen bg-light-background dark:bg-dark-background'>
-            <Swiper
-                className='w-[90vw] rounded-md flex items-center justify-center text-center h-[80vh]'
-                style={{
-                    '--swiper-navigation-sides-offset': '20px',
-                    '--swiper-navigation-size': '30px',
-                    '--swiper-pagination-color': '#18A2DE',
-                }}
-                modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
-                pagination={{
-                    type: 'progressbar',
-                }}
-                grabCursor={true}
-                autoplay={{ delay: 4000, }}
+            {state === 'loading' ? (
+                <p className='text-white text-center flex justify-center items-center'>Loading...</p>
+            ) : (page &&
+                <Swiper
+                    className='w-[90vw] rounded-md flex items-center justify-center text-center h-[80vh]'
+                    style={{
+                        '--swiper-navigation-sides-offset': '20px',
+                        '--swiper-navigation-size': '30px',
+                        '--swiper-pagination-color': '#18A2DE',
+                    }}
+                    modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
+                    pagination={{
+                        type: 'progressbar',
+                    }}
+                    grabCursor={true}
+                    autoplay={{ delay: 4000, }}
 
-                loop={true}
-            // navigation={true}
-            // onAutoplayTimeLeft={onAutoplayTimeLeft}
-            >
-                <SwiperSlide><img className='cover' src={slide2} alt="slideimage" /></SwiperSlide>
-                <SwiperSlide><img className='cover' src={slide} alt="slideimage" /></SwiperSlide>
-                <SwiperSlide><img className='cover' src={slide3} alt="slideimage" /></SwiperSlide>
+                    loop={true}
+                    // navigation={true}
+                >
+                    <SwiperSlide><PrismicImage field={page.data.img1} /></SwiperSlide>
+                    <SwiperSlide><PrismicImage field={page.data.img2} /></SwiperSlide>
+                    <SwiperSlide><PrismicImage field={page.data.img3} /></SwiperSlide>
 
-            </Swiper>
+                </Swiper>
+            )}
         </div>
     )
 }

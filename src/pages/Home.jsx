@@ -5,8 +5,8 @@ import ContainerSuporte from '../components/ContainerSuporte'
 import ContainerBackup from '../components/ContainerBackup'
 import ContainerFeedback from '../components/ContainerFeedback'
 import { FaWhatsapp } from 'react-icons/fa'
-import { X } from 'lucide-react'
 import PopupModal from '../components/PopupModal'
+
 function Home(props) {
     const [support, setSupport] = useState(false)
     const [showModal, setShowModal] = useState(false)
@@ -38,6 +38,7 @@ function Home(props) {
             <ContainerBackup />
             <ContainerFeedback />
         </div>
+
     )
 }
 

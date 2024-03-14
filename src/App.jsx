@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/theme";
 import { useEffect, useState } from "react";
+import { PrismicProvider } from "@prismicio/react";
+import { client } from "./services/prismic";
+
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark')
@@ -21,11 +24,13 @@ function App() {
 
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <BrowserRouter>
+      <PrismicProvider client={client}>
+        <BrowserRouter>
           <Header />
           <AppRoutes />
           <Footer />
-      </BrowserRouter>
+        </BrowserRouter>
+      </PrismicProvider>
     </ThemeProvider>
   )
 }
