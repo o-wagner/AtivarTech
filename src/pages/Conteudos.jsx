@@ -7,7 +7,8 @@ import { NavLink } from 'react-router-dom'
 import ativar from '../assets/Ativar.png'
 import PopupModal from '../components/PopupModal'
 import { FaWhatsapp } from 'react-icons/fa'
-import { PrismicImage, usePrismicDocumentByUID} from '@prismicio/react';
+import { PrismicImage, PrismicText, useAllPrismicDocumentsByType } from '@prismicio/react';
+import Content from '../helpers/content'
 
 const content = [
   {
@@ -34,18 +35,9 @@ const content = [
 ]
 
 function Conteudos() {
-  const [page, { state }] = usePrismicDocumentByUID('carousel', 'slideimgs');
-  const [iscontent, setIscontent] = useState(false)
   const [support, setSupport] = useState(true)
   const [showModal, setShowModal] = useState(false)
 
-  useEffect(() => {
-    if (content.length > 4) {
-      setIscontent(true)
-    } else {
-      setIscontent(false)
-    }
-  })
   const handleClick = () => {
     setShowModal(!showModal);
   }
@@ -54,9 +46,9 @@ function Conteudos() {
     <div className='w-full bg-light-background dark:bg-dark-background'>
       <> <PopupModal handleClick={handleClick} showModal={showModal} support={support} />
         <button onClick={() => handleClick()}>
-            <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
-              <FaWhatsapp color='white' />
-            </div>
+          <div className='dark:bg-tertiary-dark bg-dark-blue dark:hover:bg-secondary-dark transition-colors drop-shadow-2xl duration-150 hover:bg-[#071b38] rounded-full p-[14px] flex items-center justify-center bottom-6 right-8 z-30 fixed text-md lg:text-3xl'>
+            <FaWhatsapp color='white' />
+          </div>
         </button>
       </>
       <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[65px]'>
@@ -85,7 +77,9 @@ function Conteudos() {
       </section>
       <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-44 px-16'>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
-          {content.map((c) => {
+        <Content/>
+          
+          {/* {content.map((c) => {
             return (
               <NavLink key={c.id}
                 className='dark:bg-quaternary-dark px-4 py-4 border-slate-300 duration-200 transition-transform hover:-translate-y-1 border dark:border-slate-900 bg-white rounded-xl dark:hover:bg-secondary-dark flex flex-col drop-shadow-lg hover:drop-shadow-xl gap-3 justify-start'>
@@ -100,17 +94,17 @@ function Conteudos() {
                 </div>
               </NavLink>
             )
-          })}
-        </div> 
-          <section className='flex flex-col text-dark-blue dark:text-blueish-gray items-center justify-center w-full h-screen'>
-            <div className='flex items-center flex-col '>
-              <h2 className='font-poppins text-[30px] leading tracking-widest font-semibold uppercase text-primary-blue dark:text-vanilla text-center'>Em Breve!</h2>
-              <p className='font-inter text-sm pb-4 text-center'>Conteúdos exclusivos em breve.</p>
-              <NavLink to="/" className='px-10 min-w-40 py-[5px] bg-button-gradient text-nowrap
+          })} */}
+        </div>
+        <section className='flex flex-col text-dark-blue dark:text-blueish-gray items-center justify-center w-full h-screen'>
+          <div className='flex items-center flex-col '>
+            <h2 className='font-poppins text-[30px] leading tracking-widest font-semibold uppercase text-primary-blue dark:text-vanilla text-center'>Em Breve!</h2>
+            <p className='font-inter text-sm pb-4 text-center'>Conteúdos exclusivos em breve.</p>
+            <NavLink to="/" className='px-10 min-w-40 py-[5px] bg-button-gradient text-nowrap
                 hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
                 font-semibold font-inter text-sm cursor-pointer text-slate-100 flex justify-center items-center text-center'>Voltar para início</NavLink>
-            </div>
-          </section>
+          </div>
+        </section>
       </section>
     </div>
   )
