@@ -38,7 +38,7 @@ function Food() {
           </a>
         </button>
       </>
-      <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%]'>
+      <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 md:h-screen lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[60px]'>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Food</h3>
@@ -56,12 +56,12 @@ function Food() {
             offset={-100}
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
         </div>
-        <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
+        <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0  flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[360px] md:max-w-[300px] translate-x-6 lg:w-[350px] md:w-[300px] drop-shadow-md' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id='segmento' className='w-full lg:px-36 px-10 pb-24 flex flex-col items-center justify-center'>
-        <div className='flex items-center flex-col justify-center lg:py-[50px] py-[40px] '>
+      <section id='segmento' className='w-full lg:px-36 md:px-36 px-10 pb-24 flex flex-col items-center justify-center'>
+        <div className='flex items-center flex-col justify-center lg:py-[50px] md:py-[50px] py-[40px] '>
           <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>Conheça a solução</h3>
           <h1 className='lg:text-[40px] text-[25px] mb-2 tracking-tight lg:leading-[50px] leading-[35px] font-bold dark:text-vanilla text-dark-blue'>Segmentos de atuação</h1>
           <p className='font-inter text-greish-blue text-[14px] lg:text-[16px]  dark:text-blueish-gray lg:max-w-[680px] md:max-w-[680px] min-w-[300px] lg:min-w-[380px]
@@ -81,7 +81,7 @@ function Food() {
         <div className='flex items-center flex-col justify-center'>
           <h3 className='dark:text-primary-blue text-blueish-gray uppercase text-[12px] font-inter font-semibold tracking-widest'>Recursos</h3>
           <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 lg:leading-[50px] leading-[35px] tracking-tight text-center font-bold dark:text-vanilla text-dark-blue'>Explore nossas Funcionalidades </h1>
-          <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[630px] md:max-w-[680px] min-w-[300px] lg:min-w-[380px]
+          <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[630px] md:max-w-[680px] pb-10 min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Nós não entregamos somente software! Entregamos sistema, suporte, treinamento e acompanhamento da sua empresa! Seu sucesso é nosso sucesso! </p>
         </div>
         <div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function TermosCondicoes() {
     return (
-        <div className='rounded-lg dark:bg-secondary-dark text-dark-blue dark:text-vanilla bg-white p-10 border border-slate-300 dark:border-slate-700  lg:text-[16px] text-[14px] text-justify'>
+        <div className='rounded-lg rounded-t-none dark:bg-secondary-dark text-dark-blue dark:text-vanilla bg-white p-10 border border-slate-300 dark:border-slate-800  lg:text-[16px] text-[14px] text-justify'>
             <h2 className='text-primary-blue text-lg uppercase font-bold'><span>1. Termos</span></h2>
             <p><span>Ao acessar ao site <a className='underline' href="/">Ativar Tecnologia</a>, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</span></p>
             <h2 className='text-primary-blue text-lg uppercase font-bold pt-6'><span>2. Uso de Licença</span></h2>

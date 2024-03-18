@@ -51,17 +51,17 @@ function Conteudos() {
           </div>
         </button>
       </>
-      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-20 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[65px]'>
-        <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
-          <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
+      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-2 md:h-[90vh] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[65px] md:gap-[65px]'>
+        <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+          <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start  items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Materiais</h3>
             <h1 className='text-dark-blue font-semibold lg:w-[470px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 lg:text-[40px] font-poppins
                  dark:text-vanilla tracking-tighter '>
               Conteúdos Exclusivos
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px]
-                    text-center leading-loose lg:text-left pt-2 pb-6 font-inter lg:px-0 px-2 '>
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
+                    text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Explore nosso conteúdo exclusivo para aprimorar sua experiência com sistemas de gestão. Tenha acesso a materiais de apoio cuidadosamente elaborados para impulsionar a eficiência e a produtividade em sua empresa.</p>
           <Link
             to="content"
@@ -72,7 +72,7 @@ function Conteudos() {
                 font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Explorar Conteúdos<ChevronDownCircleIcon size={16} /></Link>
         </div>
         <div className=' max-w-[360px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[320px] lg:w-[320px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[320px] md:max-w-[260px] lg:w-[320px] drop-shadow-md ' src={heroshot} alt="HeroShot" />
         </div>
       </section>
       <section id='content' className='w-full h-auto lg:pb-20 pb-10 lg:px-44 px-16'>

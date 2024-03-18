@@ -26,7 +26,7 @@ function Footer() {
                         <a className='hover:text-vanilla' href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><FaWhatsapp size={22} /></a>
                     </div>
                     <button  onClick={goTop}>
-                        <span className='flex flex-row group justify-center items-center gap-[5px]'><ChevronUp className='group-hover:-translate-y-[3px] transition-transform ease-in-out duration-200' size={16}/> Ir para o topo </span>
+                        <span className='flex flex-row group lg:justify-center items-center gap-[5px] lg:max-w-[inherit] max-w-[50%]'> Ir para o topo <ChevronUp className='group-hover:-translate-y-[1px] translate-y-[3px] transition-transform ease-in-out duration-200' size={16}/></span>
                     </button>
                 </div>
                 <div className='flex flex-col justify-between '>
@@ -43,7 +43,7 @@ function Footer() {
                 <div className='flex flex-col gap-6 '>
                     <h1 className='font-semibold font-poppins text-lg max-w-28'>Horário de Funcionamento</h1>
                     <div>
-                        <p className='font-normal font-inter text-sm'>Segunda-Sexta</p>
+                        <p className='font-normal font-inter text-sm'>Segunda - Sexta</p>
                         <p className='font-normal font-inter text-sm'>08:00 - 18:00</p>
                     </div>
                     <div>

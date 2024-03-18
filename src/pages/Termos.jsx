@@ -13,12 +13,12 @@ function Termos() {
 
                 <div className=' lg:pt-0 pt-4 flex flex-row lg:justify-end md:justify-end justify-center'>
                     <button onClick={() => setPolitica(true)}>
-                        <div className={`${politica ? 'dark:bg-secondary-dark bg-white' : 'dark:bg-quaternary-dark bg-neutral-300'} dark:text-vanilla text-dark-blue text-[14px] text-center border border-slate-300 dark:border-slate-700 rounded-t-lg px-4 lg:px-6 py-2`}>
+                        <div className={`${politica ? 'dark:bg-secondary-dark bg-white' : 'dark:bg-quaternary-dark bg-neutral-300'} dark:text-vanilla text-dark-blue text-[14px] text-center border border-slate-300 dark:border-slate-800 border-b-0 rounded-t-lg px-4 lg:px-6 py-2`}>
                             Política de Privacidade
                         </div>
                     </button>
                     <button onClick={() => setPolitica(false)}>
-                        <div className={`${politica ? 'dark:bg-quaternary-dark bg-neutral-300 ' : 'dark:bg-secondary-dark bg-white'} text-dark-blue dark:text-vanilla text-center text-[14px] border border-slate-300 dark:border-slate-700 rounded-t-lg px-4 lg:px-6 py-2`}>
+                        <div className={`${politica ? 'dark:bg-quaternary-dark bg-neutral-300 ' : 'dark:bg-secondary-dark bg-white'} text-dark-blue dark:text-vanilla text-center text-[14px] border border-slate-300 dark:border-slate-800 border-b-0 rounded-t-lg px-4 lg:px-6 py-2`}>
                             Termos e condições
                         </div>
                     </button>
