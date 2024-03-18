@@ -8,7 +8,6 @@ import ativar from '../assets/Ativar.png'
 import PopupModal from '../components/PopupModal'
 import { FaWhatsapp } from 'react-icons/fa'
 import { PrismicImage, PrismicText, useAllPrismicDocumentsByType } from '@prismicio/react';
-import Content from '../helpers/content'
 
 const content = [
   {
