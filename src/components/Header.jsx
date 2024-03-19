@@ -60,19 +60,19 @@ const Header = () => {
         <header className={`bg-light-background/95 backdrop-blur-sm fixed
          dark:bg-dark-background/95 h-20 w-full text-slate-600 dark:text-slate-200 
          flex justify-center items-center px-6 z-20 ${sombra ? 'drop-shadow-md':'drop-shadow-none'}`}>
-            <div className='w-full lg:px-12 md:px-10 flex items-center justify-center'>
+            <div className='w-full lg:px-12 px-4 flex items-center justify-center'>
                 <div>
                     <NavLink to="/">
                         {themeMode === 'light' ?
-                            <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[125px] z-10 -translate-x-5' />
+                            <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[125px] z-10 -translate-x-5  ' />
                             :
-                            <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[125px] z-10 -translate-x-5' />}
+                            <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[125px] z-10 -translate-x-5 md:translate-x-0' />}
                     </NavLink>
                 </div>
                 <nav className='z-10 mr-8 w-full'>
-                    <ul div="menu" className={`lg:gap-8 md:gap-5 gap-4 grow absolute lg:static md:static flex-col lg:flex-row md:flex-row lg:flex md:flex h-screen md:h-auto lg:h-auto
-                    //  items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent md:bg-transparent dark:lg:bg-transparent dark:md:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto md:z-auto z-[-1] left-0 w-full lg:w-auto md:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
-                        <ToggleButton icon={false} className='-translate-x-3 lg:invisible md:invisible visible' />
+                    <ul div="menu" className={`lg:gap-8 md:gap-4 gap-4 grow absolute lg:static flex-col lg:flex-row md:flex-row lg:flex md:flex h-screen md:h-auto lg:h-auto
+                    items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent md:bg-transparent dark:lg:bg-transparent dark:md:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto md:z-auto z-[-1] left-0 w-full lg:w-auto md:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
+                        <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' />
                         {headerItem.map((h) => {
                             return (
                                 <ItemNav
@@ -91,13 +91,13 @@ const Header = () => {
 
                     {open === true ?
                         <div onClick={() => setOpen(false)} className='cursor-pointer animate-fade-down text-2xl flex absolute right-8 top-6' >
-                            <X className='lg:invisible md:invisible' /> </div> : <></>}
+                            <X className='lg:invisible ' /> </div> : <></>}
                 </nav>
-                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center md:justify-center md:visible lg:visible invisible dark:text-vanilla'>
+                <div className='flex flex-row gap-4 lg:items-center text-blueish-gray lg:justify-center md:justify-center lg:visible invisible dark:text-vanilla'>
                     <ToggleButton icon={true} />
 
                 </div>
-                <div onClick={() => setOpen(true)} className='lg:hidden md:hidden cursor-pointer text-2xl flex justify-end grow '>
+                <div onClick={() => setOpen(true)} className='lg:hidden cursor-pointer text-2xl flex justify-end grow '>
                     <BiMenuAltRight size={35} />
                 </div>
             </div>

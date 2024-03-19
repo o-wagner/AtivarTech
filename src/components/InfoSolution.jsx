@@ -72,13 +72,6 @@ const varejo = [
         titleBlue: ' Externas',
         desc: 'Nosso Força de vendas é a solução ideal para seus vendedores realizarem as vendas externas com agilidade direto no seu celular ou tablet. Realize pedidos offline, gerencie estoque, rotas, relatórios, saldo flex, gestão de clientes e muito mais.',
     },
-    {
-        position: false,
-        img: lock,
-        title: 'Segurança e Backup',
-        titleBlue: ' em Nuvem',
-        desc: 'Controle os acessos dos usuários ao sistema de acordo com sua função, restringindo ou permitindo acesso aos módulos, e em caso de imprevistos, fique tranquilo. Possuímos um poderoso sistema de Backup em nuvem que mantém uma cópia dos seus dados de forma segura.',
-    },
     // {
     //     position: true,
     //     img: monitor,
@@ -87,14 +80,14 @@ const varejo = [
     //     desc: 'Organize o fluxo dos serviços prestados pela sua empresa. Tenha controle de prioridades, etapas, tempo, quem executou o serviço, entre outros recursos.',
     // },
     {
-        position: true,
+        position: false,
         img: comp,
         title: 'Controle de ',
         titleBlue: 'Estoque',
         desc: 'Nosso sistema permite acompanhar a movimentação dos produtos, os mais vendidos, os mais lucrativos, entre outras informações para manter um melhor fluxo do seu estoque.',
     },
     {
-        position: false,
+        position: true,
         img: relatorio,
         title: 'Relatórios ',
         titleBlue: '',

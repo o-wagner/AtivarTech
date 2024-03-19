@@ -85,7 +85,7 @@ const ContainerServices = () => {
                 <span className='font-inter lg:text-[16px] text-[14px] leading-6 z-10 text-greish-blue dark:text-blueish-gray lg:max-w-[700px] md:max-w-[700px] min-w-[260px] text-center'>Otimize sua rotina operacional com a Ativar Tecnologia. Descubra como nossas funcionalidades inovadoras podem elevar o desempenho do seu negócio</span>
             </div>
             <div className='w-full py-12 flex items-center justify-center flex-col gap-6'>
-                <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1000px] lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4'>
+                <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1000px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
                     {resources.map((r) => {
                         return (
                             <div key={r.title} className='bg-white dark:bg-tertiary-dark hover:-translate-y-1 border-slate-300 border dark:border-slate-800

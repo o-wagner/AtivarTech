@@ -16,7 +16,7 @@ const ToggleButton = (props) => {
 
     return (
         <div className={`flex flex-row gap-2 ml-6 items-center justify-center ${props.className} `}>
-            {props.icon ? <Sun onClick={props.click} className='lg:visible md:visible invisible' size={18} /> : <></>}
+            {props.icon ? <Sun onClick={props.click} className='lg:visible invisible' size={18} /> : <></>}
             <label className='relative inline-flex items-center  cursor-pointer'>
                 <input
                     type='checkbox'
@@ -38,7 +38,7 @@ const ToggleButton = (props) => {
                 <>{themeMode === 'dark' ? <span className='text-[8px] uppercase right-6 relative  z-0'>Dark</span>
                     : <span className='text-[8px] text-white uppercase  left-6 relative z-0'>Light</span>} </> :
                 <></>} */}
-             {props.icon ? <Moon onClick={props.click} className='lg:visible md:visible invisible' size={18} /> : <></>}
+             {props.icon ? <Moon onClick={props.click} className='lg:visible invisible' size={18} /> : <></>}
 
         </div>
 
