@@ -14,7 +14,7 @@ export default function ContactForm() {
     }
 
     return (
-        <form onSubmit={sendEmail} method='POST' className='dark:bg-tertiary-dark bg-gray-300 lg:rounded-e-xl md:rounded-e-xl rounded-b-xl lg:rounded-b-none md:rounded-b-none lg font-poppins flex-col items-center lg:px-16 px-8 w-full py-16 h-1/2 lg:w-1/2 text-dark-blue dark:text-vanilla'>
+        <form onSubmit={sendEmail} method='POST' className='dark:bg-tertiary-dark bg-gray-300 lg:rounded-e-xl md:rounded-e-xl rounded-b-xl lg:rounded-b-none md:rounded-b-none lg font-poppins flex-col items-center lg:px-16 md:px-12 px-8 w-full py-16 h-1/2 lg:w-1/2 md:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly gap-8'>
                 <label htmlFor='fromName' className='flex flex-col gap-2 text-md'>Nome Completo
                     <input type='text' id="from_name" name='from_name' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" />

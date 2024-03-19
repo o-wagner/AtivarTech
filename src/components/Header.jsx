@@ -71,7 +71,7 @@ const Header = () => {
                 </div>
                 <nav className='z-10 mr-8 w-full'>
                     <ul div="menu" className={`lg:gap-8 md:gap-5 gap-4 grow absolute lg:static md:static flex-col lg:flex-row md:flex-row lg:flex md:flex h-screen md:h-auto lg:h-auto
-                    //  items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent md:bg-transparent dark:lg:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto md:z-auto z-[-1] left-0 w-full lg:w-auto md:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
+                    //  items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent md:bg-transparent dark:lg:bg-transparent dark:md:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto md:z-auto z-[-1] left-0 w-full lg:w-auto md:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
                         <ToggleButton icon={false} className='-translate-x-3 lg:invisible md:invisible visible' />
                         {headerItem.map((h) => {
                             return (

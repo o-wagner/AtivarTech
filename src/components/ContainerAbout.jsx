@@ -58,11 +58,12 @@ function ContainerAbout() {
     return (
         <section id='about' className='w-full h-full flex flex-col py-12 gap-12 justify-center bg-darker-light-bg dark:bg-dark-gradient'>
             <div className='flex items-center justify-center flex-col mb-5 mt-8 gap-2 px-10'>
+                <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>Conheça</h3>
                 <h1 className='lg:text-[40px] text-[25px] font-poppins font-semibold text-dark-blue text-center tracking-tight dark:text-vanilla'>Nossa Equipe</h1>
-                <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>
+                <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] md:min-w-[380px] px-2 text-center'>
                     Conheça a equipe dedicada que impulsiona nossas soluções. Juntos, estamos comprometidos em elevar seu sucesso empresarial.</p>
             </div>
-            <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-[5%] px-10 items-center justify-center'>
+            <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-[5%] md:px-[5%] px-10 items-center justify-center'>
                 {equipe.map((e) => {
                     return (
                         <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark w-[240px] h-[260px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-900'>

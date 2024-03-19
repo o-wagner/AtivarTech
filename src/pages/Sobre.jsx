@@ -51,7 +51,7 @@ function Sobre() {
           </a>
         </button>
       </>
-      <section id="heroAbout" className='lg:h-screen md:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%] md:gap-[6%] '>
+      <section id="heroAbout" className='lg:h-screen md:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%] md:gap-[6%] '>
         <div id="heroText" className='lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Ativar Tecnologia</h3>
@@ -77,17 +77,17 @@ function Sobre() {
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[360px] md:max-w-[300px] translate-x-6 lg:w-[350px] drop-shadow-md' src={heroshot} alt="HeroShot" />
         </div>
       </section>
-      <section id="history" className='h-auto py-16 flex-wrap px-10 flex items-center justify-center lg:gap-28 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
+      <section id="history" className='h-auto py-16 flex-wrap md:flex-nowrap px-10 flex items-center justify-center lg:gap-28 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
         <img className='lg:w-[320px] w-[280px]' src={ativarshot} alt='ativarfoto' />
-        <div className='flex flex-col items-center lg:items-start gap-4 text-center lg:text-start'>
+        <div className='flex flex-col items-center lg:items-start md:items-start gap-4 text-center md:text-start lg:text-start'>
           <h1 className='lg:text-[40px] text-[30px] w-[320px] font-bold dark:text-vanilla text-dark-blue'>Nossa <span className='text-primary-blue'>História</span></h1>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[460px]
-                    text-center lg:text-left mb-6 lg:px-0 font-inter px-2'>Desde 2021 atuamos em Guanhães e região com as melhores soluções para seu negócio. Nosso compromisso com a excelência e a satisfação do cliente nos diferencia, enquanto nossa equipe apaixonada e experiente impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região. Junte-se a nós enquanto continuamos a escrever nossa história.</p>
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[460px] md:max-w-[460px]
+                    text-center lg:text-left md:text-left mb-6 lg:px-0 md:px-0 font-inter px-2'>Desde 2021 atuamos em Guanhães e região com as melhores soluções para seu negócio. Nosso compromisso com a excelência e a satisfação do cliente nos diferencia, enquanto nossa equipe apaixonada e experiente impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região. Junte-se a nós enquanto continuamos a escrever nossa história.</p>
         </div>
       </section>
       <section className=' h-auto py-16 flex flex-col items-center justify-center gap-2 px-20'>
         <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>A Ativar Tecnologia</h3>
-        <h1 className='lg:text-[40px] text-[25px] tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
+        <h1 className='lg:text-[40px] text-[25px] text-center tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
         <p className='font-inter lg:text-[16px] text-[14px] leading-6 text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>
         <div className=' grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 items-center mt-10 '>
           {mvv.map((item) => {

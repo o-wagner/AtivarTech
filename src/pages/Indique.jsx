@@ -13,17 +13,17 @@ function Indique() {
   const [numberOrg, setNumberOrg] = useState('');
   return (
     <div className='bg-light-background dark:bg-dark-background w-full'>
-      <section id="heroIndique" className='lg:h-[100dvh] h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%]'>
-        <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start items-center'>
-          <div className='flex flex-col lg:text-start lg:items-start items-center text-center gap-2'>
+      <section id="heroIndique" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[6%]'>
+        <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+          <div className='flex flex-col lg:text-start lg:items-start md:items-start md:text-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Promoção</h3>
-            <h1 className='text-dark-blue font-semibold lg:w-[470px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 lg:text-[40px] font-poppins
+            <h1 className='text-dark-blue font-semibold lg:w-[470px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 md:px-0 lg:text-[40px] font-poppins
                  dark:text-vanilla tracking-tighter '>
               Indique e ganhe!
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[450px] max-w-[600px] lg:max-w-[420px]
-                    text-center leading-loose lg:text-left pt-2 pb-6 font-inter lg:px-0 px-2 '>
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[450px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
+                    text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Indique empresas para os sistemas da <span className='font-semibold text-primary-blue'>Ativar Tecnologia</span> e receba uma recompensa para você ou para sua empresa.</p>
           <Link
             to="indique"
@@ -31,13 +31,13 @@ function Indique() {
             offset={-100}
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Saiba como funciona<ChevronDownCircleIcon size={16} /> </Link>
         </div>
-        <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-[10%] flex animate-fade-left'>
+        <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[360px] lg:translate-x-10 translate-x-6 lg:w-[350px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[100px] px-8'>
-        <div className='border border-slate-400 dark:border-slate-800 flex flex-wrap lg:flex-row flex-col lg:items-stretch items-center w-full'>
-          <div className='lg:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
+      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[100px] md:px-[70px] px-8'>
+        <div className='border border-slate-400 dark:border-slate-800 flex flex-wrap lg:flex-row md:flex-row flex-col lg:items-stretch md:items-stretch items-center w-full'>
+          <div className='lg:w-1/2 md:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>
             <h2 className='text-2xl text-center'>Como funciona a promoção?</h2>
             <div className='dark:bg-secondary-dark justify-evenly gap-10 h-full flex flex-col dark:text-vanilla text-dark-blue font-inter'>
@@ -49,7 +49,7 @@ function Indique() {
               <h2 className='self-center text-sm rounded-lg'>Indicação + Contratação = Você ganha!</h2>
             </div>
           </div>
-          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark w-full lg:w-1/2 bg-gray-300 font-poppins flex-col items-center lg:p-12 p-8  text-dark-blue dark:text-vanilla'>
+          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark w-full lg:w-1/2 md:w-1/2 bg-gray-300 font-poppins flex-col items-center lg:p-12 p-8  text-dark-blue dark:text-vanilla'>
             <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly'>
               <div className='flex flex-col gap-10'>
                 <label htmlFor='fullName' className='flex flex-col gap-2 text-md'>Nome Completo
