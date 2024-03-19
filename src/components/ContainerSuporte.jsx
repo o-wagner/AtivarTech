@@ -4,8 +4,8 @@ import Button from './Button'
 
 export default function ContainerSuporte() {
     return (
-        <div className='w-full lg:px-36 px-10 pt-28 py-20 bg-secondary-light dark:bg-quaternary-dark
-        flex lg:gap-10 gap-4 flex-row items-center justify-center flex-wrap lg:flex-nowrap'>
+        <div className=' w-full lg:px-36 md:px-20 px-12 pt-28 py-20 bg-secondary-light dark:bg-quaternary-dark
+        flex lg:gap-10 gap-4 flex-row items-center justify-center flex-wrap lg:flex-nowrap md:flex-nowrap'>
             <div>
                 <img className='min-w-[260px] lg:w-[280px] md:w-[260px] w-[240px]' src={suporte} alt="imagem de uma pessoa da equipe de suporte" />
             </div>

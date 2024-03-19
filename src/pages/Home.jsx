@@ -34,8 +34,11 @@ function Home(props) {
                 </button></>
             <ContainerHeroSlide />
             <ContainerServices />
-            <ContainerSuporte />
-            <ContainerBackup />
+
+            <div className=''>
+                <ContainerSuporte />
+                <ContainerBackup />
+            </div>
             <ContainerFeedback />
         </div>
 
