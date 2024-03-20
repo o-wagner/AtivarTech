@@ -59,7 +59,7 @@ const Header = () => {
     return (
         <header className={`bg-light-background/95 backdrop-blur-sm fixed
          dark:bg-dark-background/95 h-20 w-full text-slate-600 dark:text-slate-200 
-         flex justify-center items-center px-6 z-20 ${sombra ? 'drop-shadow-md':'drop-shadow-none'}`}>
+         flex justify-center items-center px-6 z-20 ${sombra ? 'drop-shadow-md' : 'drop-shadow-none'}`}>
             <div className='w-full lg:px-12 px-4 flex items-center justify-center'>
                 <div>
                     <NavLink to="/">
@@ -70,8 +70,8 @@ const Header = () => {
                     </NavLink>
                 </div>
                 <nav className='z-10 mr-8 w-full'>
-                    <ul div="menu" className={`lg:gap-8 md:gap-4 gap-4 grow absolute lg:static flex-col lg:flex-row md:flex-row lg:flex md:flex h-screen md:h-auto lg:h-auto
-                    items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent md:bg-transparent dark:lg:bg-transparent dark:md:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto md:z-auto z-[-1] left-0 w-full lg:w-auto md:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
+                    <ul div="menu" className={`lg:gap-8 md:gap-4 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex  h-screen lg:h-auto
+                    items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
                         <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' />
                         {headerItem.map((h) => {
                             return (
@@ -84,7 +84,7 @@ const Header = () => {
                                 />
                             )
                         })}
-                        <NavLink onClick={()=>setOpen(false)} className='px-6 min-w-40 py-[4px] bg-button-gradient text-nowrap
+                        <NavLink onClick={() => setOpen(false)} className='px-6 min-w-40 py-[4px] bg-button-gradient text-nowrap
                         hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px] 
                         font-semibold text-[13px] font-inter cursor-pointer text-slate-100 visited:text-slate-100 flex justify-center items-center text-center' to='/indique-e-ganhe'>Indique e Ganhe!</NavLink>
                     </ul>
