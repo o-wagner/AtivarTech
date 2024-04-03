@@ -8,50 +8,51 @@ import jeferson from '../assets/equipe/jeferson.png'
 
 const equipe = [
     {
+        Img: larissa,
+        name: 'Alessandra Diamantino',
+        cargo: 'Analista de Implantação',
+    },
+    {
+        Img: gabriel,
+        name: 'Gabriel Lucas',
+        cargo: 'Técnico em Suporte',
+    },
+    {
+        Img: gabriel,
+        name: 'Gabriel Marques',
+        cargo: 'Lider Técnico do Suporte',
+    },
+    {
+        Img: gabriel,
+        name: 'Géssica Araújo',
+        cargo: 'Assistente Comercial',
+    },
+    {
         Img: cbum,
-        name: 'Luan Marinho',
-        cargo: 'Sócio Proprietário',
+        name: 'Jéferson Álefe',
+        cargo: 'CEO',
     },
     {
         Img: jeferson,
-        name: 'Jeferson Álefe',
-        cargo: 'Sócio Proprietário',
+        name: 'Larissa Gonzaga',
+        cargo: 'Técnico em suporte',
+    },
+    {
+        Img: jeferson,
+        name: 'Luann Marinho',
+        cargo: 'CEO',
     },
     {
         Img: thais,
         name: 'Thaís Pascoal',
-        cargo: 'Suporte',
+        cargo: 'Analista de Implantação',
     },
     {
         Img: thais,
         name: 'Wagner Oliveira',
         cargo: 'Analista de Suporte',
     },
-    {
-        Img: gabriel,
-        name: 'Gabriel Lucas',
-        cargo: 'Analista de Suporte',
-    },
-    {
-        Img: gabriel,
-        name: 'Gabriel Marques',
-        cargo: 'Analista de Suporte',
-    },
-    {
-        Img: larissa,
-        name: 'Larissa Gonzaga',
-        cargo: 'Analista de Suporte',
-    },
-    {
-        Img: larissa,
-        name: 'Alessandra Diamantino',
-        cargo: 'Analista de Suporte',
-    },
-    {
-        Img: larissa,
-        name: 'Géssica Araújo',
-        cargo: 'Setor Comercial',
-    },
+    
 ]
 
 function ContainerAbout() {

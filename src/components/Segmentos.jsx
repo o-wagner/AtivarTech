@@ -1,4 +1,6 @@
 import React from 'react'
+import serviceDark from '../assets/retail/Light/service.png'
+import service from '../assets/retail/service.png'
 import useTheme from '../context/theme'
 import burguer from '../assets/food/Light/Cheeseburger.png'
 import burguerDark from '../assets/food/Cheeseburger.png'
@@ -10,8 +12,6 @@ import foodDark from '../assets/food/Food.png'
 import food from '../assets/food/Light/Food.png'
 import picoleDark from '../assets/food/iceCream.png'
 import picole from '../assets/food/Light/iceCream.png'
-import carneDark from '../assets/food/Carne.png'
-import carne from '../assets/food/Light/Carne.png'
 import cafeDark from '../assets/food/Cafe.png'
 import cafe from '../assets/food/Light/Cafe.png'
 import addDark from '../assets/food/Add.png'
@@ -26,46 +26,44 @@ import auto from '../assets/retail/auto.png'
 import autoLight from '../assets/retail/Light/auto.png'
 import mercado from '../assets/retail/mercado.png'
 import mercadoLight from '../assets/retail/Light/mercado.png'
-import pneu from '../assets/retail/pneu.png'
-import pneuLight from '../assets/retail/Light/pneu.png'
 import conveniencia from '../assets/retail/conveniencia.png'
 import convenienciaLight from '../assets/retail/Light/conveniencia.png'
-import cabide from '../assets/retail/cabide.png'
-import cabideLight from '../assets/retail/Light/cabide.png'
 import madeireira from '../assets/retail/madeireira.png'
 import madeireiraLight from '../assets/retail/Light/madeireira.png'
-import variedade from '../assets/retail/variedade.png'
-import variedadeLight from '../assets/retail/Light/variedade.png'
-import quadra from '../assets/retail/quadra.png'
-import quadraLight from '../assets/retail/Light/quadra.png'
+import lanchoneteDark from '../assets/food/Light/lanchonete.png'
+import lanchonete from '../assets/food/lanchonete.png'
+import construction from '../assets/retail/construction.png'
+import constructionDark from '../assets/retail/Light/construction.png'
+import graficaDark from '../assets/retail/Light/grafica.png'
+import grafica from '../assets/retail/grafica.png'
 
 const segmentosFood = [
   {
-    icon: pao, title: 'Padarias e confeitarias', iconDark: paoDark
+    icon: pao, title: 'Padaria e confeitaria', iconDark: paoDark
   },
   {
-    icon: pizza, title: 'Pizzarias', iconDark: pizzaDark
+    icon: pizza, title: 'Pizzaria', iconDark: pizzaDark
   },
   {
-    icon: burguer, title: 'Lanchonetes', iconDark: burguerDark
+    icon: lanchoneteDark, title: 'Lanchonete', iconDark: lanchonete
   },
   {
-    icon: food, title: 'Restaurantes', iconDark: foodDark
+    icon: food, title: 'Restaurante', iconDark: foodDark
   },
   {
-    icon: picole, title: 'Sorveterias', iconDark: picoleDark
+    icon: picole, title: 'Sorveteria', iconDark: picoleDark
   },
   {
-    icon: carne, title: 'Açougues', iconDark: carneDark
+    icon: burguer, title: 'Hamburgueria', iconDark: burguerDark
   },
   {
-    icon: cafe, title: 'Cafeterias', iconDark: cafeDark
+    icon: cafe, title: 'Cafeteria', iconDark: cafeDark
   },
   {
-    icon: acai, title: 'Açaiterias', iconDark: acaiDark
+    icon: acai, title: 'Açaiteria', iconDark: acaiDark
   },
   {
-    icon: dist, title: 'Distribuidoras', iconDark: distDark
+    icon: dist, title: 'Bar', iconDark: distDark
   },
   {
     icon: add, title: 'Muito Mais', iconDark: addDark
@@ -73,31 +71,31 @@ const segmentosFood = [
 ]
 const segmentosVarejo = [
   {
-    icon: mercadoLight, title: 'Mercados', iconDark: mercado
+    icon: mercadoLight, title: 'Mercado e açougue', iconDark: mercado
   },
   {
-    icon: pneuLight, title: 'Borracharias', iconDark: pneu
+    icon: dist, title: 'Distribuidora', iconDark: distDark
   },
   {
-    icon: autoLight, title: 'Auto-Peças', iconDark: auto
+    icon: serviceDark, title: 'Prestadores de serviço', iconDark: service
   },
   {
-    icon: convenienciaLight, title: 'Conveniências', iconDark: conveniencia
+    icon: autoLight, title: 'Oficina e Auto Peças', iconDark: auto
   },
   {
-    icon: cabideLight, title: 'Loja de Roupa', iconDark: cabide
+    icon: convenienciaLight, title: 'Lojas em Geral', iconDark: conveniencia
+  },
+  {
+    icon: constructionDark, title: 'Material de Construção', iconDark: construction
   },
   {
     icon: madeireiraLight, title: 'Madeireira', iconDark: madeireira
   },
   {
-    icon: variedadeLight, title: 'Loja de Variedades', iconDark: variedade
+    icon: graficaDark, title: 'Gráfica e papelaria', iconDark: grafica
   },
   {
-    icon: quadraLight, title: 'Artigos Esportivos', iconDark: quadra
-  },
-  {
-    icon: carLight, title: 'Concessionárias', iconDark: car
+    icon: carLight, title: 'Loja de Veículos', iconDark: car
   },
   {
     icon: add, title: 'Muito Mais', iconDark: addDark
@@ -109,11 +107,11 @@ function Segmentos(props) {
   return (
     <div>
       {props.segmento === "varejo" &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-5 grid-cols-2 gap-3'>
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[1100px] lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-3'>
           {segmentosVarejo.map((v) => {
             return (
               <div key={v.title} className='bg-white dark:bg-quaternary-dark items-center
-               border-slate-400/60 border dark:border-slate-800 hover:drop-shadow-xl p-8 lg:h-[120px] md:h-[120px] min-w-[100px] 
+               border-slate-400/60 border dark:border-slate-900 hover:drop-shadow-xl p-4 lg:h-[120px] md:h-[120px] min-w-[135px] 
                              drop-shadow-lg flex flex-col rounded-xl justify-center text-center transition-transform duration-200'>
                 <div className='flex flex-col gap-1 items-center justify-center text-dark-blue dark:text-vanilla' id="icon">
                   {themeMode === "dark" ? <img src={v.iconDark} className='min-w-[35px] w-[35px]' /> : <img src={v.icon} className='min-w-[35px] w-[35px]' />}
@@ -125,11 +123,11 @@ function Segmentos(props) {
         </div>}
 
       {props.segmento === "food" &&
-        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-5 grid-cols-2 gap-3'>
+        <div className='grid w-full z-10 h-full min-w-[300px] max-w-[970px] lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-3'>
           {segmentosFood.map((s) => {
             return (
               <div key={s.title} className='bg-white dark:bg-quaternary-dark items-center border-slate-400/60 border
-               dark:border-slate-800 hover:drop-shadow-xl p-8 lg:h-[120px] md:h-[120px] min-w-[100px] 
+               dark:border-slate-900 hover:drop-shadow-xl p-4 lg:h-[120px] md:h-[120px] min-w-[135px] 
                 drop-shadow-lg flex flex-col rounded-xl justify-center text-center transition-transform duration-200'>
                 <div className='flex flex-col gap-1 items-center justify-center text-dark-blue dark:text-vanilla' id="icon">
                   {themeMode === "dark" ? <img src={s.iconDark} className='min-w-[35px] w-[35px]' /> : <img src={s.icon} className='min-w-[35px] w-[35px]' />}

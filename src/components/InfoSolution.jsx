@@ -68,23 +68,16 @@ const varejo = [
     {
         position: true,
         img: vendas,
-        title: 'Força de vendas',
-        titleBlue: ' Externas',
+        title: 'App Força de vendas ',
+        titleBlue: '(vendas externas)',
         desc: 'Nosso Força de vendas é a solução ideal para seus vendedores realizarem as vendas externas com agilidade direto no seu celular ou tablet. Realize pedidos offline, gerencie estoque, rotas, relatórios, saldo flex, gestão de clientes e muito mais.',
     },
-    // {
-    //     position: true,
-    //     img: monitor,
-    //     title: 'Ordem de ',
-    //     titleBlue: 'Serviço',
-    //     desc: 'Organize o fluxo dos serviços prestados pela sua empresa. Tenha controle de prioridades, etapas, tempo, quem executou o serviço, entre outros recursos.',
-    // },
     {
         position: false,
         img: comp,
-        title: 'Controle de ',
-        titleBlue: 'Estoque',
-        desc: 'Nosso sistema permite acompanhar a movimentação dos produtos, os mais vendidos, os mais lucrativos, entre outras informações para manter um melhor fluxo do seu estoque.',
+        title: 'App Eagle Analytics',
+        titleBlue: ' (Indicadores)',
+        desc: 'Acompanhe em tempo real tudo da sua empresa diretamente na tela do seu celular, de onde estiver. Saiba os pontos estratégicos do seu negócio através de indicadores, direcionando a sua atenção ao que realmente importa.',
     },
     {
         position: true,
@@ -102,17 +95,17 @@ function InfoSolution(props) {
             {props.segmento === "food" && <>
                 {food.map((f) => {
                     return (
-                        <div key={f.title} className='flex flex-col  items-center'>
+                        <div key={f.title} className='flex flex-col items-center'>
                             {
-                                f.position ? <div className='flex lg:gap-20 gap-10 py-12 justify-center items-center flex-wrap' key={f.title}>
+                                f.position ? <div className='flex lg:gap-20 gap-10 py-10 justify-center items-center flex-wrap lg:flex-nowrap' key={f.title}>
                                     <img loading="lazy" src={f.img} className='lg:max-w-[290px] lg:max-h-[290px] md:max-h-[230px] md:max-w-[230px] max-h-[200px] max-w-[250px]'/>
                                     <div className='flex flex-col lg:text-start md:text-start text-center'>
-                                        <h3 className='dark:text-vanilla lg:text-start md:text-start text-center lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
+                                        <h3 className='dark:text-vanilla lg:text-start leading-10 md:text-start text-center lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray text-greish-blue lg:text-[16px] text-[14px] leading-6 max-w-[530px]'>{f.desc}</p>
                                     </div>
-                                </div> : <div className='flex lg:gap-20 gap-10 py-12 justify-center items-center flex-wrap-reverse' key={f.title}>
+                                </div> : <div className='flex lg:gap-20 gap-10 py-10 justify-center items-center flex-wrap-reverse lg:flex-nowrap' key={f.title}>
                                     <div className='flex flex-col lg:text-end md:text-end text-center'>
-                                        <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
+                                        <h3 className='dark:text-vanilla lg:text-[35px] leading-10 text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{f.title}<span className='text-primary-blue'>{f.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[540px]'>{f.desc}</p>
                                     </div>
                                     <img loading="lazy" src={f.img} className='lg:max-w-[290px] lg:max-h-[290px] md:max-h-[230px] md:max-w-[220px] max-h-[200px] max-w-[250px]' />
@@ -127,15 +120,15 @@ function InfoSolution(props) {
                     return (
                         <div key={v.title} className='flex flex-col items-center'>
                             {
-                                v.position ? <div className='flex lg:gap-20 gap-10 py-12 justify-center items-center flex-wrap' key={v.title}>
+                                v.position ? <div className='flex lg:gap-20 gap-10 py-10 justify-center items-center flex-wrap lg:flex-nowrap' key={v.title}>
                                     <img loading="lazy" src={v.img}  className='lg:max-w-[290px] lg:max-h-[290px] md:max-h-[230px] md:max-w-[230px] max-h-[200px] max-w-[250px]' />
                                     <div className='flex flex-col lg:text-start md:text-start text-center'>
-                                        <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
+                                        <h3 className='dark:text-vanilla lg:text-[35px] leading-10 text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray text-greish-blue lg:text-[16px] text-[14px] leading-6 max-w-[600px]'>{v.desc}</p>
                                     </div>
-                                </div> : <div className='flex lg:gap-20 gap-10 py-12 justify-center items-center flex-wrap-reverse' key={v.title}>
+                                </div> : <div className='flex lg:gap-20 gap-10 py-10 justify-center items-center flex-wrap-reverse lg:flex-nowrap' key={v.title}>
                                     <div className='flex flex-col lg:text-end md:text-end text-center'>
-                                        <h3 className='dark:text-vanilla lg:text-[35px] text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
+                                        <h3 className='dark:text-vanilla lg:text-[35px] leading-10 text-[25px] mb-2 text-dark-blue font-poppins font-bold'>{v.title}<span className='text-primary-blue'>{v.titleBlue}</span></h3>
                                         <p className='font-inter dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue leading-6 max-w-[600px]'>{v.desc}</p>
                                     </div>
                                     <img loading="lazy" src={v.img}  className=' lg:max-w-[290px] lg:max-h-[290px] md:max-h-[230px] md:max-w-[230px] max-h-[200px] max-w-[250px]' />

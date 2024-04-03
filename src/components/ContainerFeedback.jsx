@@ -24,7 +24,7 @@ function ContainerFeedback() {
                             disableOnInteraction: false,
                         }}
                         centeredSlides={true}
-                        pagination={true}
+                        // pagination={true}
                         loop={true}
                         breakpoints={{
                             640: {
@@ -46,7 +46,7 @@ function ContainerFeedback() {
                                 <SwiperSlide key={f.autor} className='h-[15rem] w-full '>
                                     <div
                                         className='bg-white cursor-grab dark:bg-tertiary-dark shadow-xl border-slate-300 border dark:border-slate-800
-                                         rounded-[50px] h-[12rem] justify-start p-7 flex flex-col overflow-hidden gap-2 max-w-[340px]'>
+                                         rounded-[50px] h-[12rem] m-4 justify-start p-7 flex flex-col overflow-hidden gap-2 max-w-[340px]'>
                                         {/*STARS*/}  <div className='flex flex-row justify-between'>
                                             <div className='flex flex-row'>
                                                 <IoIosStar color='yellow' size={20} />
@@ -59,7 +59,7 @@ function ContainerFeedback() {
                                         </div>
                                         <div className='flex flex-col'>
                                             <p className='font-regular dark:text-vanilla text-sm'>{f.comment}</p>
-                                            <span className='text-dark-blue dark:text-primary-blue absolute bottom-[70px] font-medium text-sm mt-2'>{f.autor}</span>
+                                            <span className='text-dark-blue dark:text-primary-blue absolute bottom-[40px] font-medium text-sm mt-2'>{f.autor}</span>
                                         </div>
                                     </div>
 

@@ -19,7 +19,7 @@ export default function ContactForm() {
                 <label htmlFor='fromName' className='flex flex-col gap-2 text-md'>Nome Completo
                     <input type='text' id="from_name" name='from_name' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" />
                 </label>
-                <label htmlFor='emailFrom' className='flex flex-col gap-2 text-md'>Email
+                <label htmlFor='emailFrom' className='flex flex-col gap-2 text-md'>Email (Opcional)
                     <input type='email' id='email_from' name='email_from' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" />
                 </label>
                 <label htmlFor='numberFrom' className='flex flex-col gap-2 text-md'>Número

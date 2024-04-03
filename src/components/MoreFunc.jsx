@@ -20,6 +20,8 @@ import analytics from '../assets/retail/moreFunc/analytics.png'
 import service from '../assets/retail/moreFunc/service.png'
 import serviceLight from '../assets/retail/moreFunc/Light/service.png'
 import useTheme from '../context/theme'
+import imprimir from '../assets/food/moreFunc/imprimir.png'
+import imprimirLight from '../assets/food/moreFunc/Light/imprimir.png'
 
 const food = [
     {
@@ -43,8 +45,8 @@ const food = [
         desc: 'Solução 100% offline, através do computador, tablet e smartphones. Independente do tamanho da operação ou a quantidade de garçons do estabelecimento.',
     },
     {
-        icon: bank, iconLight: bankLight, title: 'Conciliação Bancária',
-        desc: 'Através da importação de extratos bancários, nosso algoritmo identifica os pagamentos realizados, sincronizando-os com a sua gestão financeira.',
+        icon: imprimir, iconLight: imprimirLight, title: 'Impressão de pedidos na cozinha',
+        desc: 'Receba os pedidos para produção diretamente na cozinha, através de impressora ou monitor KDS, sem a necessidade de interferência humana.',
     }
 ]
 const varejo = [
@@ -57,8 +59,9 @@ const varejo = [
         desc: 'Faça suas vendas e emita NFC-e em poucos segundos com o PDV Expresso. Nosso PDV possui PIX Integrado, no qual você não precisa conferir o PIX, o QR CODE é gerado, e o sistema ja confere o recebimento',
     },
     {
-        icon: analytics, iconLight: analyticsLight, title: 'Analytics',
-        desc: 'Acompanhe em tempo real tudo da sua empresa diretamente na tela do seu celular. Saiba os pontos estratégicos do seu negócio através de indicadores, direcionando a sua atenção ao que importa.',
+        icon: analytics, iconLight: analyticsLight, title: 'Controle de Estoque',
+        desc: 'Nosso sistema permite acompanhar a movimentação dos produtos, os mais vendidos, os mais lucrativos, entre outras informações para manter um melhor fluxo do seu estoque.'
+        // desc: 'Acompanhe em tempo real tudo da sua empresa diretamente na tela do seu celular. Saiba os pontos estratégicos do seu negócio através de indicadores, direcionando a sua atenção ao que importa.',
     },
     {
         icon: note, iconLight: noteLight, title: 'Controle de Contas',

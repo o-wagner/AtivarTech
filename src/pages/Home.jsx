@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import ContainerHeroSlide from '../components/ContainerHeroSlide'
+import ContainerHero from '../components/ContainerHero'
 import ContainerServices from '../components/ContainerServices'
 import ContainerSuporte from '../components/ContainerSuporte'
 import ContainerBackup from '../components/ContainerBackup'
 import ContainerFeedback from '../components/ContainerFeedback'
 import { FaWhatsapp } from 'react-icons/fa'
 import PopupModal from '../components/PopupModal'
+import elipse from '../assets/elipse.png'
+import elipse2 from '../assets/elipse2.png'
 
 function Home(props) {
     const [support, setSupport] = useState(false)
     const [showModal, setShowModal] = useState(false)
     const supportShow = () => {
-        if (window.scrollY >= 90) {
+        if (window.scrollY >= 0) {
             setSupport(true);
         } else {
             setSupport(false);
@@ -32,10 +34,14 @@ function Home(props) {
                         </div>
                     </a>
                 </button></>
-            <ContainerHeroSlide />
+            <img className='z-0 absolute top-0 opacity-60 w-[40%]' src={elipse}/>
+            <img className='z-0 absolute right-0 top-0 opacity-60 w-[40%]' src={elipse2}/>
+
+            <ContainerHero/>
+            <img className='z-0 absolute right-0 opacity-20 w-[50%]' src={elipse2}/>
             <ContainerServices />
 
-            <div className=''>
+            <div>
                 <ContainerSuporte />
                 <ContainerBackup />
             </div>

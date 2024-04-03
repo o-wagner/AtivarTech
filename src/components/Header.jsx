@@ -57,9 +57,9 @@ const Header = () => {
     }
     window.addEventListener('scroll', showSombra);
     return (
-        <header className={`bg-light-background/95 backdrop-blur-sm fixed
-         dark:bg-dark-background/95 h-20 w-full text-slate-600 dark:text-slate-200 
-         flex justify-center items-center px-6 z-20 ${sombra ? 'drop-shadow-md' : 'drop-shadow-none'}`}>
+        <header className={` backdrop-blur-sm fixed
+          h-20 w-full text-slate-600 dark:text-slate-200 
+         flex justify-center items-center transition-colors px-6 z-20 ${sombra ? 'drop-shadow-md dark:bg-dark-background/95 bg-light-background/95' : 'drop-shadow-none bg-transparent'}`}>
             <div className='w-full lg:px-12 px-4 flex items-center justify-center'>
                 <div>
                     <NavLink to="/">
@@ -70,7 +70,7 @@ const Header = () => {
                     </NavLink>
                 </div>
                 <nav className='z-10 mr-8 w-full'>
-                    <ul div="menu" className={`lg:gap-8 md:gap-4 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex  h-screen lg:h-auto
+                    <ul div="menu" className={`lg:gap-8 md:gap-4 gap-4 grow absolute lg:static flex-col lg:flex-row lg:flex h-screen lg:h-auto
                     items-center justify-center flex bg-light-background dark:bg-dark-background lg:bg-transparent dark:lg:bg-transparent pb-12 lg:pb-0 md:pb-0 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 md:pl-0 pl-9  ${open ? 'top-0' : 'top-[-10000px]'}`}>
                         <ToggleButton icon={false} className='-translate-x-3 lg:invisible visible' />
                         {headerItem.map((h) => {
