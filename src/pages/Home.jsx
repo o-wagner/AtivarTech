@@ -6,8 +6,8 @@ import ContainerBackup from '../components/ContainerBackup'
 import ContainerFeedback from '../components/ContainerFeedback'
 import { FaWhatsapp } from 'react-icons/fa'
 import PopupModal from '../components/PopupModal'
-import elipse from '../assets/elipse.png'
-import elipse2 from '../assets/elipse2.png'
+import elipse from '../assets/Elipse.png'
+import elipse2 from '../assets/Elipse2.png'
 
 function Home(props) {
     const [support, setSupport] = useState(false)
