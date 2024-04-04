@@ -64,9 +64,9 @@ const Header = () => {
                 <div>
                     <NavLink to="/">
                         {themeMode === 'light' ?
-                            <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[125px] z-10 -translate-x-5  ' />
+                            <img src={ativarLight} alt="logotipo-ativar" className='min-w-[90px] w-[140px] z-10 -translate-x-5 md:translate-x-0 ' />
                             :
-                            <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[125px] z-10 -translate-x-5 md:translate-x-0' />}
+                            <img src={ativarDark} alt="logotipo-ativar" className='min-w-[90px] w-[140px] z-10 -translate-x-5 md:translate-x-0' />}
                     </NavLink>
                 </div>
                 <nav className='z-10 mr-8 w-full'>

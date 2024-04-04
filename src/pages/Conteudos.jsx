@@ -50,7 +50,7 @@ function Conteudos() {
           </div>
         </button>
       </>
-      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-2 md:h-[90vh] pt-10 md:pt-16 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[65px] md:gap-[65px]'>
+      <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-10 md:h-[90vh] pt-10 md:pt-16 lg:flex-row md:flex-nowrap flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[6%] '>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start  items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Materiais</h3>
@@ -59,7 +59,7 @@ function Conteudos() {
               Conteúdos Exclusivos
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
                     text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Explore nosso conteúdo exclusivo para aprimorar sua experiência com sistemas de gestão. Tenha acesso a materiais de apoio cuidadosamente elaborados para impulsionar a eficiência e a produtividade em sua empresa.</p>
           <Link

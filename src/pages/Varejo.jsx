@@ -9,6 +9,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { X } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import PopupModal from '../components/PopupModal'
+import AllFunc from '../components/AllFunc'
 
 
 
@@ -48,7 +49,7 @@ export default function Varejo() {
                             Solução completa para varejo
                         </h1>
                     </div>
-                    <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px] 
+                    <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px] 
                     text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
                         Otimize processos da sua empresa de um jeito simples e prático, tendo total controle das informações do seu negócio, como vendas, estoque, financeiro, fiscal e contábil, aumentando sua produtividade e maximizando resultados.</p>
                     <Link
@@ -91,12 +92,19 @@ export default function Varejo() {
                 </div>
             </section>
             <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
-                <div className='flex items-center flex-col justify-center py-20 '>
+                <div className='flex items-center flex-col justify-center py-16 '>
                     <h1 className='lg:text-[35px] text-[25px] font-poppins mb-2 tracking-tight font-bold dark:text-vanilla text-dark-blue'>Confira mais diferencias</h1>
                     <p className='font-inter text-greish-blue dark:text-blueish-gray lg:max-w-[630px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para você e seu cliente evoluirem</p>
                 </div>
                 <MoreFunc segmento="varejo" />
+            </section>
+            <section id='allFunc' className=' dark:bg-quaternary-dark bg-neutral-300 lg:px-[4%] px-8 pb-24 pt-10'>
+                <div className='flex items-center flex-col justify-center py-16 '>
+                    <h1 className='lg:text-[26px] text-[25px] font-poppins mb-2 tracking-tight max-w-[650px] font-bold text-center dark:text-vanilla text-dark-blue'>
+                        Tudo que você precisa para Varejo em um só sistema</h1>
+                </div>
+                <AllFunc segmento="varejo" />
             </section>
         </div >
     )

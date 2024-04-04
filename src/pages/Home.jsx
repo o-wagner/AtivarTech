@@ -34,17 +34,13 @@ function Home(props) {
                         </div>
                     </a>
                 </button></>
-            <img className='z-0 absolute top-0 opacity-60 w-[40%]' src={elipse}/>
-            <img className='z-0 absolute right-0 top-0 opacity-60 w-[40%]' src={elipse2}/>
-
-            <ContainerHero/>
-            <img className='z-0 absolute right-0 opacity-20 w-[50%]' src={elipse2}/>
+            <img loading='lazy' className='z-0 absolute top-0 opacity-60 w-[40%]' src={elipse} />
+            <img loading='lazy' className='z-0 absolute right-0 top-0 opacity-60 w-[40%]' src={elipse2} />
+            <ContainerHero />
+            <img loading='lazy' className='z-0 absolute right-0 opacity-20 w-[50%]' src={elipse2} />
             <ContainerServices />
-
-            <div>
-                <ContainerSuporte />
-                <ContainerBackup />
-            </div>
+            <ContainerSuporte />
+            <ContainerBackup />
             <ContainerFeedback />
         </div>
 

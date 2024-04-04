@@ -22,7 +22,7 @@ function Indique() {
               Indique e ganhe!
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[450px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal min-w-[300px] lg:min-w-[450px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
                     text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Indique empresas para os sistemas da <span className='font-semibold text-primary-blue cursor-pointer'>Ativar Tecnologia</span> e receba uma recompensa para você ou para sua empresa.</p>
           <Link
@@ -32,7 +32,7 @@ function Indique() {
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Saiba como funciona<ChevronDownCircleIcon size={16} /> </Link>
         </div>
         <div className=' max-w-[540px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[400px] lg:translate-x-10 translate-x-6 lg:w-[400px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] lg:translate-x-6 translate-x-6 lg:w-[400px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
       <section id="indique" className='pb-12 flex items-center justify-center lg:px-[100px] md:px-[70px] px-8'>

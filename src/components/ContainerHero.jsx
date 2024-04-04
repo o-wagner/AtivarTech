@@ -33,7 +33,7 @@ const ContainerHero = () => {
                     <img className='self-end w-[90%]' src={HeroShot} alt="heroshot" />
                 </div> */}
                 <div className=' max-w-[450px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
-                    <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[500px] md:max-w-[300px] translate-x-4 lg:w-[500px] drop-shadow-md' src={HeroShot} alt="HeroShot" />
+                    <img loading='lazy' className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[500px] md:max-w-[300px] translate-x-4 lg:w-[500px] drop-shadow-md' src={HeroShot} alt="HeroShot" />
                 </div>
             </div>
         </section>

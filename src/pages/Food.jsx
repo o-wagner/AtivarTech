@@ -10,6 +10,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { X } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import PopupModal from '../components/PopupModal'
+import AllFunc from '../components/AllFunc'
 
 
 function Food() {
@@ -47,7 +48,7 @@ function Food() {
               Solução completa para Food
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[430px] md:max-w-[420px]
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[430px] md:max-w-[420px]
                     text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Tenha o controle total da sua empresa com soluções integradas, otimizando processos internos em poucos cliques, facilitando o dia-a-dia da sua empresa em todas etapas, desde a realização do pedido pelo seu cliente, a produção na cozinha, até a entrega e satisfação do seu cliente.</p>
           <Link
@@ -89,14 +90,21 @@ function Food() {
         </div>
       </section>
       <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
-        <div className='flex items-center flex-col justify-center py-20 '>
-          <h1 className='lg:text-[26px] text-[25px] font-poppins mb-2 tracking-tight max-w-[580px] font-bold text-center dark:text-vanilla text-dark-blue'>Um Ecossistema Completo De Soluções Inovadoras
+        <div className='flex items-center flex-col justify-center py-16 '>
+          <h1 className='lg:text-[26px] text-[25px] font-poppins mb-2 tracking-tight max-w-[650px] font-bold text-center dark:text-vanilla text-dark-blue'>Um Ecossistema Completo De Soluções Inovadoras
 </h1>
           {/* <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[380px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para a evolução de sua empresa e seu cliente</p> */}
         </div>
         <MoreFunc segmento="food" />
       </section>
+      <section id='allFunc' className=' dark:bg-quaternary-dark bg-neutral-300 lg:px-[4%] px-8 pb-24 pt-10'>
+        <div className='flex items-center flex-col justify-center py-16 '>
+          <h1 className='lg:text-[26px] text-[25px] font-poppins mb-2 tracking-tight max-w-[650px] font-bold text-center dark:text-vanilla text-dark-blue'>
+          Tudo que você precisa para Food-Service em um só sistema</h1>
+        </div>
+        <AllFunc segmento="food" />
+      </section>      
     </div >
   )
 }

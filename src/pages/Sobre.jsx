@@ -59,7 +59,7 @@ function Sobre() {
               Otimizando a gestão do seu negócio
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
                     text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Somos a ponte entre sua empresa e o sucesso. Nossas soluções não apenas organizam, mas também se adaptam ao DNA exclusivo do seu negócio, promovendo uma gestão mais humana e eficaz.</p>
           <Link

@@ -10,6 +10,10 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: theme(colors.light-background);
+}
+.dark body{
+  background-color: theme(colors.dark-background);
 }
 
 

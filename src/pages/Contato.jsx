@@ -40,7 +40,7 @@ function Contato() {
               Entre em Contato
             </h1>
           </div>
-          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-dark-blue font-normal min-w-[300px] lg:min-w-[400px] md:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
+          <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal min-w-[300px] lg:min-w-[400px] md:min-w-[400px] max-w-[600px] lg:max-w-[420px] md:max-w-[420px]
                 text-center leading-loose lg:text-left md:text-left pt-2 pb-6 font-inter lg:px-0 md:px-0 px-2 '>
             Ja estamos ansiosos para o seu contato, descubra como nossas soluções de gestão de negócios podem impulsionar o seu sucesso. Estamos aqui para ajudar a encontrar a melhor solução para as necessidades únicas da sua empresa.</p>
           <a target='_blank' rel="noreferrer noopener" href="https://wa.me/553321010601" className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
@@ -48,8 +48,8 @@ function Contato() {
                 font-semibold font-inter text-[14px] cursor-pointer text-slate-100 flex justify-center items-center text-center'>
             Falar pelo Whatsapp</a>
         </div>
-        <div className=' max-w-[400px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[360px] lg:w-[350px] md:w-[450px] drop-shadow-md' src={HeroContact} alt="EntreEmContato-Image" />
+        <div className='max-w-[450px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
+          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] drop-shadow-md' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
       <section className='lg:px-[80px] md:px-[90px] px-10 lg:py-12 flex flex-col gap-10 pb-8'>
