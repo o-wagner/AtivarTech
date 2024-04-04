@@ -8,7 +8,9 @@ import ativar from '../assets/Ativar.png'
 import PopupModal from '../components/PopupModal'
 import { FaWhatsapp } from 'react-icons/fa'
 import { PrismicImage, PrismicText, useAllPrismicDocumentsByType } from '@prismicio/react';
-import Content from '../helpers/Content'
+import elipse from '../assets/elipse.png'
+import elipse2 from '../assets/elipse2.png'
+
 const content = [
   {
     title: 'Aprenda a cadastrar clientes',
@@ -50,6 +52,8 @@ function Conteudos() {
           </div>
         </button>
       </>
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
       <section id="heroContent" className='lg:h-[100dvh] h-auto w-full lg:pt-10 md:h-[90vh] pt-10 md:pt-16 lg:flex-row md:flex-nowrap flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[6%] '>
         <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start  items-center text-center gap-2'>

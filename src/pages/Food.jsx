@@ -11,7 +11,8 @@ import { X } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import PopupModal from '../components/PopupModal'
 import AllFunc from '../components/AllFunc'
-
+import elipse from '../assets/elipse.png'
+import elipse2 from '../assets/elipse2.png'
 
 function Food() {
   const [support, setSupport] = useState(false)
@@ -39,8 +40,10 @@ function Food() {
           </a>
         </button>
       </>
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[20%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
       <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 md:h-screen lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[4%] md:gap-[4%] md:flex-nowrap'>
-        <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+        <div id="heroText" className=' z-10 lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Food-Service</h3>
             <h1 className='text-dark-blue font-semibold lg:w-[470px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 lg:text-[40px] font-poppins
@@ -57,7 +60,7 @@ function Food() {
             offset={-50}
             className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
         </div>
-        <div className=' max-w-[600px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0  flex animate-fade-left'>
+        <div className=' z-10  max-w-[600px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0  flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] md:w-[300px] drop-shadow-md' src={heroshot} alt="HeroShot" />
         </div>
       </section>
@@ -70,7 +73,7 @@ function Food() {
             todo o território brasileiro. Veja alguns dos nossos segmentos.</p>
         </div>
         <Segmentos segmento="food" />
-        <div className='w-full flex-col items-end flex justify-end max-w-[970px] pt-4'>
+        <div className='w-full z-10 flex-col items-end flex justify-end max-w-[970px] pt-4'>
           <button onClick={() => setShowFound(!showFound)}><h3 className='text-blueish-gray hover:underline font-semibold text-[14px] font-poppins'>Não localizou sua área específica?</h3></button>
           <div className={`${showFound ? 'block animate-fade-down' : 'hidden'} font-inter font-regular text-[13px] text-end text-blueish-gray max-w-[200px]`}>
             <NavLink to='/contato' className='text-primary-blue underline' id="link">Entre em contato</NavLink>

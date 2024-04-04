@@ -5,7 +5,8 @@ import { IoIosCall, IoIosMail, IoIosPin, IoIosPeople } from "react-icons/io";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { RiFacebookCircleLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import ContactForm from '../components/ContactForm';
-
+import elipse from '../assets/elipse.png'
+import elipse2 from '../assets/elipse2.png'
 const info = [
   {
     icon: <IoIosCall color="#18A2DE" size={20} />,
@@ -31,8 +32,10 @@ const info = [
 function Contato() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full h-full'>
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
       <section id="heroContato" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[68px] md:gap-[68px] '>
-        <div id="heroText" className='lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+        <div id="heroText" className='z-10 lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Fale Conosco</h3>
             <h1 className='text-dark-blue font-semibold lg:w-[470px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 md:px-0 lg:text-[40px] font-poppins
@@ -52,16 +55,16 @@ function Contato() {
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] drop-shadow-md' src={HeroContact} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section className='lg:px-[80px] md:px-[90px] px-10 lg:py-12 flex flex-col gap-10 pb-8'>
-        <div className='border border-slate-400 dark:border-slate-900 flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
-          <div className=' lg:px-[100px] md:px-[70px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 md:w-1/2 text-dark-blue dark:text-vanilla'>
+      <section className=' lg:px-[80px] md:px-[90px] px-10 lg:py-12 flex flex-col gap-10 pb-8'>
+        <div className='border z-10 border-slate-400 dark:border-slate-900 flex flex-wrap dark:bg-quaternary-dark bg-white rounded-xl w-full'>
+          <div className=' z-10 lg:px-[100px] md:px-[70px] px-8 py-16 justify-between flex-col gap-8 w-full flex h-1/2 lg:w-1/2 md:w-1/2 text-dark-blue dark:text-vanilla'>
             <div className='items-center flex flex-col'>
               <h3 className='text-2xl font-bold font-poppins'>Fale Conosco</h3>
               <p className='text-blueish-gray font-inter text-center leading-snug'>Nos envie uma mensagem preenchendo o formulário ao lado</p>
             </div>
             {info.map((i) => {
               return (
-                <div key={i.title} className=' flex flex-col self-start '>
+                <div key={i.title} className='z-10 flex flex-col self-start '>
                   <div className='flex-row break-words flex gap-2 items-center dark:text-vanilla text-dark-blue font-semibold font-poppins'>
                     {i.icon}
                     <h3>{i.title}</h3>

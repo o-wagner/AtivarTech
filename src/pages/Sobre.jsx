@@ -6,6 +6,9 @@ import { ChevronDownCircleIcon, Eye, Goal, HeartHandshake } from 'lucide-react'
 import { Link } from 'react-scroll'
 import { FaWhatsapp } from 'react-icons/fa'
 import PopupModal from '../components/PopupModal'
+import elipse from '../assets/elipse.png'
+import elipse2 from '../assets/elipse2.png'
+
 const mvv = [
   {
     icon: <Goal size={32} className='dark:text-vanilla text-dark-blue' />,
@@ -50,8 +53,10 @@ function Sobre() {
           </a>
         </button>
       </>
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
       <section id="heroAbout" className='lg:h-screen md:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%] md:gap-[6%] md:flex-nowrap '>
-        <div id="heroText" className='lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+        <div id="heroText" className='z-10 lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Ativar Tecnologia</h3>
             <h1 className='text-dark-blue font-semibold lg:w-[470px] md:w-[320px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 md:px-0 lg:text-[40px] font-poppins
@@ -66,7 +71,7 @@ function Sobre() {
             to="history"
             smooth={true}
             offset={-100}
-            className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+            className=' px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
             hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
             font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>A Ativar Tecnologia<ChevronDownCircleIcon size={16} /> </Link>
         </div>
@@ -79,10 +84,10 @@ function Sobre() {
         <div className='flex flex-col items-center lg:items-start md:items-start gap-4 text-center md:text-start lg:text-start'>
           <h1 className='lg:text-[40px] text-[30px] w-[380px] font-bold dark:text-vanilla text-dark-blue'>Nossa <span className='text-primary-blue'>História</span></h1>
           <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[600px] md:max-w-[460px]
-                    text-center lg:text-left md:text-left mb-6 lg:px-0 md:px-0 font-inter px-2'>A Ativar Tecnologia surgiu através de uma parceria com a Eagle Tecnologia, uma empresa sólida no mercado que nos impulsionou a oferecer as melhores soluções em sistemas de gestão para pequenas, médias e grandes empresas. <br/>
-                    Atuamos no mercado de Guanhães e região desde 2021 e estamos em constante crescimento, com clientes em diversas regiões do Brasil. Nosso compromisso com a excelência e a satisfação do nosso cliente, nos diferencia, enquanto nossa equipe apaixonada e experiente, impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região, oferecendo o melhor atendimento e suporte técnico humanizado.
-                    Junte-se a nós enquanto continuamos a escrever a nossa história.
-                    </p>
+                    text-center lg:text-left md:text-left mb-6 lg:px-0 md:px-0 font-inter px-2'>A Ativar Tecnologia surgiu através de uma parceria com a Eagle Tecnologia, uma empresa sólida no mercado que nos impulsionou a oferecer as melhores soluções em sistemas de gestão para pequenas, médias e grandes empresas. <br />
+            Atuamos no mercado de Guanhães e região desde 2021 e estamos em constante crescimento, com clientes em diversas regiões do Brasil. Nosso compromisso com a excelência e a satisfação do nosso cliente, nos diferencia, enquanto nossa equipe apaixonada e experiente, impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região, oferecendo o melhor atendimento e suporte técnico humanizado.
+            Junte-se a nós enquanto continuamos a escrever a nossa história.
+          </p>
         </div>
       </section>
       <section className=' h-auto py-16 flex flex-col items-center justify-center gap-2 px-20'>
