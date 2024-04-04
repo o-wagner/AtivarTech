@@ -6,8 +6,8 @@ import { ChevronDownCircleIcon, Eye, Goal, HeartHandshake } from 'lucide-react'
 import { Link } from 'react-scroll'
 import { FaWhatsapp } from 'react-icons/fa'
 import PopupModal from '../components/PopupModal'
-import elipse from '../assets/elipse.png'
-import elipse2 from '../assets/elipse2.png'
+import elipse from '../assets/Elipse.png'
+import elipse2 from '../assets/Elipse2.png'
 
 const mvv = [
   {

@@ -5,8 +5,8 @@ import { IoIosCall, IoIosMail, IoIosPin, IoIosPeople } from "react-icons/io";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { RiFacebookCircleLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import ContactForm from '../components/ContactForm';
-import elipse from '../assets/elipse.png'
-import elipse2 from '../assets/elipse2.png'
+import elipse from '../assets/Elipse.png'
+import elipse2 from '../assets/Elipse2.png'
 const info = [
   {
     icon: <IoIosCall color="#18A2DE" size={20} />,

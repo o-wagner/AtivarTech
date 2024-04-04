@@ -4,8 +4,8 @@ import { Link } from 'react-scroll'
 import Input from 'react-phone-number-input/input'
 import heroIndique from '../assets/HeroIndique.png'
 import { NavLink } from 'react-router-dom'
-import elipse from '../assets/elipse.png'
-import elipse2 from '../assets/elipse2.png'
+import elipse from '../assets/Elipse.png'
+import elipse2 from '../assets/Elipse2.png'
 
 const sendEmail = (e) => {
   e.preventDefault();

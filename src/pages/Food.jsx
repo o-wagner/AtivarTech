@@ -11,8 +11,8 @@ import { X } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import PopupModal from '../components/PopupModal'
 import AllFunc from '../components/AllFunc'
-import elipse from '../assets/elipse.png'
-import elipse2 from '../assets/elipse2.png'
+import elipse from '../assets/Elipse.png'
+import elipse2 from '../assets/Elipse2.png'
 
 function Food() {
   const [support, setSupport] = useState(false)
