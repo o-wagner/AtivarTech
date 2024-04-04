@@ -158,7 +158,7 @@ const ContainerServices = () => {
                                     <p className='text-blueish-gray font-inter text-[14px] font-normal'>{s.desc}</p>
                                 </div>
                                     <div className='w-full flex justify-end font-inter font-semibold uppercase text-sm text-dark-blue dark:text-vanilla'>
-                                        <NavLink to={s.path} className='hover:underline flex items-center justify-center'>Saber Mais<ChevronRight className='translate-y-[1px]' size={18} /></NavLink>
+                                        <NavLink to={s.path} className='pt-3 hover:underline flex items-center justify-center'>Saber Mais<ChevronRight className='translate-y-[1px]' size={18} /></NavLink>
                                     </div>
                                 </div>
 
