@@ -19,7 +19,7 @@ function Indique() {
       <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
       <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
       <section id="heroIndique" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[6%] md:flex-nowrap'>
-        <div id="heroText" className='lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+        <div id="heroText" className='z-10 lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start md:items-start md:text-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Promoção</h3>
             <h1 className='text-dark-blue font-semibold lg:w-[470px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 md:px-0 lg:text-[40px] font-poppins
@@ -40,12 +40,12 @@ function Indique() {
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] lg:translate-x-6 translate-x-6 lg:w-[400px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section id="indique" className='pb-12 flex items-center justify-center lg:px-[100px] md:px-[70px] px-8'>
-        <div className='border border-slate-400 dark:border-slate-800 flex flex-wrap lg:flex-row md:flex-row flex-col lg:items-stretch md:items-stretch items-center w-full'>
-          <div className='lg:w-1/2 md:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
+      <section id="indique" className='z-10 first-letter:pb-12 flex items-center justify-center lg:px-[100px] md:px-[70px] px-8'>
+        <div className='z-10 border border-slate-400 dark:border-slate-800 flex flex-wrap lg:flex-row md:flex-row flex-col lg:items-stretch md:items-stretch items-center w-full'>
+          <div className='z-10 lg:w-1/2 md:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>
             <h2 className='text-2xl text-center'>Como funciona a promoção?</h2>
-            <div className='dark:bg-secondary-dark justify-evenly gap-10 h-full flex flex-col dark:text-vanilla text-dark-blue font-inter'>
+            <div className='z-10 dark:bg-secondary-dark justify-evenly gap-10 h-full flex flex-col dark:text-vanilla text-dark-blue font-inter'>
 
               <p className='text-[14px] text-blueish-gray text-justify'>1. Aqui na Ativar Tecnologia, sua indicação vale muito e ficamos gratos quando você nos recomenda para possíveis clientes. Basta nos fornecer os nomes, números de telefone e/ou e-mails de possíveis empresas, e se eles contratarem sistema conosco, você ganha um valor como recompensa por cada empresa indicada que contratar.</p>
               <p className='text-[14px] text-blueish-gray text-justify'>2. Caso a empresa indicada já tenha feito contato comercial prévio com a Ativar Tecnologia, a indicação não será considerada válida e não será oferecida nenhuma bonificação relacionada a essa indicação.</p>
@@ -58,15 +58,15 @@ function Indique() {
             </div>
           </div>
           <form onSubmit={sendEmail} className='dark:bg-tertiary-dark w-full lg:w-1/2 md:w-1/2 bg-gray-300 font-poppins flex-col items-center lg:p-12 p-8  text-dark-blue dark:text-vanilla'>
-            <div className='font-poppins dark:text-vanilla flex flex-col justify-evenly'>
-              <div className='flex flex-col gap-10'>
+            <div className='font-poppins dark:text-vanilla z-10 flex flex-col justify-evenly'>
+              <div className='flex flex-col gap-10 z-10'>
                 <label htmlFor='fullName' className='flex flex-col gap-2 text-md'>Nome Completo
-                  <input type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" />
+                  <input type='text' required className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" />
                 </label>
-                <label htmlFor='emailFrom' className='flex flex-col gap-2 text-md'>Email
+                <label htmlFor='emailFrom' className='flex flex-col gap-2 text-md'>Email (Opcional)
                   <input type='email' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" />
                 </label>
-                <label className='flex flex-col gap-2 text-md'>Número*
+                <label className='flex flex-col gap-2 text-md'>Número
                   <Input value={number}
                     required={true}
                     onChange={setNumber}
@@ -78,8 +78,7 @@ function Indique() {
                 </label>
                 <label className='flex flex-col gap-2 text-md'>Nome da Empresa Indicada*
                   <input required='true' type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira o nome da empresa indicada" />
-                </label>
-                
+                </label>      
                 <label className='flex flex-col gap-2 text-md'>Número da empresa indicada*
                   <Input value={numberOrg}
                     onChange={setNumberOrg}
@@ -91,7 +90,7 @@ function Indique() {
               <div className='flex flex-col text-blueish-gray py-8 gap-6'><div className='flex gap-2 text-sm'><input type="checkbox" required={true} /> <p> Li e estou de acordo com o <NavLink to="/politica-de-privacidade" className='text-dark-blue dark:text-primary-blue hover:underline'>Termo de uso e Política de Privacidade</NavLink> </p></div>
               </div>
               <button type='submit' className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
-                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[8px]
                 font-regular text-[14px] cursor-pointer text-slate-100 flex justify-center items-center text-center'>
                 Fazer Indicação</button>
 

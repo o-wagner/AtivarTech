@@ -40,7 +40,7 @@ function Food() {
           </a>
         </button>
       </>
-      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[20%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
       <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
       <section id="heroFood" className='lg:h-[100dvh] h-auto w-full lg:pt-16 pt-10 md:h-screen lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[4%] md:gap-[4%] md:flex-nowrap'>
         <div id="heroText" className=' z-10 lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
