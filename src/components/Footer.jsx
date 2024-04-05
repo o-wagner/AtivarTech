@@ -5,7 +5,7 @@ import { RiFacebookCircleLine, RiLinkedinBoxLine } from "react-icons/ri";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
-import { ChevronUp } from 'lucide-react';
+import { Copy, ChevronUp } from 'lucide-react';
 
 function Footer() {
 
@@ -55,7 +55,8 @@ function Footer() {
                     <h1 className='font-semibold font-poppins text-lg'>Contato</h1>
                     <a href='mailto:contato@ativartecnologia.com' ><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <MdOutlineMailOutline className='w-5 text-xl' width={20} />
-                        <span className='font-inter'>contato@ativartecnologia.com</span></div></a>
+                        <span className='font-inter flex gap-2'>contato@ativartecnologia.com 
+                        </span></div></a>
                     <a href="https://wa.me/553321010601" target='_blank' rel="noreferrer noopener"><div className='flex hover:text-vanilla flex-row items-center gap-2 justify-center'>
                         <FaWhatsapp className='text-xl' width={20} />
                         <span className='font-inter'>(33) 2101-0601</span></div></a>

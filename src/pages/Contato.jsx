@@ -7,6 +7,9 @@ import { RiFacebookCircleLine, RiLinkedinBoxLine } from 'react-icons/ri';
 import ContactForm from '../components/ContactForm';
 import elipse from '../assets/Elipse.png'
 import elipse2 from '../assets/Elipse2.png'
+import { Copy } from 'lucide-react';
+import useClipboard from '../components/useClipboard';
+
 const info = [
   {
     icon: <IoIosCall color="#18A2DE" size={20} />,
@@ -20,6 +23,7 @@ const info = [
     title: 'Email',
     path: 'mailto:contato@ativartecnologia.com',
     info: 'contato@ativartecnologia.com',
+    icon2: <Copy size={15}/>
   },
   {
     icon: <IoIosPin fill="#18A2DE" size={20} />,
@@ -30,10 +34,12 @@ const info = [
 ]
 
 function Contato() {
+  const copyToClipboard = useClipboard();
+
   return (
     <div className='dark:bg-dark-background bg-light-background w-full h-full'>
-      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
-      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-40 w-[40%]' src={elipse2} />
       <section id="heroContato" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[68px] md:gap-[68px] '>
         <div id="heroText" className='z-10 lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
@@ -69,7 +75,7 @@ function Contato() {
                     {i.icon}
                     <h3>{i.title}</h3>
                   </div>
-                  <a target='_blank' rel="noopener noreferrer" href={i.path}><p className='text-sm font-inter font-semibold text-blueish-gray'>{i.info}</p></a>
+                  <div className='flex gap-2 items-center'><a target='_blank' rel="noopener noreferrer" href={i.path}><p className='text-sm font-inter flex flex-row gap-2 font-semibold text-blueish-gray'>{i.info}</p></a><button className='hover:text-primary-blue' onClick={() => copyToClipboard('contato@ativartecnologia.com')}>{i.icon2}</button></div>
                 </div>
               )
             })}

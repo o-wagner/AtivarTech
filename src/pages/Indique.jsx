@@ -16,8 +16,8 @@ function Indique() {
   const [numberOrg, setNumberOrg] = useState('');
   return (
     <div className='bg-light-background dark:bg-dark-background w-full'>
-      <img loading='lazy' className='-z-0 absolute top-0 opacity-40 w-[30%]' src={elipse} />
-      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-20 w-[40%]' src={elipse2} />
+      <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
+      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-40 w-[40%]' src={elipse2} />
       <section id="heroIndique" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[6%] md:flex-nowrap'>
         <div id="heroText" className='z-10 lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start md:items-start md:text-start items-center text-center gap-2'>
@@ -40,7 +40,7 @@ function Indique() {
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] lg:translate-x-6 translate-x-6 lg:w-[400px] drop-shadow-md ' src={heroIndique} alt="EntreEmContato-Image" />
         </div>
       </section>
-      <section id="indique" className='z-10 first-letter:pb-12 flex items-center justify-center lg:px-[100px] md:px-[70px] px-8'>
+      <section id="indique" className='z-10 pb-12 flex items-center justify-center lg:px-[100px] md:px-[70px] px-8'>
         <div className='z-10 border border-slate-400 dark:border-slate-800 flex flex-wrap lg:flex-row md:flex-row flex-col lg:items-stretch md:items-stretch items-center w-full'>
           <div className='z-10 lg:w-1/2 md:w-1/2 h-[inherit] dark:text-vanilla bg-white dark:bg-secondary-dark text-dark-blue font-poppins gap-4 justify-evenly flex flex-col lg:p-12 p-8 py-12'>
             <h3 className='dark:text-blueish-gray text-primary-blue text-[12px] text-center font-inter font-semibold leading-4 tracking-widest uppercase'>Indique e Ganhe</h3>

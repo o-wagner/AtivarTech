@@ -8,8 +8,9 @@ import { Link } from 'react-scroll'
 const ContainerHero = () => {
     return (
         <section id="home" name="home">
-            <div className='z-10 lg:h-screen md:h-screen h-auto w-full lg:pt-[55px] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-36 lg:gap-[3%] md:gap-[6%] md:flex-nowrap'>
-                <div id="heroText" className='lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+            <div className='z-10 lg:h-screen md:h-screen min-h-screen h-auto w-full lg:pt-[55px] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-36 lg:gap-[3%] md:gap-[6%] md:flex-nowrap'>
+                <div id="heroText" className='lg:gap-2 md:gap-2 
+                lg:place-self-center md:place-self-center place-self-start max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
                     <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
                         <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Ativar Tecnologia</h3>
                         <h1 className='text-dark-blue font-semibold lg:w-[470px] md:w-[320px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 md:px-0 lg:text-[44px] font-poppins
@@ -32,8 +33,8 @@ const ContainerHero = () => {
                 {/* <div className='lg:w-1/2 w-[70%] z-0 flex lg:h-[90vh] h-auto'>
                     <img className='self-end w-[90%]' src={HeroShot} alt="heroshot" />
                 </div> */}
-                <div className=' max-w-[450px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
-                    <img loading='lazy' className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[500px] md:max-w-[300px] translate-x-4 lg:w-[500px] drop-shadow-md' src={HeroShot} alt="HeroShot" />
+                <div className=' max-w-[450px] lg:h-auto lg:place-self-center md:place-self-center place-self-end lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
+                    <img loading='lazy' className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[500px] md:max-w-[300px] translate-x-4 lg:w-[500px] drop-shadow-md' src={HeroShot} alt="HeroShot" />
                 </div>
             </div>
         </section>
