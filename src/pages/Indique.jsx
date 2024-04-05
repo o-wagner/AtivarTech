@@ -33,7 +33,7 @@ function Indique() {
   return (
     <div className='bg-light-background dark:bg-dark-background w-full'>
       <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
-      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-40 w-[40%]' src={elipse2} />
+      <img loading='lazy' className='-z-0 absolute right-0 top-0 opacity-40 w-[40%]' src={elipse2} />
       <section id="heroIndique" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[6%] md:gap-[6%] md:flex-nowrap'>
         <div id="heroText" className='z-10 lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start lg:items-start md:items-start md:text-start items-center text-center gap-2'>

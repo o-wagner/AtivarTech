@@ -39,7 +39,7 @@ function Contato() {
   return (
     <div className='dark:bg-dark-background bg-light-background w-full h-full'>
       <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
-      <img loading='lazy' className='-z-0 absolute -right-20 top-0 opacity-40 w-[40%]' src={elipse2} />
+      <img loading='lazy' className='-z-0 absolute right-0 top-0 opacity-40 w-[40%]' src={elipse2} />
       <section id="heroContato" className='lg:h-[100dvh] md:h-screen h-auto w-full lg:pt-[4.5rem] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[68px] md:gap-[68px] '>
         <div id="heroText" className='z-10 lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>

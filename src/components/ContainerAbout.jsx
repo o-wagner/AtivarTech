@@ -65,7 +65,7 @@ function ContainerAbout() {
                 <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] md:min-w-[380px] px-2 text-center'>
                     Conheça a equipe dedicada que impulsiona nossas soluções. Juntos, estamos comprometidos em elevar seu sucesso empresarial.</p>
             </div>
-            <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-[5%] md:px-[5%] px-10 items-center justify-center'>
+            <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-[0%] md:px-[5%] px-10 items-center justify-center'>
                 {equipe.map((e) => {
                     return (
                         <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark/80 w-[220px] h-[240px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-900'>
