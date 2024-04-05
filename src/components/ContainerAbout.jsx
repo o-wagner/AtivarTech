@@ -1,19 +1,20 @@
 import React from 'react'
-import cbum from '../assets/equipe/cbum.png'
+import gessica from '../assets/equipe/gessica.jpg'
 import thais from '../assets/equipe/thais.png'
-import larissa from '../assets/equipe/larissa.png'
-import gabriel from '../assets/equipe/gabriel.png'
-import jeferson from '../assets/equipe/jeferson.png'
-
+import luann from '../assets/equipe/luann.jpg'
+import larissa from '../assets/equipe/larissa.jpg'
+import gabriel from '../assets/equipe/gabriel.jpeg'
+import jeferson from '../assets/equipe/jeferson.jpg'
+import cbum from '../assets/equipe/cbum.png'
 
 const equipe = [
     {
-        Img: larissa,
+        Img: thais,
         name: 'Alessandra Diamantino',
         cargo: 'Analista de Implantação',
     },
     {
-        Img: gabriel,
+        Img: cbum,
         name: 'Gabriel Lucas',
         cargo: 'Técnico em Suporte',
     },
@@ -23,22 +24,22 @@ const equipe = [
         cargo: 'Lider Técnico do Suporte',
     },
     {
-        Img: gabriel,
+        Img: gessica,
         name: 'Géssica Araújo',
         cargo: 'Assistente Comercial',
     },
     {
-        Img: cbum,
+        Img: jeferson,
         name: 'Jéferson Álefe',
         cargo: 'CEO',
     },
     {
-        Img: jeferson,
+        Img: larissa,
         name: 'Larissa Gonzaga',
         cargo: 'Técnico em suporte',
     },
     {
-        Img: jeferson,
+        Img: luann,
         name: 'Luann Marinho',
         cargo: 'CEO',
     },
@@ -48,7 +49,7 @@ const equipe = [
         cargo: 'Analista de Implantação',
     },
     {
-        Img: thais,
+        Img: cbum,
         name: 'Wagner Oliveira',
         cargo: 'Analista de Suporte',
     },
@@ -67,13 +68,13 @@ function ContainerAbout() {
             <div className='flex flex-row gap-4 flex-wrap pb-20 lg:px-[5%] md:px-[5%] px-10 items-center justify-center'>
                 {equipe.map((e) => {
                     return (
-                        <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark/80 w-[240px] h-[260px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-900'>
+                        <div key={e.name} className='flex flex-col justify-center items-center gap-4 ease-in-out bg-white dark:bg-quaternary-dark/80 w-[220px] h-[240px] drop-shadow-lg hover:drop-shadow-xl text-center rounded-lg p-4 transition-transform hover:-translate-y-1 border border-slate-300 dark:border-slate-900'>
                             <div>
-                                <img src={e.Img} className='w-28 lg:w-[115px] drop-shadow-md' />
+                                <img src={e.Img} className=' w-[120px] h-[120px] rounded-full drop-shadow-md' />
                             </div>
                             <div className='flex flex-col gap-1 items-center justify-center' >
-                                <h3 className='font-bold leading-tight font-poppins text-lg dark:text-primary-blue text-dark-blue'>{e.name}</h3>
-                                <span className='font-regular text-[14px] font-poppins text-greish-blue dark:text-blueish-gray'>{e.cargo}</span>
+                                <h3 className='font-bold leading-tight font-poppins text-sm dark:text-primary-blue text-dark-blue'>{e.name}</h3>
+                                <span className='font-regular text-xs font-poppins text-greish-blue dark:text-blueish-gray'>{e.cargo}</span>
                             </div>
                         </div>
                     )
