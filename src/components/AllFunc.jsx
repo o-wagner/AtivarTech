@@ -1,6 +1,6 @@
 import React from 'react'
-import ok from '../assets/food/allFunc/ok.png'
-import okDark from '../assets/food/allFunc/okDark.png'
+import ok from '../assets/food/allFunc/Ok.png'
+import okDark from '../assets/food/allFunc/OkDark.png'
 import useTheme from '../context/theme'
 
 const food = [
