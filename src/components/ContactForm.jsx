@@ -15,9 +15,14 @@ export default function ContactForm() {
                 text: "Mensagem Enviada com Sucesso!",
                 icon: "success"
             })
+        }else{
+            Swal.fire({
+                title: "Erro no envio!",
+                text: "Mensagem Não foi Enviada!",
+                icon: "error"
+            })
         }
         setStatus(true)
-
     }
 
     return (

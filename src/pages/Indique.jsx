@@ -6,14 +6,30 @@ import heroIndique from '../assets/HeroIndique.png'
 import { NavLink } from 'react-router-dom'
 import elipse from '../assets/Elipse.png'
 import elipse2 from '../assets/Elipse2.png'
-
-const sendEmail = (e) => {
-  e.preventDefault();
-  alert('email enviado');
-}
+import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
 function Indique() {
   const [number, setNumber] = useState('');
   const [numberOrg, setNumberOrg] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID2, e.target, import.meta.env.VITE_PUBLIC_KEY)) {
+        Swal.fire({
+            title: "Muito bem",
+            text: "Mensagem Enviada com Sucesso!",
+            icon: "success"
+        })
+    }else{
+        Swal.fire({
+            title: "Erro no envio!",
+            text: "Mensagem Não foi Enviada!",
+            icon: "error"
+        })
+    }
+    setStatus(true)
+}
+
   return (
     <div className='bg-light-background dark:bg-dark-background w-full'>
       <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
@@ -57,30 +73,34 @@ function Indique() {
                 <h2 className='self-center text-sm rounded-lg'>INDICOU E CONTRATOU = <span className='text-primary-blue'>VOCÊ GANHOU!</span></h2></div>
             </div>
           </div>
-          <form onSubmit={sendEmail} className='dark:bg-tertiary-dark w-full lg:w-1/2 md:w-1/2 bg-gray-300 font-poppins flex-col items-center lg:p-12 p-8  text-dark-blue dark:text-vanilla'>
+          <form onSubmit={sendEmail} method='POST' className='dark:bg-tertiary-dark w-full lg:w-1/2 md:w-1/2 bg-gray-300 font-poppins flex-col items-center lg:p-12 p-8  text-dark-blue dark:text-vanilla'>
             <div className='font-poppins dark:text-vanilla z-10 flex flex-col justify-evenly'>
               <div className='flex flex-col gap-10 z-10'>
                 <label htmlFor='fullName' className='flex flex-col gap-2 text-md'>Nome Completo
-                  <input type='text' required className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" />
+                  <input type='text' name='from_name' required className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu nome completo" />
                 </label>
                 <label htmlFor='emailFrom' className='flex flex-col gap-2 text-md'>Email (Opcional)
-                  <input type='email' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" />
+                  <input type='email' name='email_from' id='email_from' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira seu melhor email" />
                 </label>
                 <label className='flex flex-col gap-2 text-md'>Número
                   <Input value={number}
+                    name='number_from'
+                    id='number_from'
                     required={true}
                     onChange={setNumber}
                     country="BR"
                     className='rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm' placeholder="Insira seu número de telefone" />
                 </label>
                 <label className='flex flex-col gap-2 text-md'>Responsável da Empresa Indicada (Caso Saiba)
-                  <input required='true' type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Nome do responsável da empresa " />
+                  <input required='true' name='resp_empresa' id='resp_empresa' type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Nome do responsável da empresa " />
                 </label>
                 <label className='flex flex-col gap-2 text-md'>Nome da Empresa Indicada*
-                  <input required='true' type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira o nome da empresa indicada" />
+                  <input required='true' name='nome_empresa' id='nome_empresa' type='text' className="rounded-md py-2 px-2 dark:bg-dark-input placeholder:text-blueish-gray outline-none text-sm focus:placeholder-transparent placeholder:text-sm" placeholder="Insira o nome da empresa indicada" />
                 </label>      
                 <label className='flex flex-col gap-2 text-md'>Número da empresa indicada*
                   <Input value={numberOrg}
+                    name='numero_empresa'
+                    id='numero_empresa'
                     onChange={setNumberOrg}
                     required={true}
                     country="BR"
