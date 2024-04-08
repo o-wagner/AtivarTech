@@ -42,7 +42,7 @@ export default function Varejo() {
                 </button>
             </>
             <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
-      <img loading='lazy' className='-z-0 absolute right-0 top-0 opacity-40 w-[40%]' src={elipse2} />
+            <img loading='lazy' className='-z-0 absolute right-0 top-0 opacity-40 w-[40%]' src={elipse2} />
             <section id="heroVarejo" className='lg:h-[100dvh] h-auto w-full lg:pt-16 md:h-screen pt-10 lg:flex-row flex-wrap-reverse flex justify-center items-center px-10 py-12 gap-5 lg:gap-[4%] md:gap-[4%] md:flex-nowrap'>
                 <div id="heroText" className=' z-10 lg:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
                     <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
@@ -58,8 +58,10 @@ export default function Varejo() {
                     <Link
                         to="segmento"
                         smooth={true}
-                        offset={-50}
-                        className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
+                        offset={-70}
+                        className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Conheça Mais<ChevronDownCircleIcon size={16} /></Link>
                 </div>
                 <div className=' z-10 max-w-[600px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
                     <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] drop-shadow-md' src={heroshot} alt="HeroShot" />

@@ -55,8 +55,8 @@ function Sobre() {
       </>
       <img loading='lazy' className='-z-0 absolute top-0 opacity-50 w-[30%]' src={elipse} />
       <img loading='lazy' className='-z-0 absolute right-0 top-0 opacity-40 w-[40%]' src={elipse2} />
-      <section id="heroAbout" className='lg:h-screen md:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%] md:gap-[6%] md:flex-nowrap '>
-        <div id="heroText" className='z-10 lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
+      <section id="heroAbout" className='lg:h-screen min-h-screen  md:h-screen h-auto w-full lg:pt-16 pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-10 lg:gap-[6%] md:gap-[6%] md:flex-nowrap '>
+        <div id="heroText" className='z-10 lg:place-self-center md:place-self-center place-self-start lg:gap-2 md:gap-2 max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
           <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
             <h3 className='text-primary-blue uppercase font-inter text-[12px] font-semibold tracking-widest'>Ativar Tecnologia</h3>
             <h1 className='text-dark-blue font-semibold lg:w-[470px] md:w-[320px] w-[320px] lg:leading-[50px] leading-[35px] text-[25px] lg:px-0 md:px-0 lg:text-[40px] font-poppins
@@ -75,8 +75,8 @@ function Sobre() {
             hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
             font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>A Ativar Tecnologia<ChevronDownCircleIcon size={16} /> </Link>
         </div>
-        <div className=' max-w-[450px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
-          <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] drop-shadow-md' src={heroshot} alt="HeroShot" />
+        <div className=' lg:place-self-center md:place-self-center place-self-end max-w-[450px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0 flex animate-fade-left'>
+          <img className='object-contain min-w-[150px] max-w-[300px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] drop-shadow-md' src={heroshot} alt="HeroShot" />
         </div>
       </section>
       <section id="history" className='h-auto py-16 flex-wrap md:flex-nowrap px-10 flex items-center justify-center lg:gap-[5%] md:gap-10 gap-5 bg-darker-light-bg dark:bg-quaternary-dark '>
@@ -84,13 +84,13 @@ function Sobre() {
         <div className='flex flex-col items-center lg:items-start md:items-start gap-4 text-center md:text-start lg:text-start'>
           <h1 className='lg:text-[40px] text-[30px] w-[380px] font-bold dark:text-vanilla text-dark-blue'>Nossa <span className='text-primary-blue'>História</span></h1>
           <p className='dark:text-blueish-gray lg:text-[16px] text-[14px] text-greish-blue font-normal leading-loose min-w-[300px] lg:min-w-[400px] max-w-[600px] lg:max-w-[600px] md:max-w-[460px]
-                    text-center lg:text-left md:text-left mb-6 lg:px-0 md:px-0 font-inter px-2'>A Ativar Tecnologia surgiu através de uma parceria com a Eagle Tecnologia, uma empresa sólida no mercado que nos impulsionou a oferecer as melhores soluções em sistemas de gestão para pequenas, médias e grandes empresas. <br />
+                    text-center lg:text-left md:text-left mb-6 lg:px-0 md:px-0 font-inter px-10 '>A Ativar Tecnologia surgiu através de uma parceria com a Eagle Tecnologia, uma empresa sólida no mercado que nos impulsionou a oferecer as melhores soluções em sistemas de gestão para pequenas, médias e grandes empresas. <br />
             Atuamos no mercado de Guanhães e região desde 2021 e estamos em constante crescimento, com clientes em diversas regiões do Brasil. Nosso compromisso com a excelência e a satisfação do nosso cliente, nos diferencia, enquanto nossa equipe apaixonada e experiente, impulsiona nossa missão de liderar o caminho para o sucesso empresarial da região, oferecendo o melhor atendimento e suporte técnico humanizado.
             Junte-se a nós enquanto continuamos a escrever a nossa história.
           </p>
         </div>
       </section>
-      <section className=' h-auto py-16 flex flex-col items-center justify-center gap-2 px-20'>
+      <section id="mvv" className=' h-auto py-16 pb-8 flex flex-col items-center justify-center gap-2 lg:px-20 px-10'>
         <h3 className='text-primary-blue uppercase text-[12px] font-inter font-semibold tracking-widest'>A Ativar Tecnologia</h3>
         <h1 className='lg:text-[40px] text-[25px] text-center tracking-tight font-bold dark:text-vanilla text-dark-blue'>Missão, Visão e Valores</h1>
         <p className='font-inter lg:text-[16px] text-[14px] leading-6 text-greish-blue dark:text-blueish-gray max-w-[600px] min-w-[300px] lg:min-w-[380px] px-2 text-center'>Saiba mais sobre o que nos impulsiona e como estamos moldando o futuro da tecnologia através de nossa visão inspiradora e valores fundamentais.</p>

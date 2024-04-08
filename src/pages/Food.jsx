@@ -28,7 +28,7 @@ function Food() {
   window.addEventListener('scroll', supportShow);
   const handleClick = () => {
     setShowModal(!showModal);
-}
+  }
   return (
     <div className='dark:bg-dark-background bg-light-background w-full'>
       <> <PopupModal handleClick={handleClick} showModal={showModal} support={support} />
@@ -57,8 +57,10 @@ function Food() {
           <Link
             to="segmento"
             smooth={true}
-            offset={-50}
-            className='flex gap-2 items-center font-semibold text-md text-white bg-button-gradient px-6 w-44 cursor-pointer hover:bg-button-gradient-hover py-[5px] rounded-[12px]'>Conheça mais<ChevronDownCircleIcon size={16} /> </Link>
+            offset={-70}
+            className='px-6 min-w-36 py-[5px] bg-button-gradient text-nowrap
+                hover:bg-button-gradient-hover transition-all duration-300 rounded-[12px]
+                font-semibold font-inter text-[14px] gap-2 cursor-pointer text-slate-100 flex justify-center items-center text-center'>Conheça Mais<ChevronDownCircleIcon size={16} /></Link>
         </div>
         <div className=' z-10  max-w-[600px] lg:h-auto lg:mt-0 mt-[20%] md:mt-0  flex animate-fade-left'>
           <img className='object-contain min-w-[150px] max-w-[240px] lg:max-w-[400px] md:max-w-[300px] translate-x-6 lg:w-[400px] md:w-[300px] drop-shadow-md' src={heroshot} alt="HeroShot" />
@@ -95,7 +97,7 @@ function Food() {
       <section id='moreFunc' className='lg:px-36 px-10 pb-24 pt-10'>
         <div className='flex items-center flex-col justify-center py-16 '>
           <h1 className='lg:text-[26px] text-[25px] font-poppins mb-2 tracking-tight max-w-[650px] font-bold text-center dark:text-vanilla text-dark-blue'>Um Ecossistema Completo De Soluções Inovadoras
-</h1>
+          </h1>
           {/* <p className='font-inter lg:text-[16px] text-[14px] text-greish-blue dark:text-blueish-gray lg:max-w-[380px] min-w-[300px] lg:min-w-[380px]
            px-2 text-center'>Proporcionando novas tecnologias para a evolução de sua empresa e seu cliente</p> */}
         </div>
@@ -104,10 +106,10 @@ function Food() {
       <section id='allFunc' className=' dark:bg-quaternary-dark bg-neutral-300 lg:px-[4%] px-8 pb-24 pt-10'>
         <div className='flex items-center flex-col justify-center py-16 '>
           <h1 className='lg:text-[26px] text-[25px] font-poppins mb-2 tracking-tight max-w-[650px] font-bold text-center dark:text-vanilla text-dark-blue'>
-          Tudo que você precisa para Food-Service em um só sistema</h1>
+            Tudo que você precisa para Food-Service em um só sistema</h1>
         </div>
         <AllFunc segmento="food" />
-      </section>      
+      </section>
     </div >
   )
 }
