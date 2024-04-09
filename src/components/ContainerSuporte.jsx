@@ -1,13 +1,13 @@
 import React from 'react'
-import suporte from '../assets/support.svg'
+import suporte from '../assets/suporte.png'
 import Button from './Button'
 
 export default function ContainerSuporte() {
     return (
         <div className=' w-full lg:px-36 md:px-20 px-12 pt-28 py-16 bg-secondary-light dark:bg-quaternary-dark
-        flex lg:gap-10 gap-4 flex-row items-center justify-center flex-wrap lg:flex-nowrap md:flex-nowrap'>
+        flex lg:gap-10 gap-10 flex-row items-center justify-center flex-wrap lg:flex-nowrap md:flex-nowrap'>
             <div>
-                <img className='min-w-[260px] lg:w-[280px] md:w-[260px] w-[240px]' src={suporte} alt="imagem de uma pessoa da equipe de suporte" />
+                <img className='min-w-[260px] lg:w-[260px] md:w-[240px] w-[240px]' src={suporte} alt="imagem de uma pessoa da equipe de suporte" />
             </div>
             <div className='flex items-center lg:items-start md:items-start lg:justify-center md:justify-center flex-col gap-6'>
                 <div className='flex flex-col gap-4'>
