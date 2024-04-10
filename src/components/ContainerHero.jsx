@@ -8,7 +8,7 @@ import { Link } from 'react-scroll'
 const ContainerHero = () => {
     return (
         <section id="home" name="home">
-            <div className='z-10 lg:h-screen md:h-screen min-h-screen h-auto w-full lg:pt-[55px] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-36 lg:gap-[3%] md:gap-[6%] md:flex-nowrap'>
+            <div className='z-10 lg:h-screen md:h-screen lg:min-h-0 md:min-h-0 min-h-screen h-auto w-full lg:pt-[55px] pt-10 lg:flex-row md:flex-row flex-wrap-reverse flex justify-center items-center py-12 gap-5 px-36 lg:gap-[3%] md:gap-[6%] lg:flex-nowrap md:flex-nowrap'>
                 <div id="heroText" className='lg:gap-2 md:gap-2 
                 lg:place-self-center md:place-self-center place-self-start max-w-[570px] gap-2 flex flex-col lg:items-start md:items-start items-center'>
                     <div className='flex flex-col lg:text-start md:text-start lg:items-start md:items-start items-center text-center gap-2'>
