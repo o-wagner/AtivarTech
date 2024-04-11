@@ -13,7 +13,8 @@ export default function ContactForm() {
             Swal.fire({
                 title: "Muito bem",
                 text: "Mensagem Enviada com Sucesso!",
-                icon: "success"
+                icon: "success",
+                confirmButtonColor:'#18A2DE'
             })
         }else{
             Swal.fire({
